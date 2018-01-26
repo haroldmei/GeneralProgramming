@@ -12,4 +12,10 @@ Algorithm, OO, Template, C++, Java, etc.
   A, Dynamic programming  
   B, Complexity & performance  
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/System & Network  
+  Historical notes on System & Network related topics.
+  TCP/IP  
+  Socket implementation  
+  Linux & vxWorks system  
   
