@@ -1,0 +1,102 @@
+/*
+You are asked to cut off trees in a forest for a golf event. The forest is represented as a non-negative 2D map, in this map:
+
+0 represents the obstacle can't be reached.
+1 represents the ground can be walked through.
+The place with number bigger than 1 represents a tree can be walked through, and this positive number represents the tree's height.
+You are asked to cut off all the trees in this forest in the order of tree's height - always cut off the tree with lowest height first. And after cutting, the original place has the tree will become a grass (value 1).
+
+You will start from the point (0, 0) and you should output the minimum steps you need to walk to cut off all the trees. If you can't cut off all the trees, output -1 in that situation.
+
+You are guaranteed that no two trees have the same height and there is at least one tree needs to be cut off.
+
+Example 1:
+Input: 
+[
+ [1,2,3],
+ [0,0,4],
+ [7,6,5]
+]
+Output: 6
+Example 2:
+Input: 
+[
+ [1,2,3],
+ [0,0,0],
+ [7,6,5]
+]
+Output: -1
+Example 3:
+Input: 
+[
+ [2,3,4],
+ [0,0,5],
+ [8,7,6]
+]
+Output: 6
+Explanation: You started from the point (0,0) and you can cut off the tree in (0,0) directly without walking.
+Hint: size of the given matrix will not exceed 50x50.
+*/
+
+class Solution {
+public:	
+	int Distance(vector<vector<int>> forest, int i0, int j0, int i1, int j1)
+	{
+		if (i0 == i1 && j0 == j1)
+			return 0;
+
+		queue<pair<int, pair<int,int>>> q;
+		int directions[4][2] = {1,0,-1,0,0,1,0,-1};//left,right,top,bottom
+		q.push({ 0, {i0,j0} });
+		forest[i0][j0] = 0;
+
+		while (q.size())
+		{
+			auto cur = q.front();
+			q.pop();
+
+			for (int dir = 0; dir < 4; dir++)
+			{
+				int i = cur.second.first + directions[dir][0];
+				int j = cur.second.second + directions[dir][1];
+				if (i < 0 || i >= forest.size() || j < 0 || j >= forest[0].size())
+					continue;
+
+				if (i == i1 && j == j1)
+					return cur.first + 1;
+
+				if (forest[i][j]) {
+					q.push({cur.first + 1, {i,j} });
+					forest[i][j] = 0;
+				}
+			}
+		}
+
+		return -1;
+	}
+	int cutOffTree(vector<vector<int>>& forest) {
+
+		if (!forest.size() || !forest[0].size() || !forest[0][0])
+			return -1;
+
+		map<int, pair<int, int>> cells;
+		for (int i = 0; i < forest.size(); i++)
+			for (int j = 0; j < forest[0].size(); j++)
+				if (forest[i][j])
+					cells[forest[i][j]] = make_pair(i, j);
+
+		int res = 0;
+		int i0 = 0, j0 = 0;
+		for (auto a : cells)
+		{
+			int i1 = a.second.first, j1 = a.second.second;
+			int cur = Distance(forest, i0, j0, i1, j1);
+			if (cur < 0)	//cannot be reached
+				return -1;
+
+			res += cur;
+			i0 = i1, j0 = j1;
+		}
+		return res;
+	}
+};
