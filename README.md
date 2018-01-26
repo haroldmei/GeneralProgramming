@@ -9,5 +9,7 @@ Algorithm, OO, Template, C++, Java, etc.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 /General_algo: c++, java general programming  
-  A, Dynamic programming
-  B, Complexity & performance
+  A, Dynamic programming  
+  B, Complexity & performance  
+
+  
