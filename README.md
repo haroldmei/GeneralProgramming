@@ -14,7 +14,7 @@ Algorithm, OO, Template, C++, Java, etc.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 /System & Network: Historical notes on System & Network related topics.  
-  TCP/IP  
+  Stuff I did in the past.  
   Socket implementation  
   Linux & vxWorks system  
 
