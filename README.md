@@ -18,10 +18,10 @@ Algorithm, OO, Template, C++, Java, etc.
   Socket implementation  
   Linux & vxWorks system  
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 /CHINESE_POKER:
 Dou di zhu (was once a famous Chinese poker game), the rules are specified in:  
-https://en.wikipedia.org/wiki/Dou_dizhu
+https://en.wikipedia.org/wiki/Dou_dizhu  
 
 This c implementation is super fast and memory efficient, the game literally 
 consumes no memory, all data needed in the game are just 4 32bit integers, 
