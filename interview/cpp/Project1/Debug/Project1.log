@@ -1,0 +1,10 @@
+﻿  autumncompass3.cpp
+C:\work\hackerrank\cpp\Project1\autumncompass3.cpp(17,20): warning C4018:  '<': signed/unsigned mismatch
+C:\work\hackerrank\cpp\Project1\autumncompass3.cpp(22,20): warning C4018:  '<': signed/unsigned mismatch
+C:\work\hackerrank\cpp\Project1\autumncompass3.cpp(46,22): warning C4018:  '<': signed/unsigned mismatch
+C:\work\hackerrank\cpp\Project1\autumncompass3.cpp(48,23): warning C4018:  '<': signed/unsigned mismatch
+C:\work\hackerrank\cpp\Project1\autumncompass3.cpp(55,22): warning C4018:  '<': signed/unsigned mismatch
+C:\work\hackerrank\cpp\Project1\autumncompass3.cpp(57,23): warning C4018:  '<': signed/unsigned mismatch
+C:\work\hackerrank\cpp\Project1\autumncompass3.cpp(60,11): warning C4018:  '<': signed/unsigned mismatch
+C:\work\hackerrank\cpp\Project1\autumncompass3.cpp(67,11): warning C4018:  '<': signed/unsigned mismatch
+  Project1.vcxproj -> C:\work\hackerrank\cpp\Debug\Project1.exe
