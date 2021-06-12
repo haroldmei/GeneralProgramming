@@ -1,0 +1,820 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "res/Win32++.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDW_MAIN MENU 
+BEGIN
+    POPUP "任务(&T)"
+    BEGIN
+        MENUITEM "保存配置(&S)",                ID_SAVECFG
+        MENUITEM "恢复出厂配置(&R)",            ID_RESTORECFG
+        MENUITEM SEPARATOR
+        MENUITEM "开始(&G)",                    ID_Menu
+        MENUITEM "停止(&T)",                    ID_ERASER_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "涉密信息清除(&E)",            ID_SECRET_ERASER
+        MENUITEM "导出日志(&L)",                ID__40003
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&Q)",                    IDM_FILE_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "增加结点(&A)",                ID_NODE_ADD
+        MENUITEM "删除结点(&D)",                ID_NODE_DELETE
+        MENUITEM "配置(&C)",                    ID_NODE_CFG
+        MENUITEM SEPARATOR
+        MENUITEM "拷贝(&C)",                    ID_40005
+        MENUITEM "粘贴(&P)",                    ID_40006
+        MENUITEM SEPARATOR
+        MENUITEM "工具栏",                      IDW_VIEW_TOOLBAR, CHECKED
+        MENUITEM "状态栏",                      IDW_VIEW_STATUSBAR, CHECKED
+    END
+    POPUP "管理(&M)"
+    BEGIN
+        MENUITEM "软件设置",                    ID_TEST_TEST3
+        MENUITEM "授权服务器",                  ID_TEST_TEST2
+        MENUITEM "目标设置(&D)",                ID_ERASER_DST
+    END
+    POPUP "浮动窗口(&F)"
+    BEGIN
+        MENUITEM "全屏",                        ID_VIEW_
+        MENUITEM "默认格调(&D)",                IDM_DOCK_DEFAULT
+        MENUITEM "关闭所有",                    IDM_DOCK_CLOSEALL
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于本软件(&A)",              IDM_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDW_MAIN                ICON                    "res/Barbarian.ico"
+IDI_CLASSVIEW           ICON                    "res/classview.ico"
+IDI_FILEVIEW            ICON                    "res/fileview.ico"
+IDI_TEXT                ICON                    "res/text.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDW_MAIN                BITMAP                  "res\\toolbar.bmp"
+IDW_SDBOTTOM            BITMAP                  "res/SDbottom.bmp"
+IDW_SDCENTER            BITMAP                  "res/SDcenter.bmp"
+IDW_SDLEFT              BITMAP                  "res/SDleft.bmp"
+IDW_SDMIDDLE            BITMAP                  "res/SDmiddle.bmp"
+IDW_SDRIGHT             BITMAP                  "res/SDright.bmp"
+IDW_SDTOP               BITMAP                  "res/SDtop.bmp"
+IDB_CLASSVIEW           BITMAP                  "res/classview.bmp"
+IDB_FILEVIEW            BITMAP                  "res/fileview.bmp"
+IDB_STATUS              BITMAP                  "res/status.bmp"
+IDB_THREESTATE          BITMAP                  "res\\threestate.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDW_SPLITH              CURSOR                  "res/SplitH.cur"
+IDW_SPLITV              CURSOR                  "res/SplitV.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDW_ABOUT DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,68,49,50,14
+    CTEXT           "TraceWiper 计算机使用痕迹清除工具",IDC_STATIC,60,22,64,
+                    18
+    ICON            IDW_MAIN,0,4,4,20,20
+END
+
+IDD_DIALOG_TABTEST DIALOGEX 0, 0, 235, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Tab Dialog"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,2,1,232,108
+END
+
+IDD_COMBOBOXES DIALOGEX 0, 0, 230, 94
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO1,10,15,60,70,CBS_SIMPLE | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Simple",IDC_STATIC,5,0,70,90
+    COMBOBOX        IDC_COMBO2,85,15,60,75,CBS_DROPDOWN | CBS_SORT | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Drop Down",IDC_STATIC,80,0,70,90
+    COMBOBOX        IDC_COMBO3,160,15,60,75,CBS_DROPDOWNLIST | CBS_SORT | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Drop List",IDC_STATIC,155,0,70,90
+END
+
+IDD_BUTTONS DIALOGEX 0, 0, 230, 94
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Pushbuttons",IDC_STATIC,10,5,60,76
+    PUSHBUTTON      "Pushbutton",IDC_BUTTON1,15,20,49,14
+    GROUPBOX        "Radio Buttons",IDC_STATIC,84,5,60,76
+    CONTROL         "Radio1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,89,20,50,10
+    CONTROL         "Radio2",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,89,39,50,
+                    10
+    CONTROL         "Radio3",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,89,57,50,
+                    10
+    GROUPBOX        "Check Boxes",IDC_STATIC,157,5,60,77
+    CONTROL         "Check1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,162,20,50,10
+    CONTROL         "Check2",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,162,39,50,10
+    CONTROL         "Check3",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,162,57,50,10
+END
+
+IDD_DIALOG_NODECFG DIALOGEX 0, 0, 469, 259
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "结点信息配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",ID_CONFIRM,262,238,50,14
+    DEFPUSHBUTTON   "删除",IDOK_DELETE,155,238,50,14
+    DEFPUSHBUTTON   "新建",IDOK_NEW,49,238,50,14
+    CONTROL         "",IDC_LIST_ENTRIES,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,455,184,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "功能名称",IDC_STATIC,14,203,33,8
+    EDITTEXT        IDC_EDIT_NODENAME,53,202,162,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "取消",ID_CANCEL,361,238,50,14
+END
+
+IDD_DIALOG_AUTH DIALOGEX 0, 0, 315, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "授权信息设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK_AUTH,258,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,258,24,50,14
+    EDITTEXT        IDC_EDIT_SERVER,63,12,136,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_USER,63,36,135,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,63,62,135,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SECRET,63,85,135,14,ES_AUTOHSCROLL
+    LTEXT           "服务器",IDC_STATIC,18,16,25,8
+    LTEXT           "用户名",IDC_STATIC,18,40,25,8
+    LTEXT           "密码",IDC_STATIC,18,64,17,8
+    LTEXT           "密钥",IDC_STATIC,18,87,21,8
+END
+
+IDD_DIALOG_SECRET_ERASER DIALOGEX 0, 0, 461, 308
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+CAPTION "敏感信息清除"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "开始",ID_SECRET_START,81,287,50,14
+    PUSHBUTTON      "取消",ID_SECRET_CANCEL,319,287,50,14
+    CONTROL         "",IDC_TREE_DISKINFO,"SysTreeView32",TVS_CHECKBOXES | 
+                    TVS_NOSCROLL | WS_BORDER | WS_TABSTOP,7,7,136,233
+    GROUPBOX        "涉密文件/目录清除",IDC_STATIC,152,64,302,86
+    GROUPBOX        "磁盘扇区清除",IDC_STATIC,152,7,302,53
+    GROUPBOX        "磁盘敏感扇区清除",IDC_STATIC,152,155,302,85
+    CONTROL         "磁盘扇区清除",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,
+                    160,30,64,10
+    CONTROL         "涉密文件/目录清除",IDC_RADIO2,"Button",
+                    BS_AUTORADIOBUTTON,160,104,83,10
+    CONTROL         "磁盘敏感扇区清除",IDC_RADIO3,"Button",
+                    BS_AUTORADIOBUTTON,160,195,80,10
+    CONTROL         "",IDC_ERASE_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    262,447,13
+    CONTROL         "全盘擦除",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,254,20,48,10
+    CONTROL         "空闲空间擦除",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,254,38,64,10
+    DEFPUSHBUTTON   "停止",ID_SECRET_STOP,205,287,50,14
+    CONTROL         "磁盘敏感扇区",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,254,171,64,10
+    EDITTEXT        IDC_EDIT_2,286,216,161,14,ES_AUTOHSCROLL
+    LTEXT           "关键字",IDC_STATIC,252,220,25,8
+    CONTROL         "磁盘上网扇区",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,254,191,64,10
+    EDITTEXT        IDC_EDIT_1,287,79,159,14,ES_AUTOHSCROLL
+    LTEXT           "关键字",IDC_STATIC,254,82,25,8
+    LTEXT           "空闲",IDC_ERASE_STATUS,50,247,76,8
+    LTEXT           "任务状态",IDC_STATIC,7,246,33,8
+END
+
+IDD_DIALOG_ENTRYCFG DIALOGEX 0, 0, 491, 233
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "配置项信息配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",ID_CONFIRM,103,212,50,14
+    DEFPUSHBUTTON   "取消",ID_ENTRY_CANCEL,339,212,50,14
+    LTEXT           "配置类型",IDC_STATIC,13,16,33,8
+    COMBOBOX        IDC_COMBO_NODETYPE,53,14,163,30,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    GROUPBOX        "目录/文件",IDC_STATIC,7,34,477,57
+    EDITTEXT        IDC_EDIT_DIR,53,48,422,12,ES_AUTOHSCROLL
+    GROUPBOX        "注册表值",IDC_STATIC,7,153,477,53
+    EDITTEXT        IDC_EDIT_FILETYPE,53,67,422,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REGVAL,53,175,421,12,ES_AUTOHSCROLL
+    GROUPBOX        "注册表键",IDC_STATIC,7,96,477,53
+    EDITTEXT        IDC_EDIT_REGKEY,54,118,421,12,ES_AUTOHSCROLL
+    LTEXT           "目录",IDC_STATIC,23,49,17,8
+    LTEXT           "文件",IDC_STATIC,24,68,17,8
+    LTEXT           "注册表键",IDC_STATIC,15,120,37,8
+    LTEXT           "注册表值",IDC_STATIC,15,176,37,8
+END
+
+IDD_SOFTWARE_SETTING DIALOGEX 0, 0, 397, 308
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "软件设置"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "文件/文件夹右键擦除",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,44,17,86,10
+    CONTROL         "回收站右键擦除",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,44,35,67,10
+    CONTROL         "磁盘右键擦除",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,44,52,60,10
+    CONTROL         "彼得加特曼方法",IDC_CHECK_2_1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,44,94,72,10
+    CONTROL         "美国国防部标准方法(8-306./E.C and E)",IDC_CHECK_2_2,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,44,113,149,10
+    CONTROL         "美国国防部标准方法(8-306./E)",IDC_CHECK_2_3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,44,132,121,10
+    CONTROL         "伪随机方法",IDC_CHECK_2_4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,44,151,56,10
+    CONTROL         "彼得加特曼方法",IDC_CHECK_3_1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,44,203,72,10
+    CONTROL         "美国国防部标准方法(8-306./E.C and E)",IDC_CHECK_3_2,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,44,222,149,10
+    CONTROL         "美国国防部标准方法(8-306./E)",IDC_CHECK_3_3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,44,243,121,10
+    CONTROL         "伪随机方法",IDC_CHECK_3_4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,44,263,56,10
+    PUSHBUTTON      "OK",IDC_BUTTON2,168,285,50,14
+    GROUPBOX        "鼠标右键行为设置",IDC_STATIC,7,3,383,68
+    GROUPBOX        "文件/文件夹擦除选项",IDC_STATIC,7,79,383,96
+    GROUPBOX        "磁盘空间擦除选项",IDC_STATIC,7,184,383,100
+END
+
+IDD_TARGET_DLG DIALOGEX 0, 0, 397, 209
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "软件设置"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "浏览",IDC_BUTTON_BROSE,329,39,50,14
+    PUSHBUTTON      "导入",IDC_BUTTON_LOAD,329,60,50,14
+    LTEXT           "注册表文件路径",IDC_STATIC,15,23,57,8
+    EDITTEXT        IDC_EDIT_REGDIRECTORY,17,39,297,14,ES_AUTOHSCROLL
+    GROUPBOX        "注册表导入",IDC_STATIC,7,7,383,77
+    GROUPBOX        "目标选择",IDC_STATIC,7,97,383,77
+    LTEXT           "目标用户",IDC_STATIC,15,116,33,8
+    COMBOBOX        IDC_COMBO_USER,61,114,166,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "确定",IDC_BUTTON_OK,59,186,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON_CNL,256,186,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDW_MAIN ACCELERATORS 
+BEGIN
+    "N",            IDM_FILE_NEW,           VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_FILE_OPEN,          VIRTKEY, CONTROL, NOINVERT
+    "P",            IDM_FILE_PRINT,         VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_FILE_SAVE,          VIRTKEY, CONTROL, NOINVERT
+    "C",            IDM_EDIT_COPY,          VIRTKEY, CONTROL, NOINVERT
+    "X",            IDM_EDIT_CUT,           VIRTKEY, CONTROL, NOINVERT
+    "V",            IDM_EDIT_PASTE,         VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDM_EDIT_UNDO,          VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDM_EDIT_REDO,          VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_DELETE,      IDM_EDIT_DELETE,        VIRTKEY, NOINVERT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_NODECFG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 462
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 252
+    END
+
+    IDD_DIALOG_AUTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_DIALOG_SECRET_ERASER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 454
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 301
+    END
+
+    IDD_DIALOG_ENTRYCFG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 484
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_SOFTWARE_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 299
+    END
+
+    IDD_TARGET_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,1,1,0
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "Resource"
+            VALUE "FileVersion", "0, 1, 1, 0"
+            VALUE "InternalName", "Resource"
+            VALUE "LegalCopyright", "版权所有 (C) 2010"
+            VALUE "OriginalFilename", "Resource.rc"
+            VALUE "ProductName", " Resource"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDW_MAIN                "TraceWiper - 计算机使用痕迹清除工具"
+    IDS_ERROR_DIRECTORY     "Failed to create temporary directory to drive %1, maybe one exists already. Try again."
+    IDW_VIEW_TOOLBAR        "Show or hide the tool bar"
+    IDW_VIEW_STATUSBAR      "Show or hide the status bar"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_FILE_NEW            "Create a New Document"
+    IDM_FILE_OPEN           "Open Existing Document"
+    IDM_FILE_SAVE           "Save the Document"
+    IDM_FILE_SAVEAS         "Save the Document with a new name"
+    IDM_FILE_PRINT          "Print the Document"
+    IDM_FILE_EXIT           "End the Program"
+    IDM_EDIT_UNDO           "Undo the last action"
+    IDM_EDIT_REDO           "Redo the previously undone action"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_EDIT_CUT            "Cut the Selected Contents to the Clipboard"
+    IDM_EDIT_COPY           "Copy the Selected Contents to the Clipboard"
+    IDM_EDIT_PASTE          "Paste the Clipboard Contents to the Document"
+    IDM_EDIT_DELETE         "Erase the selected Contents"
+    IDM_HELP_ABOUT          "Display Information about this program"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_DOCK_DEFAULT        "Restore default dock layout"
+    IDM_DOCK_CLOSEALL       "Close all docked and undocked windows"
+END
+
+STRINGTABLE 
+BEGIN
+    61536                   "Close the Window"
+END
+
+STRINGTABLE 
+BEGIN
+    61488                   "Maximize the Window"
+END
+
+STRINGTABLE 
+BEGIN
+    61472                   "Minimize the WIndow"
+END
+
+STRINGTABLE 
+BEGIN
+    61456                   "Move the Window"
+END
+
+STRINGTABLE 
+BEGIN
+    61504                   "Select Next Window"
+END
+
+STRINGTABLE 
+BEGIN
+    61520                   "Select Previous Window"
+END
+
+STRINGTABLE 
+BEGIN
+    61728                   "Restore the Window"
+END
+
+STRINGTABLE 
+BEGIN
+    61440                   "Resize the Window"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_TASKSTATISTICS DIALOG  0, 0, 205, 178
+STYLE DS_SETFONT | WS_POPUP | WS_DISABLED | WS_CAPTION
+CAPTION "Statistics"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Reset",IDC_BUTTON_RESET,148,156,50,14
+    EDITTEXT        IDC_EDIT_STATISTICS,7,18,191,131,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Statistics for the current configuration:",IDC_STATIC,7,
+                    7,175,8
+END
+
+IDD_PROPPAGE_TASKSCHEDULE DIALOGEX 0, 0, 205, 178
+STYLE DS_SETFONT | WS_POPUP | WS_DISABLED | WS_CAPTION
+CAPTION "Schedule"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_COMBO_WHEN,72,22,92,62,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_TIME,72,40,37,14,ES_AUTOHSCROLL
+    CONTROL         "&PM",IDC_CHECK_PM,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,112,40,36,10
+    LTEXT           "Every",IDC_STATIC,7,22,58,8
+    LTEXT           "At",IDC_STATIC,7,40,58,8
+    LTEXT           "Schedule task to be processed",IDC_STATIC,7,7,175,8
+END
+
+IDD_PROPPAGE_TASKDATA DIALOGEX 0, 0, 332, 309
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+CAPTION "Data"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "&Unused space on drive",IDC_RADIO_DISK,"Button",
+                    BS_AUTORADIOBUTTON,7,7,175,10
+    COMBOBOX        IDC_COMBO_DRIVES,19,18,163,68,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Files on f&older",IDC_RADIO_FILES,"Button",
+                    BS_AUTORADIOBUTTON,7,37,175,10
+    EDITTEXT        IDC_EDIT_FOLDER,19,49,142,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSE,165,49,16,14
+    CONTROL         "&Subfolders",IDC_CHECK_SUBFOLDERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,65,163,10
+    CONTROL         "&Remove folder(s)",IDC_CHECK_FOLDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,76,163,10
+    CONTROL         "Only su&bfolders",IDC_CHECK_ONLYSUB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,31,87,151,10
+    CONTROL         "&File",IDC_RADIO_FILE,"Button",BS_AUTORADIOBUTTON,7,103,
+                    175,10
+    EDITTEXT        IDC_EDIT_FILE,19,115,142,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSE_FILES,165,115,16,14
+    CONTROL         "Use &wildcards",IDC_CHECK_WILDCARDS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,131,163,10
+    CONTROL         "&Include subfolders",IDC_CHECK_WILDCARDS_SF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,31,142,151,10
+    CONTROL         "&Keep task on the list",IDC_PERSISTENT_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,291,175,10
+    CONTROL         "&File",IDC_RADIO_FILE2,"Button",BS_AUTORADIOBUTTON,8,
+                    158,175,10
+    EDITTEXT        IDC_EDIT_FILE2,20,170,142,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSE_FILES2,166,170,16,14
+    CONTROL         "Use &wildcards",IDC_CHECK_WILDCARDS2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,186,163,10
+    CONTROL         "&Include subfolders",IDC_CHECK_WILDCARDS_SF2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,32,197,151,10
+    PUSHBUTTON      "OK",IDC_BUTTON_OK,275,242,50,14
+    PUSHBUTTON      "CANCEL",IDC_BUTTON_CANCEL,275,279,50,14
+END
+
+IDD_PROPPAGE_SCHEDULER DIALOGEX 0, 0, 333, 323
+STYLE DS_SETFONT | WS_POPUP | WS_DISABLED | WS_CAPTION
+CAPTION "Scheduler"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Enable running of scheduled tasks",IDC_CHECK_ENABLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,15,190,10
+    CONTROL         "Queue overlapping tasks",IDC_CHECK_QUEUE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,26,190,10
+    CONTROL         "No visual error messages",IDC_CHECK_NOVISUALERRORS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,59,190,10
+    CONTROL         "No taskbar tray icon",IDC_CHECK_NOTRAYICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,70,190,10
+    CONTROL         "Hide main window when minimized",
+                    IDC_CHECK_HIDEONMINIMIZE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,81,176,10
+    CONTROL         "Log actions",IDC_CHECK_LOG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,116,190,10
+    CONTROL         "Only error messages",IDC_CHECK_LOG_ONLYERRORS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,127,178,10
+    CONTROL         "Limit log file size to",IDC_CHECK_LOG_LIMITSIZE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,138,76,10
+    EDITTEXT        IDC_EDIT_LIMIT,101,138,45,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_LIMIT,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,138,138,7,
+                    14
+    CONTROL         "Start Scheduler at Windows startup",IDC_CHECK_STARTUP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,305,196,10
+    LTEXT           "kB",IDC_STATIC_KB,148,138,34,8
+    GROUPBOX        "Appearance",IDC_STATIC,7,47,319,51
+    GROUPBOX        "Logging",IDC_STATIC,7,104,319,57
+    GROUPBOX        "Tasks",IDC_STATIC,7,3,319,40
+END
+
+IDD_DLGNEW_DIALOG DIALOGEX 0, 0, 267, 226
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Choose File/Folder"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,210,205,50,14
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",WS_BORDER | WS_TABSTOP,
+                    7,7,253,187
+END
+
+IDD_DIALOG_ERASER DIALOGEX 0, 0, 243, 133
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP | 
+    WS_CLIPCHILDREN | WS_CAPTION
+CAPTION "WinEraser"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "&Stop",IDCANCEL,96,112,50,14
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",0x1,7,58,
+                    201,12
+    LTEXT           "Erasing:",IDC_STATIC,7,7,37,8
+    LTEXT           "",IDC_STATIC_ERASING,48,7,188,8
+    LTEXT           "",IDC_STATIC_MESSAGE,48,16,188,8
+    LTEXT           "",IDC_STATIC_DATA,48,36,188,8,SS_NOPREFIX
+    LTEXT           "Item:",IDC_STATIC,7,36,37,8
+    LTEXT           "Pass:",IDC_STATIC,7,45,37,8
+    LTEXT           "",IDC_STATIC_PASS,48,45,54,8
+    LTEXT           "",IDC_STATIC_TIME,108,45,128,8
+    RTEXT           "",IDC_STATIC_PERCENT,211,58,25,8
+    CONTROL         "Progress1",IDC_PROGRESS_TOTAL,"msctls_progress32",0x1,7,
+                    94,201,9
+    RTEXT           "",IDC_STATIC_PERCENT_TOTAL,211,94,25,8
+    LTEXT           "Total:",IDC_STATIC,7,82,37,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,30,229,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,76,228,1
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 252, 118
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "About WinEraser"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            128,IDC_STATIC,7,7,20,20
+    LTEXT           "",IDC_STATIC_VERSION,40,14,198,8,SS_NOPREFIX
+    LTEXT           "Copyright ?2002-2003 Garrett Trant",IDC_STATIC,40,66,
+                    150,8
+    DEFPUSHBUTTON   "OK",IDOK,195,97,50,14,WS_GROUP
+    LTEXT           "",IDC_HYPERLINK,40,35,198,8,SS_NOPREFIX
+    LTEXT           "Free Software",IDC_STATIC,40,24,197,8,SS_NOPREFIX
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,40,47,204,1
+    LTEXT           "Copyright ?1997-2002 Sami Tolvanen",IDC_STATIC,40,56,
+                    150,8
+    LTEXT           "Copyright ?2006 WinEraser Project",IDC_STATIC,40,75,150,
+                    8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PROPPAGE_TASKSTATISTICS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_PROPPAGE_TASKSCHEDULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_PROPPAGE_TASKDATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 301
+    END
+
+    IDD_PROPPAGE_SCHEDULER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 315
+    END
+
+    IDD_DIALOG_ERASER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

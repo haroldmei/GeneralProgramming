@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EraserDll", "EraserDll.vcproj", "{9A4377A3-8CD6-4AB5-80C4-54D7CC7EF84E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{9A4377A3-8CD6-4AB5-80C4-54D7CC7EF84E}.Debug.ActiveCfg = Debug|Win32
+		{9A4377A3-8CD6-4AB5-80C4-54D7CC7EF84E}.Debug.Build.0 = Debug|Win32
+		{9A4377A3-8CD6-4AB5-80C4-54D7CC7EF84E}.Release.ActiveCfg = Release|Win32
+		{9A4377A3-8CD6-4AB5-80C4-54D7CC7EF84E}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

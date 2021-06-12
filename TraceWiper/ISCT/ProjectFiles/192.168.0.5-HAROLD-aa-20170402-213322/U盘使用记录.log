@@ -1,0 +1,6 @@
+@cdrom.inf,%gencdrom_devdesc%;CD-ROM Drive
+Linux File-CD Gadget USB Device
+7&1ada0737&0&AXS0216429002919&0
+@disk.inf,%disk_devdesc%;Disk drive
+USB DISK 2.0 USB Device
+07076AD6B6621007&0

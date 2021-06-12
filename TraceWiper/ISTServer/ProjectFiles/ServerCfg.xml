@@ -1,0 +1,4 @@
+<Node Name="1234">
+    <Node Name="nemo" Department="硬件部" Ipaddr="192.168.1.1" Macaddr="11:22:33:11:22:33" Hardserial="123456" Password="arctangent" Key="xyzzy5461"/>
+    <Node Name="waba" Department="硬件部" Ipaddr="192.168.1.2" Macaddr="11:22:33:11:22:33" Hardserial="123456" Password="brctangent" Key="xyzzy5461"/>
+</Node>

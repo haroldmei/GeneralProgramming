@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "plat", "..\..\platform\plat\plat.vcxproj", "{A6E8F229-BEFD-4460-9222-0CBF1DB181F7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ISTC", "ISTSC.vcxproj", "{42A74E33-A355-4D57-AB80-B920B5BE84A2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RadiusLib", "..\..\radius\radLib\RadiusLib\RadiusLib.vcxproj", "{853420B4-CD86-4F89-8DF3-3DC8D7BE5B1A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlitelib", "..\..\sqlite_lib\sqlitelib\sqlitelib.vcxproj", "{E74F4E99-FD60-4668-8640-5E5C4C934437}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6E8F229-BEFD-4460-9222-0CBF1DB181F7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A6E8F229-BEFD-4460-9222-0CBF1DB181F7}.Debug|Win32.Build.0 = Debug|Win32
+		{A6E8F229-BEFD-4460-9222-0CBF1DB181F7}.Release|Win32.ActiveCfg = Release|Win32
+		{A6E8F229-BEFD-4460-9222-0CBF1DB181F7}.Release|Win32.Build.0 = Release|Win32
+		{42A74E33-A355-4D57-AB80-B920B5BE84A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{42A74E33-A355-4D57-AB80-B920B5BE84A2}.Debug|Win32.Build.0 = Debug|Win32
+		{42A74E33-A355-4D57-AB80-B920B5BE84A2}.Release|Win32.ActiveCfg = Release|Win32
+		{42A74E33-A355-4D57-AB80-B920B5BE84A2}.Release|Win32.Build.0 = Release|Win32
+		{853420B4-CD86-4F89-8DF3-3DC8D7BE5B1A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{853420B4-CD86-4F89-8DF3-3DC8D7BE5B1A}.Debug|Win32.Build.0 = Debug|Win32
+		{853420B4-CD86-4F89-8DF3-3DC8D7BE5B1A}.Release|Win32.ActiveCfg = Release|Win32
+		{853420B4-CD86-4F89-8DF3-3DC8D7BE5B1A}.Release|Win32.Build.0 = Release|Win32
+		{E74F4E99-FD60-4668-8640-5E5C4C934437}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E74F4E99-FD60-4668-8640-5E5C4C934437}.Debug|Win32.Build.0 = Debug|Win32
+		{E74F4E99-FD60-4668-8640-5E5C4C934437}.Release|Win32.ActiveCfg = Release|Win32
+		{E74F4E99-FD60-4668-8640-5E5C4C934437}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

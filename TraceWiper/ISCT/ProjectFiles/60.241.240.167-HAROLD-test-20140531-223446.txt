@@ -1,0 +1,766 @@
+			检测结果
+
+被检人员: test
+
+部门:test
+
+IP地址:60.241.240.167
+
+主机名:HAROLD
+
+检测开始时间: 20140531-223446
+
+检测结束时间: 
+
+导出时间:31/05/2014
+
+导出地点:aa
+
+安全评估结果:
+1 	上网记录
+
+1.1	IE使用痕迹
+
+1.1.1	WEB 缓存
+
+1.1.1	WEB 缓存
+URL地址	最近访问时间	
+
+http://cdn.adnxs.com/p/e1/f2/ff/ec/e1f2ffec0500621cd08c7c842e99e0f1.jpg	2014年05月31日 21:32:35	
+
+http://cdn.adnxs.com/p/03/35/52/3b/0335523b1be590eca96e63afd3269b8d.GIF	2014年05月31日 21:32:24	
+
+http://isdspeed.qq.com/cgi-bin/v.cgi?1=50&flag1=700096&flag2=2	2014年05月31日 21:44:37	
+
+http://isdspeed.qq.com/cgi-bin/v.cgi?1=500&2=47&flag1=700019&flag2=1	2014年05月31日 21:45:30	
+
+http://isdspeed.qq.com/cgi-bin/v.cgi?1=500&flag1=700053&flag2=1	2014年05月31日 21:48:23	
+
+http://isdspeed.qq.com/cgi-bin/v.cgi?1=50&flag3=21&flag1=700130&flag2=2	2014年05月31日 21:45:07	
+
+http://img0.paipaiimg.com/b8e09c19/expr-5386ADB4-000000001EEC43305386ADB400023705.1.jpg?ck=a80ade94cb641c111906496a5644c327	2014年05月31日 21:46:14	
+
+http://scdown.qq.com/download/HelperUpdate.htm	2014年05月31日 21:48:03	
+
+http://scdown.qq.com/download/TBHprofileForQQ.ini	2014年05月31日 21:48:02	
+
+http://img1.paipaiimg.com/f3ed3a68/expr-5329407D-0000000032F64BB15329407D000EADEE.1.jpg?ck=119a20112b3b7ea62b4a2e28aef39c48	2014年05月31日 21:45:36	
+
+http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js	2014年05月31日 21:31:35	
+
+http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js	2014年05月31日 21:32:27	
+
+http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js	2014年05月31日 21:31:32	
+
+http://action.tenpay.com/cuifei/2014/qqwallet/yifenqian.shtml?clientuin=170254937&clientkey=96B8383E9E4E05C239AB88294BA8A80B55A902EF45ADD70815DFC8D669D23F38	2014年05月31日 19:43:23	
+
+http://action.tenpay.com/res_action/cuifei_msg/global/css/global.css?v=20130409	2014年05月31日 19:43:23	
+
+http://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/dcs.gif?&dcsdat=1401535895766&dcssip=msdn.microsoft.com&dcsuri=/en-us/library/dn251007(d=default,l=en-us,v=vs.120).aspx&WT.tz=10&WT.bh=21&WT.ul=en-AU&WT.cd=24&WT.sr=1680x1050&WT.jo=Yes&WT.ti=MFC%20MBCS%20DLL%20Add-on&WT.js=Yes&WT.jv=1.3&WT.bs=1360x449&WT.fi=Yes&WT.fv=13.0&WT.sp=msdnlib_devtools_lang&WT.dl=0&WT.dcsvid=GUID=e7a4f13625b0b64c935d1efd94b5337e%26HASH=36f1%26LV=201405%26V=4%26LU=1401535404681&WT.dcsdat=1401535895766&WT.seg_1=en-us&WT.wtsv=1&WT.sv_sp=msdnlib_devtools_lang&WT.co_f=2373be352cdc8cb1e511401470599949&WT.vt_f_tlh=1401535399&WT.vt_sid=2373be352cdc8cb1e511401470599949.1401535399949&wt_date=2014/5/31&wt_dos=1&wtDrillDir=/library/&wtEvtSrc=msdn.microsoft.com/library/dn251007.aspx&ProductFamily=LIB_DG&Product=VS_VC&Title=MFC%20MBCS%20DLL%20Add-on	2014年05月31日 21:31:37	
+
+http://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/wtid.js	2014年05月31日 21:23:20	
+
+http://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/dcs.gif?dcsredirect=126&dcstlh=0&dcstlv=0&dcsdat=1401535399904&dcssip=msdn.microsoft.com&dcsuri=/en-us/library/dn251007(d=default,l=en-us,v=vs.120).aspx&WT.tz=10&WT.bh=21&WT.ul=en-AU&WT.cd=24&WT.sr=1680x1050&WT.jo=Yes&WT.ti=MFC%20MBCS%20DLL%20Add-on&WT.js=Yes&WT.jv=1.3&WT.bs=1490x380&WT.fi=Yes&WT.fv=13.0&WT.sp=msdnlib_devtools_lang&WT.dl=0&WT.dcsdat=1401535399904&WT.wtsv=1&WT.sv_sp=msdnlib_devtools_lang&WT.co_f=2373be352cdc8cb1e511401470599949&WT.vt_f=1&WT.vt_f_a=1&WT.vt_f_s=1&WT.vt_f_d=1&WT.vt_f_tlv=0&WT.vt_f_tlh=0&WT.vt_sid=2373be352cdc8cb1e511401470599949.1401535399949&WT.vt_nvr0=1&WT.vt_nvr2=1&WT.vt_nvr3=1&wt_date=2014/5/31&wt_dos=1&wtDrillDir=/library/&wtEvtSrc=msdn.microsoft.com/library/dn251007.aspx&ProductFamily=LIB_DG&Product=VS_VC&Title=MFC%20MBCS%20DLL%20Add-on	2014年05月31日 21:23:24	
+
+http://pet.qq.com/static/toolbar_conf.json?t=0.7694512940943241	2014年05月31日 19:43:46	
+
+http://pet.qq.com/static/desktop_game.json?rt=1401529416511&PET_UIN=&PET_ID=&PET_SIGN=	2014年05月31日 19:43:46	
+
+http://c.s-microsoft.com/en-us/CMSImages/icon_arrow.png?version=45068e15-1f21-60f3-d03a-a98d7b2c00b7	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/en-us/CMSImages/search.ltr.png?version=38884e53-76d0-d138-6215-41918aa59c26	2014年05月31日 21:32:27	
+
+http://c.s-microsoft.com/en-us/CMSImages/office_symbol.png?version=8a3d8983-7b8d-c5b3-875b-504f8b2d0fa2	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/CMSImages/icon_to_right_arrow.png?version=bd7dde14-4e76-47b0-ab46-c26f51fb656b	2014年05月31日 21:32:30	
+
+http://c.s-microsoft.com/en-us/CMSImages/microsoft_logo_56x56.png?version=ad0d2fa7-0ee8-4e82-ddbf-8ea5dc9d9c23	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/en-us/CMSImages/windowsphone_symbol.png?version=1b2bd4af-a95a-1154-1961-f76daae4c607	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/en-us/CMSImages/nokia_symbol_clr_52x52.png?version=fcf4dd12-804c-280b-fe6c-3b3c9c71940c	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/en-us/CMSImages/mslogo.png?version=856673f8-e6be-0476-6669-d5bf2300391d	2014年05月31日 21:32:27	
+
+http://c.s-microsoft.com/en-us/CMSImages/microsoft_update_icon.png?version=452f1705-7064-00eb-f7a1-e5b67f54308d	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/en-us/CMSImages/bing_symbol.png?version=5e8cc4ee-663c-5970-919e-9bc72fb1a2ec	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/en-us/CMSImages/windows_symbol.png?version=f1f9db81-67ef-8866-1be3-d5b1c1bb0b26	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/en-us/CMSScripts/script.jsx?k=517a7087-9636-e078-8b13-a173049192f5_83a1f942-eaea-dba0-331d-aa6f17e466ba_d3bc9880-cc5f-f076-397b-64222c41edee_525283c5-3d35-4dd2-5a96-acaf933fab61_49488e0d-6ae2-5101-c995-f4d56443b1d8_0faa2be8-2e50-59c7-7a5b-2ee59edffbe1_38aa9ffb-ddb5-75be-6536-a58628f435f5_e3e65a0a-c133-43e7-571d-2293e03f85e6_4ca0e9dc-a4de-17ba-f0de-d1d346cb99e2_06310cd8-41c6-3b11-4645-b4884789ed70_5c27e8aa-9347-969e-39ac-37a4de428a8d_6d75fb76-c051-a2d5-bcdc-e00cf65e8e65_96485685-4c26-aecc-698e-be18ce0f2b51_ae0c308b-4ac4-2d85-af81-b7fa2d0b129a_cf2ceca9-3467-a5b3-d095-68958eee6d4c_8c8be2fc-d64f-68b1-c04f-86433b07a6b7_ec5fa2c9-3950-ff57-a5c3-1fa77e0db190_d19f9592-65df-bcc9-e30e-439b875c3381_fa490340-b2c0-a467-cb67-728d4cb1f067_4c06930e-976d-9cb1-9883-35ccc5d4118f_10102c22-b3f8-db84-b802-423fccfef217_0d0bc397-9ed4-1790-c53b-19ef58e50eda_daf547ea-e7e0-5c13-2375-876773f4442e_ed1edc1e-59a4-d30a-33f1-7023ad077a46_31f7b2e8-247c-8192-8a93-02446f7ecb54_b5687080-802a-ed0f-42f6-40dddfa471e8_206c0c	2014年05月31日 21:32:27	
+
+http://c.s-microsoft.com/en-us/CMSImages/store_symbol.png?version=e2eecca5-4550-10c6-57b1-5114804a4c01	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/en-us/CMSStyles/style.csx?k=eb892833-0e5a-b8c0-2921-57013ef132d9_899796fc-1ab6-ed87-096b-4f10b915033c_e8d8727e-02f3-1a80-54c3-f87750a8c4de_9bda9ca0-6388-b603-621a-d2ba3be34b94_9ca95969-741a-449f-3ade-e9af3be46477_fc29d27f-7342-9cf3-c2b5-a04f30605f03_49529edc-bcf2-0e6e-bb5b-a38a32a8df2c_42385393-1568-0a1d-5f22-b6edde17fe2e_a66bb9d1-7095-dfc6-5a12-849441da475c_512edd68-496e-4736-4747-a157b9f76588_ef11258b-15d1-8dab-81d5-8d18bc3234bc_11339d5d-cf04-22ad-4987-06a506090313_74c627f5-7388-88a7-f42f-f6e8b507bad6_8031d0e3-4981-8dbc-2504-bbd5121027b7_910faa83-c85a-8949-2b2f-5ea4ddf777da_aebeacd9-6349-54aa-9608-cb67eadc2d17_0cdb912f-7479-061d-e4f3-bea46f10a753_343d1ae8-c6c4-87d3-af9d-4720b6ea8f34_a905814f-2c84-2cd4-839e-5634cc0cc383_190a3885-bf35-9fab-6806-86ce81df76f6_c8d2e791-3bfb-e9b9-51bc-b274485f0085_04cdd06f-491b-f252-4816-e05dbe3089b4_4d591b90-4f6b-d61a-3fe3-eeabaa54e007_d2a7617d-4fec-e271-3b3c-29c71d1edda1_c54c82ad-9a34-5e14-9f7e-f76e05daa48e_7662fbc3-5b00-dd7a-8c24-6b7bb7bb4b48_2bcd3d2d	2014年05月31日 21:32:27	
+
+http://c.s-microsoft.com/en-us/CMSImages/xbox_symbol.png?version=8dc5af5f-c398-c2b1-1704-f327c77085c1	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/en-us/CMSScripts/script.jsx?k=1bec8aa9-e409-b738-fad4-cd9ba3c4141e	2014年05月31日 21:32:29	
+
+http://c.s-microsoft.com/en-us/CMSImages/info_tip_16x16.png?version=8dd2a4cb-59c7-14a4-2abf-d78d79c815a3	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/en-us/CMSStyles/CMSImages/accordion_icon_sprite.png?version=17099D97-CD5E-0507-9950-F316C697F104	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/en-us/CMSImages/MSStores_Default.png?version=1ba30975-3453-ae96-3aca-2798d284aa82	2014年05月31日 21:32:30	
+
+http://c.s-microsoft.com/en-us/CMSImages/ms_footerlogo_symbol.png?version=ee37649c-b0fc-fb61-2145-208603a372db	2014年05月31日 21:32:29	
+
+http://c.s-microsoft.com/en-us/CMSImages/VS_2013GA_70x70_EN_US.png?version=806f2a3b-a77b-8a4f-8670-ee6df406243c	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/en-us/CMSStyles/CMSImages/Caret_Gray.png?version=07593BEE-0203-BA88-C4A8-AD16F380F02A	2014年05月31日 21:32:29	
+
+http://c.s-microsoft.com/en-us/CMSImages/surface_symbol.png?version=9ac2386b-2729-f631-7ec4-15d8032f8b85	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/en-us/CMSImages/loading-md.gif?version=cfcaadbb-48cc-ae67-098c-2e657e0aae80	2014年05月31日 21:32:28	
+
+http://c.s-microsoft.com/en-us/CMSScripts/script.jsx?k=6848d512-e14d-4e09-1194-5de6bc24cbe6_f3c4a4eb-d525-0def-8753-f4835e2f9949_8c693876-7ed8-69ec-3e44-be17b34be6b9_93007181-29a3-a626-49b7-12b98955254f_4200337d-a1fd-0b86-7ace-60bb19a65c23_2cd3c1f7-f2c9-ab4e-5b8e-4b4ff873ecaa_51077a6c-8fc6-7acc-1b57-af19d92ec422	2014年05月31日 21:32:29	
+
+http://c.s-microsoft.com/en-us/CMSImages/skype_symbol.png?version=329162f4-4d39-4899-1232-40b0a4bfb87b	2014年05月31日 21:32:28	
+
+http://msdn.microsoft.com/Combined.js?resources=0:Utilities,1:Layout,2:Header,2:Footer,3:Feedback,0:Topic,4:webtrendsscript,5:omni_rsid_MSDN,0:AppInsightsPerf,6:SearchBox;/Areas/Epx/Content/Scripts:0,/Areas/Centers/Themes/Base/Content:1,/Areas/Centers/Themes/StandardDevCenter/Content:2,/Areas/Epx/Shared/Content:3,/Areas/Global/Content/Webtrends/resources:4,/Areas/Global/Content/Omniture/resources/MSDN:5,/Areas/Epx/Themes/Base/Content:6&amp;hashKey=5ED483CE4D1C4F29BB3535DBA07833E0	2014年05月31日 21:23:19	
+
+http://msdn.microsoft.com/Combined.css?resources=0:Topic,0:CodeSnippet,0:ProgrammingSelector,0:ExpandableCollapsibleArea,1:CommunityContent,0:TopicNotInScope,0:FeedViewerBasic,0:ImageSprite,2:Header,2:HeaderFooterSprite,3:LinkList,4:PrintExportButton,1:Toc,1:NavigationResize,5:FeedbackCounter,0:VersionSelector,1:LibraryMemberFilter,2:Footer,5:Feedback,3:Base,6:Msdn;/Areas/Epx/Content/Css:0,/Areas/Library/Content:1,/Areas/Centers/Themes/StandardDevCenter/Content:2,/Areas/Epx/Themes/Base/Content:3,/Areas/Library/Themes/Base/Content:4,/Areas/Epx/Shared/Content:5,/Areas/Library/Themes/Msdn/Content:6&amp;hashKey=1EF75A1822EB81D39C53CF6A79470460	2014年05月31日 21:23:16	
+
+http://msdn.microsoft.com/library/dn251007.aspx	2014年05月31日 21:31:32	
+
+http://msdn.microsoft.com/Areas/Centers/Themes/StandardDevCenter/Content/Images/microsoftLogoForHeader.png	2014年05月31日 21:23:17	
+
+http://msdn.microsoft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png	2014年05月31日 21:23:17	
+
+http://msdn.microsoft.com/en-au/library/community/comments/dn251007.aspx?_=1401535895823	2014年05月31日 21:31:36	
+
+http://msdn.microsoft.com/Areas/Epx/Content/Images/ImageSprite.png	2014年05月31日 21:23:18	
+
+http://msdn.microsoft.com/Areas/Global/Content/Omniture/resources/ms2.js	2014年05月31日 21:23:21	
+
+http://msdn.microsoft.com/areas/global/content/clear.gif	2014年05月31日 21:23:20	
+
+http://msdn.microsoft.com/Combined.js?resources=0:CommunityContent,0:LibraryMemberFilter,1:Toc_Fixed,1:CodeSnippet,1:TopicNotInScope,1:CollapsibleArea,1:VersionSelector,1:SurveyBroker;/Areas/Library/Content:0,/Areas/Epx/Content/Scripts:1&amp;hashKey=7DFFEC88BE1B5AB6142D05C857F9E403	2014年05月31日 21:23:20	
+
+http://msdn.microsoft.com/en-au/library/community/comments/dn251007.aspx?_=1401535400887	2014年05月31日 21:23:21	
+
+http://msdn.microsoft.com/Areas/Epx/Content/Scripts/modernizr-2.6.2-msdn.min.js	2014年05月31日 21:23:16	
+
+http://msdn.microsoft.com/Areas/Epx/Content/Css/PrintView.css	2014年05月31日 21:31:35	
+
+http://msdn.microsoft.com/Combined.js?resources=0:PrintExportButton,1:Toc,1:NavigationResize,2:FeedbackCounter;/Areas/Library/Themes/Base/Content:0,/Areas/Library/Content:1,/Areas/Epx/Shared/Content:2&amp;hashKey=66872A62A3ED5011793DE8DC80B4968C	2014年05月31日 21:23:20	
+
+http://i1.social.s-msft.com/profile/u/avatar.jpg?displayname=braddunagan&size=small	2014年05月31日 21:31:36	
+
+http://i1.social.s-msft.com/profile/u/avatar.jpg?displayname=sjholmes54&size=small	2014年05月31日 21:31:36	
+
+http://i1.social.s-msft.com/profile/u/avatar.jpg?displayname=per+salmi&size=small	2014年05月31日 21:31:36	
+
+http://i3.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox&btnid=HeaderSearchButton&brand=Msdn&loc=en-au&focusOnInit=false&emptyWatermark=true&searchButtonTooltip=Search%20MSDN	2014年05月31日 21:23:20	
+
+http://i2.msdn.microsoft.com/Areas/Global/Content/Omniture/resources/ms2.js	2014年05月31日 21:31:36	
+
+http://i2.msdn.microsoft.com/Combined.js?resources=0:CommunityContent,0:LibraryMemberFilter,1:Toc_Fixed,1:CodeSnippet,1:TopicNotInScope,1:CollapsibleArea,1:VersionSelector,1:SurveyBroker;/Areas/Library/Content:0,/Areas/Epx/Content/Scripts:1&amp;hashKey=7DFFEC88BE1B5AB6142D05C857F9E403	2014年05月31日 21:31:35	
+
+http://i2.msdn.microsoft.com/Areas/Epx/Content/Scripts/modernizr-2.6.2-msdn.min.js	2014年05月31日 21:31:32	
+
+http://i2.msdn.microsoft.com/Combined.js?resources=0:PrintExportButton,1:Toc,1:NavigationResize,2:FeedbackCounter;/Areas/Library/Themes/Base/Content:0,/Areas/Library/Content:1,/Areas/Epx/Shared/Content:2&amp;hashKey=66872A62A3ED5011793DE8DC80B4968C	2014年05月31日 21:31:35	
+
+http://i2.msdn.microsoft.com/Combined.js?resources=0:Utilities,1:Layout,2:Header,2:Footer,3:Feedback,0:Topic,4:webtrendsscript,5:omni_rsid_MSDN,0:AppInsightsPerf,6:SearchBox;/Areas/Epx/Content/Scripts:0,/Areas/Centers/Themes/Base/Content:1,/Areas/Centers/Themes/StandardDevCenter/Content:2,/Areas/Epx/Shared/Content:3,/Areas/Global/Content/Webtrends/resources:4,/Areas/Global/Content/Omniture/resources/MSDN:5,/Areas/Epx/Themes/Base/Content:6&amp;hashKey=5ED483CE4D1C4F29BB3535DBA07833E0	2014年05月31日 21:31:35	
+
+http://dri2.img.digitalrivercontent.net/Storefront/Company/msintl/images/English/en-INTL_Office_2013_Home_Student_ESD_AAA-02875/en-INTL_S_Office_2013_Home_Student_ESD_AAA-02875.jpg	2014年05月31日 21:32:20	
+
+http://dri2.img.digitalrivercontent.net/Storefront/Company/msintl/images/English/en-INTL_Win_8_UPG_LE_ESD_6QR-00002/en-INTL_S_Win_8_UPG_LE_ESD_6QR-00002.jpg	2014年05月31日 21:32:19	
+
+http://ots.optimize.webtrends.com/ots/ots/js-3.2/311121/WT3InNhiIm1vuVSWjOgI0iUSj8FP7Qm8g7PQHcy5gQ5AxjYx-DwWn6NwxtMF6XLboaZ0BqRtvIwdoPmuu2kHmZKT3WxzyS-9w6xzokogMoC8E6m83u5nZMFdqH3zuU71QkoHISIIe8_E9Bv691llU85TdobqH86CrpxhiVUed0rqzdFalYlFrIw72EFPD7PpECiXOi3zlUgOIAJc3inR4Jgh1LVeL96-US5muZdSf2zulwuRC-lsE8V4FGpfxaFD6rR-9fF6PSgXfSpcnife1FD5UGCZ2zTyyCLpdCDDAvsxQYaiQ3CS_SBWOzE25Xctkpf9N_Mm7w0j-CvRGvSjrZS5Cq8UoRpxiixvpT0tru7SRJqWpQ4roLd2uducUSKnMDHt8v_XPwHu2F5l-1vaZRNSHZHaf6UQsFwURe03P21i-rGmrRH-2NSQWMmHixiURqdxw7ofgRSTuklULvPyywtjVsp3Z2lsK433FeV75nIueH19jOohWZxz4D5ftI8E_Lswek-GcLbZ96GeeB-iaHPEVTrP11U5daVBWZe_KiXa0VQHD8NxUVmUnPUdv41-P7h33udFW0fXgJnksZ7E6qXbadUdiCXDxZbK29BJHEnke9tkgj-CRqoJvo1OFEJ9LUEo3rogAs9f9EjWRJNqpLnqyIzbha3XCm1k3SIbhvfKTWeOQodIW4rTVU0eO3-6Lkbg5ubcSD2qqTsiBkQu1eWn3TrvH6FkYlNIEpUPlZcS7QCs533hCxGuKnM74DDdCv3Zd1P8KSGr1D1lDS0-lq6HJsSvfk0SK3KxP7JXDc9vuLmw3QUNQDy1RhoZTdSUh2Wl1gwxB-27SK_AlwOguR4EmlrOOVPcLL3X2zalXWfyy2lwqQmPm039FuQxx6UeiUquMTtiVEguBS5GGmJx_osm0aIfouhNmdRzVfFTDjHbqH-3NazdBf6Mukd_YiXdmEhZrzs	2014年05月31日 21:32:19	
+
+http://ots.optimize.webtrends.com/ots/lib/3.2/wt_lib.js	2014年05月31日 21:32:27	
+
+http://ots.optimize.webtrends.com/ots/ots/js-3.2/311121/shuA8ExDP0Tzd5MeiVZB2cW6CCeLWLG_H1wdCE-_amXdsKdvvhnBOo9nz_6n4tPvcPuubax04AOkDVtbGA6pvhQ2FvtkyJrFYYIw1fIapLQWlyWXcGed3Vb4G2OZrk78cHLPNNfDpUvoRW1cJNqyEf2S-sLWqOd0d3r0LRXh0qtJDiQB3wpi0vkLRZ2Lpl1o0ysU965PIG68TsraixMbSuIByaMSPE9J5_n3T2PNGCaRLfHRPh-O_xMmkD3NicCg4_iOE2K42bCzu7932L_WjUmyYaQSWejjtZ_MabdiV0vrxy-HmBh_I8OgDncJ33tooGFZFY4gVljN7J7lxZz_ptvGuRLYodq3UMMs4HYvO3d6KyifhRjsdogFeiVZzXTMSVhCTlbVzAk1K0Wsj5sZdqjDAUtil_3dR5_dDEteyzclVHUo5UbcIhDFdMtyCeugXUYILwy8NLOepHqETfLFbBXuAGjHiY5q5Xq-3LT5ADgFVqKfjj2k5XLsSsiUuNtJ9_Kc5V1ZQss1Hy3qsazmHDyTS_vXeE2FNvC-0tSw-kHooytgssTesNucnVxo9KAjrmpktmfAryuqsi5UpY_SqjxnQlypQevVcJs8ik-YA1rKHC2IsiLhZKwy0Th38wHRdTNoX9kF7bnz0vlqHpb-6JxHZ1hXZ7DP6wU9Ec4oSLbIOiNSgeJEyzYWbjUb3C_L5kNsEg5Ea3jOb36E_o2JlieXVL-3_iL842Tur50gmiMrA6YvHaBw1fKm5kioo-Wu0SZg7tLHzN5tkf9xjkTpO_NeAD1gh6ZWhCwB5I7zN2uBg0w11AdriHSF2OIPuMwgKCXRf7qem-O7yI6GHCrAFL26NUUY8I7D03GXKdjClEb_XNKhO4u7hYQOi77KsAl5dO6-0ljPO4fmTQ9xq6jSyweJ6ISTff5UEojAbT9YDohry3sgiqrDetj7zXXjT90WYTZ6WBS	2014年05月31日 21:32:29	
+
+http://ots.optimize.webtrends.com/ots/ots/js-3.2/311121/WT3pDV5ePhMLrCJzYefs4Gld3LNNx_yjt-SqRGncwhtKrIKJYbDBD0PNNGgkOJBgMxPi3ozum4DD-84qaweINBaMeMnD4Df6EtdXsJJqDCBVjG4M3JxJ0D6NGjI-83RJYfHcUAlrEGmYukrIytoAJoUxuk7Ka6zPNkwifZXYkTR_owV9roTjpsjhAkk-acdNBR975D6B2oB1mvQeqZmrQza03DGiFSqG85LqjTGmg80KS0GXVG37W_rPTUID8yoO8s_iRbolrltAV6lK39mMLUsv07NSDfz08TkCLW6XI4Hz2YOr6acoKPgX-lK7noFbCABbcGCWiDo_YTzyFDBGaTUF4loBoJHa65twd-bWJ_pvRazGqMLfXXZ7tQgqjOrnd-O5k9AmYwQ5n4ozFM4KpY39l5zefhdubZakgy9piTtvE6U59ohcdZ2N5mzbITKc1jOG1kyLPI2MLs4w32eQ-jRwrLSuWphcH5wmwV-lIXDpE_S-N7IF47qQXPtU9BGkoEVojbJtVp39ZLvlEhFdZdFucRmPUx3sE69Q1TF-lj4aNfizE9BVyeVT8BF32UBxZ3eg7AaUb2KRPhaMFiNsIqCB8WJH5PsWT6WcHnZBLxh5pfrCy1ti7V26F8PZur-uXbSEGo7mtGufO6oD1CUGovePD-bzFFCg7Zof4hkKH2eqJiAnQw4a4FgoJOU0_Xih3_Ah2ONdPMM0wLL9y0m278XxYARpr-xyLqkPFBds6K0liR3JKQEDkZ0ABR5s6sx21h8pV_AcHLICLM3RwZuLx9c0Hhjfl8aqcBYV6JDfO5gezsOgLFuCjDfXWuHcCJQ8tR0TqoeUREuDbVLN3ioo_WtLmN9Qxzo8jUCo8UuF1YvPE4XBxTvSSZt_j5kuRWwhc9iRBU1rmZzZ6tiEZqBLpKV8jH1aXX1vNkLDJsNOb9R9BSrHWZZT0qtsqP4Y_DUjT7h_fMc	2014年05月31日 21:32:28	
+
+http://i.microsoft.com/global/ImageStore/PublishingImages/icons/globe-black.png	2014年05月31日 21:32:16	
+
+http://rad.msn.com/ADSAdClient31.dll?GetSAd=&DPJS=4&ID=209C67D5A11863C636BD619EA51865AA&MUID=209C67D5A11863C636BD619EA51865AA&PG=CMSDCB&AP=1087	2014年05月31日 21:32:20	
+
+http://rad.msn.com/ADSAdClient31.dll?GetSAd=&DPJS=4&ID=209C67D5A11863C636BD619EA51865AA&MUID=209C67D5A11863C636BD619EA51865AA&PG=CMSDCH&AP=0	2014年05月31日 21:32:30	
+
+http://js.microsoft.com/library/svy/sto/broker.js	2014年05月31日 21:31:35	
+
+http://www.google.com/intl/zh-CN/ime/pinyin/done.html	2014年05月31日 21:29:42	
+
+res://C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\VCConvertEngine.dll/SCHEMA/VCToolFileSchema.xsd	2014年05月31日 21:16:48	
+
+res://C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\VCConvertEngine.dll/SCHEMA/VCPlatformConfigFileSchema.xsd	2014年05月31日 21:16:48	
+
+res://C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\VCConvertEngine.dll/SCHEMA/VCStyleSheetFileSchema.xsd	2014年05月31日 21:16:48	
+
+res://C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\VCConvertEngine.dll/SCHEMA/VCProjectFileSchema.xsd	2014年05月31日 21:16:48	
+
+res://C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\VCConvertEngine.dll/SCHEMA/VCUserFileSchema.xsd	2014年05月31日 21:16:48	
+
+res://C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\VCConvertEngine.dll/SCHEMA/VCMergeModulesFileSchema.xsd	2014年05月31日 21:16:48	
+
+http://www.google-analytics.com/__utm.gif?utmwv=5.5.1&utms=1&utmn=1678503305&utmhn=info.gomlab.com&utmcs=utf-8&utmsr=1680x1050&utmvp=453x22&utmsc=32-bit&utmul=en-gb&utmje=1&utmfl=13.0%20r0&utmhid=1820842435&utmr=-&utmp=%2Feng_ad.html&utmht=1401528060812&utmac=UA-34475771-1&utmcc=__utma%3D33747065.1068509164.1401528061.1401528061.1401528061.1%3B%2B__utmz%3D33747065.1401528061.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~	2014年05月31日 19:21:01	
+
+http://www.google-analytics.com/__utm.gif?utmwv=5.5.1&utms=1&utmn=199822856&utmhn=info.gomlab.com&utmcs=utf-8&utmsr=1680x1050&utmvp=453x22&utmsc=32-bit&utmul=en-gb&utmje=1&utmfl=13.0%20r0&utmhid=52287327&utmr=-&utmp=%2Feng_ad.html&utmht=1401536077137&utmac=UA-34475771-1&utmcc=__utma%3D33747065.1068509164.1401528061.1401528061.1401536077.2%3B%2B__utmz%3D33747065.1401528061.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~	2014年05月31日 21:34:37	
+
+http://www.google-analytics.com/__utm.gif?utmwv=5.5.1&utms=2&utmn=528063702&utmhn=playinfo.gomlab.com&utmcs=utf-8&utmsr=1680x1050&utmvp=716x533&utmsc=32-bit&utmul=en-gb&utmje=1&utmfl=13.0%20r0&utmdt=ENG%20Main%20AD&utmhid=1876975084&utmr=-&utmp=%2Feng.html&utmht=1401529777893&utmac=UA-46212037-1&utmcc=__utma%3D98386782.994625636.1401528062.1401528062.1401528062.1%3B%2B__utmz%3D98386782.1401528062.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~	2014年05月31日 19:49:38	
+
+http://www.google-analytics.com/__utm.gif?utmwv=5.5.1&utms=1&utmn=1324993973&utmhn=playinfo.gomlab.com&utmcs=utf-8&utmsr=1680x1050&utmvp=716x533&utmsc=32-bit&utmul=en-gb&utmje=1&utmfl=13.0%20r0&utmdt=ENG%20Main%20AD&utmhid=1342211512&utmr=-&utmp=%2Feng.html&utmht=1401536078282&utmac=UA-46212037-1&utmcc=__utma%3D98386782.994625636.1401528062.1401528062.1401536078.2%3B%2B__utmz%3D98386782.1401528062.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~	2014年05月31日 21:34:39	
+
+http://www.google-analytics.com/ga.js	2014年05月31日 21:34:38	
+
+http://www.google-analytics.com/__utm.gif?utmwv=5.5.1&utms=1&utmn=515264254&utmhn=playinfo.gomlab.com&utmcs=utf-8&utmsr=1680x1050&utmvp=716x533&utmsc=32-bit&utmul=en-gb&utmje=1&utmfl=13.0%20r0&utmdt=ENG%20Main%20AD&utmhid=1917582319&utmr=-&utmp=%2Feng.html&utmht=1401528062403&utmac=UA-46212037-1&utmcc=__utma%3D98386782.994625636.1401528062.1401528062.1401528062.1%3B%2B__utmz%3D98386782.1401528062.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~	2014年05月31日 19:21:02	
+
+http://www.google-analytics.com/__utm.gif?utmwv=5.5.1&utms=2&utmn=1967669608&utmhn=info.gomlab.com&utmcs=utf-8&utmsr=1680x1050&utmvp=1x1&utmsc=32-bit&utmul=en-gb&utmje=1&utmfl=13.0%20r0&utmhid=1325931157&utmr=-&utmp=%2Feng_ad.html&utmht=1401529768384&utmac=UA-34475771-1&utmcc=__utma%3D33747065.1068509164.1401528061.1401528061.1401528061.1%3B%2B__utmz%3D33747065.1401528061.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~	2014年05月31日 19:49:28	
+
+http://web.pet.qq.com/static.html	2014年05月31日 19:43:41	
+
+http://x.pet.qq.com/petclient?cmd=GetGames&PET_UIN=170254937&PET_ID=72339511566525017&PET_SIGN=96B8383E9E4E05C239AB88294BA8A80B55A902EF45ADD70815DFC8D669D23F38	2014年05月31日 19:43:43	
+
+http://playinfo.gomlab.com/eng.html	2014年05月31日 21:34:38	
+
+http://playinfo.gomlab.com/img/icon_converter.gif	2014年05月31日 21:34:38	
+
+http://playinfo.gomlab.com/img/icon_home.gif	2014年05月31日 21:34:38	
+
+http://playinfo.gomlab.com/img/icon_faq.gif	2014年05月31日 21:34:38	
+
+http://playinfo.gomlab.com/img/gomlogo2.2.gif	2014年05月31日 21:34:38	
+
+http://playinfo.gomlab.com/img/icon_facebook.gif	2014年05月31日 21:34:38	
+
+http://pinghot.qq.com/pingd?dm=show.qq.com.hot&url=&tt=qq%u79C0%20-%20%u767E%u53D8%u968F%u5FC3%uFF0C%u65F6%u5C1A%u6211%u5148%uFF01&hottag=client.minibar.friend&hotx=9999&hoty=9999&rand=83579	2014年05月31日 21:48:27	
+
+http://pinghot.qq.com/pingd?dm=show.qq.com.hot&url=&tt=qq%u79C0%20-%20%u767E%u53D8%u968F%u5FC3%uFF0C%u65F6%u5C1A%u6211%u5148%uFF01&hottag=client.minibar.friend&hotx=9999&hoty=9999&rand=72534	2014年05月31日 21:46:12	
+
+http://i.s-microsoft.com/fonts/icons/homepage/normal/2.eot?	2014年05月31日 21:32:28	
+
+http://i.s-microsoft.com/library/capi/wt_capi.js	2014年05月31日 21:32:27	
+
+http://v.gdt.qq.com/gdt_stats.fcg?viewid=Ox5C1ObEO5YFZBK8gW_zJQpoGfbYLB4nb1n2nRHdB53G4UcmkAZ!8tQjfWVwOW5JSkzqU!uw6pS6jo4b3Wl73!1Bqk4m9pwnpSi8JIttmpis84RSjGbDEKvbF1!83F3BZyDeoIE7Nta7jyj5PNSQYvP68rbYqiLX7Nj9rgYK3DWsE0H7RULV4AIzz0ZUADDIsCQFiCK9w6Dn9G0GQOadiC2aZfPgGwx9Tpqch4dLG_s120QpOjL2L4djVz9EqgeFCKpAoN5_w2Xn5tmIVdAGBs!may1rn7FAkRh6!zwEkA0u4HZ1zUTSpOaIFyaI0F6C!dYJjOhsY44&i=1	2014年05月31日 21:46:11	
+
+http://v.gdt.qq.com/gdt_stats.fcg?viewid=LGA5g50LBISTahc41bIksrdmNkDo4kkegU1KUsHgo4bRoUZaqdxb3xxcLRp!LSkFm4fRSxMZwM1AWweIdXKtg9cHc18pP7GLc5uqLmPCHVmuOxTB!!Q6kj_lNUyNx4vWEoiyrCuhay6VVR2Zg4r5ymLG3_cO2V0ZEapknBEVGPJQvdtnw7v7hLPhTNvrSy9nYUkwS7FdoikwhfdszJ4Xy57EtHj36QgVX!ynck_PCpbnfAXYyPb7SERD8INH2Om5BEA!XInQZSZsHGBnG!GF4eMP3xrQ8jvlVlbAkALoUUa0WGNmf9Zi!m3Z4pnu8FgqfXhWpImsYWpdGtZCAJpePKPD_Jnx7eHL&i=1	2014年05月31日 21:45:52	
+
+http://v.gdt.qq.com/gdt_stats.fcg?viewid=j30bT9MxhVB2OITxPjPVIFPP5Bj2iBnFsc98_0QMl9JpRdR2ZuRKAqRHdWDyTEeS0W5sEfwHXC3bfL6znjMNE5WvWBFGorlHvQS7WnA!MidfN188acXblssnaK4UOvP817ZOMc4Qe!mnxJpDyD_m2Ec9z7HPI1J3mmia2BcE82WqUi1d9SJnOIJvlbM7bFK4J8r94PtaH0Da8Qa4gpLU1TrWzUdDsFsAJ68aEWB5mw6jvT_XdvkopcOtPnsolh6cl6rL5PwpEMZPcVhj0Mr4IGQBthbPTkni15s3t21jgkvi2LsKoMOHI6SKkuR!s2GAPaOGhJsLQZWRypp0yh2sK3OMCzinoTYa&i=1	2014年05月31日 21:46:10	
+
+http://v.gdt.qq.com/gdt_stats.fcg?viewid=CA8woiXmMbab5Zt_pQK1v_ed5JCdTdikU5Rj9wQfYxpqQNAj0kRPWPPiGvtMKouoAa38QFfvDJ!kEswaF99t_ho68MzeyG0xqtDhpRfyosGFx3mt0pGwIQFg2JjN7Yf3sXoy1u6_bHDECKkNHzP9AN7tEgZ0SQJIa9hbync7IMwzqrr!Q80q_MwW0EMqKa5r5U_KX_A2ThCxGr4zioSZvzCF92zMnhfLnsS0ePfpCBVh0lsOa7ieh9JkG6wV8q!c_b6DfczjImt8S7VdPUAh!4z4TLplv5xgx5lb0ABOV0w1OcUDQFwaldeYu7Fpkx4rO2S6xnOd70kakcAz!E82DYxMFFx0aFbACVLHRbfiATA&i=1	2014年05月31日 21:44:37	
+
+http://v.gdt.qq.com/gdt_stats.fcg?viewid=eS1nazPkwmLECXwObLZ4k0x_!UoTLSVTgU1KUsHgo4b9Jsl5C6hFNBxcLRp!LSkFm4fRSxMZwM1AWweIdXKtg9cHc18pP7GL69x2a43SdjCuOxTB!!Q6kuqI8c0pQY8xkNBbfanXB5eKmw9I8VCvTTML5q!TgRhQ3sliQPfqbGfQ3udtZcyzXvEFWwGvPym2AzAjDGJYl0ZgW9cyZCvAoXRHq8y5o9H6SeO2ANPdmp5EQ_CDR9jpuQRAPlyJ0GUmbBxgZxvhheHjD98a0PI75VZWwJAC6FFGtFhjZn_WYvpt2eKZ7vBYKn14VqSJrGFqXRrWQgCaXjyjw_yZ8e3hyw&i=1	2014年05月31日 21:45:49	
+
+http://v.gdt.qq.com/gdt_stats.fcg?viewid=DEag9n43KOgzXLV7ZrJzAFtGpwCs54AzKNGpc3ziPwgNPyEWUCuHFBxcLRp!LSkFm4fRSxMZwM1AWweIdXKtg9U2EhWIMdhKgCj6CfSZQU4BYNiYze2H945qBnc7iVmnDKWrveLaJyyZVEQ7XZ1A_60oOpM!qy9QM6q6_kPNKvzMFtBDKimua_aITDEtpb7DHQz_RzNHj7eaQCixnhfBZwBaOaj6WZd6w4AhLFXnQBcZg3s!Yw7u0CSiqVgPURA82CFnHlEccAKjw31VJCToyYR!JAA5si9mtUI2AYAL2edSneblxJKVF4A14uSSbaEq&i=1	2014年05月31日 21:45:35	
+
+http://v.gdt.qq.com/gdt_stats.fcg?viewid=2jnctjcxaLjKzSkrwfD1QlQ2DZ_ykUkh2Vao8rU6wuF!aCyFOs!UbvDw8Egd!SbpAa38QFfvDJ!kEswaF99t_ho68MzeyG0xqtDhpRfyosGI_YoUy1NLQQFg2JjN7Yf3ffgq2gShd4iF00rxWEveThpYXRUavm8t4uTKT0rpMazeyWJA9!psZ9De521lzLNe_MpQlec8pwznUzZbJLmG12Bb1zJkK8ChdEerzLmj0fqlQiAxPzFVM0RD8INH2Om5BEA!XInQZSZsHGBnG!GF4c2CaWUHSIzqw1bnetQVCv1oMF5fHE0jhMGBf_XQJcgaVoYW!RxRgIM&i=1	2014年05月31日 21:48:30	
+
+http://v.gdt.qq.com/gdt_stats.fcg?viewid=GEPo7qM6EUN97dJiaXWRduROBWqtymOisPrxL46B8944!m122OMz60XohJLki3AN0W5sEfwHXC3bfL6znjMNE5WvWBFGorlHvQS7WnA!MifmeVZJi62DhssnaK4UOvP817ZOMc4Qe!mnxJpDyD_m2P!1kVIrUe4GW8bJaeid5YWqUi1d9SJnOIJvlbM7bFK4J8r94PtaH0DwIYPh_mokhjrWzUdDsFsAJ68aEWB5mw5AlKnY3dwUKsOtPnsolh6cl6rL5PwpEMZPcVhj0Mr4IGQBthbPTkniouHQV!Te2nOOEs7bYn8mxP978bxYUPrxrdE7qedncsc&i=1	2014年05月31日 21:45:22	
+
+http://v.gdt.qq.com/gdt_stats.fcg?viewid=rtyiQss2urKkWPPoc0aZFx_MQhqDizj32Vao8rU6wuF!aCyFOs!Ubmz5RCxvYeuzAa38QFfvDJ!kEswaF99t_ho68MzeyG0xqtDhpRfyosGI_YoUy1NLQQFg2JjN7Yf3EJndaqO4HyC0y63EXzsWdH1QRdAs8aPM_Fb4xb!BDI_eyWJA9!psZ9De521lzLNe_MpQlec8pwznUzZbJLmG12Bb1zJkK8ChdEerzLmj0frHQd!gqKH!NkFDnAuaiEpsm!53RTSO2Ct_jTFm8qDmAFTc3FlpgLDJU4hn6mqvkKL2EanolU6N_!C938Cjc!KFnSrZntAgBAHDPODyTXj8G7PGf0TWxKql&i=1	2014年05月31日 21:48:29	
+
+http://v.gdt.qq.com/gdt_stats.fcg?viewid=j30bT9MxhVB16UaWxZyDCYw8_NLEuVahhGyItbC35G84!m122OMz6_fAuKh3xoEX0W5sEfwHXC3bfL6znjMNE5WvWBFGorlHvQS7WnA!Mif10FADo4OcBssnaK4UOvP83KP2VcL3Po935eEsyJQxS3dCGgizvvaed8LM2CGjq0SqUi1d9SJnOIJvlbM7bFK4J8r94PtaH0DGnwiOu1C!ATrWzUdDsFsAJ68aEWB5mw6jvT_XdvkopcOtPnsolh6cl6rL5PwpEMZPcVhj0Mr4IGQBthbPTkni15s3t21jgkvi2LsKoMOHI6SKkuR!s2GAPaOGhJsLQZWRypp0yh2sK27StlA3MH1g&i=1	2014年05月31日 21:45:16	
+
+http://dc.services.visualstudio.com/_da.gif?jsv=17&st=js&jsa=page&pid=60854590-027a-4ae4-98be-2741a40f355f&idd=false&uid=137GWJXJ-BIJ2-4GJP-2PKS-Z0SK886VR2BY&tp=http%3A%2F%2Fmsdn.microsoft.com%2Flibrary%2Fdn251007.aspx&lng=en-AU&tz=10&scr=1680x1050x24&data=%7B%22ica%22%3A12569%7D&rnd=1401535403309	2014年05月31日 21:23:24	
+
+http://dc.services.visualstudio.com/_da.gif?jsv=17&st=js&jsa=perf&pid=60854590-027a-4ae4-98be-2741a40f355f&idd=false&uid=137GWJXJ-BIJ2-4GJP-2PKS-Z0SK886VR2BY&tp=http%3A%2F%2Fmsdn.microsoft.com%2Flibrary%2Fdn251007.aspx&lng=en-AU&tz=10&scr=1680x1050x24&data=%7B%22perf%22%3A%7B%22netCon%22%3A0%2C%22sendReq%22%3A0%2C%22recResp%22%3A0%2C%22clientProc%22%3A3942%2C%22ptotal%22%3A3942%7D%7D&rnd=1401535896349	2014年05月31日 21:31:37	
+
+http://dc.services.visualstudio.com/_da.gif?jsv=17&st=js&jsa=page&pid=60854590-027a-4ae4-98be-2741a40f355f&idd=false&uid=137GWJXJ-BIJ2-4GJP-2PKS-Z0SK886VR2BY&tp=http%3A%2F%2Fmsdn.microsoft.com%2Flibrary%2Fdn251007.aspx&lng=en-AU&tz=10&scr=1680x1050x24&data=%7B%22ica%22%3A12569%7D&rnd=1401535895796	2014年05月31日 21:31:36	
+
+http://i.msdn.microsoft.com/Areas/Centers/Themes/StandardDevCenter/Content/Images/microsoftLogoForHeader.png	2014年05月31日 21:31:33	
+
+http://i.msdn.microsoft.com/areas/global/content/clear.gif	2014年05月31日 21:31:34	
+
+http://c.microsoft.com/trans_pixel.aspx?wcs.tz=10&wcs.cot=0&wcs.route=le200&wcs.ctrl=ss100&wcs.ts=1401535949484&wcs.cd=0&wcs.eid=cdc7da84-487e-c4f3-5a2a-c60c96ad6cd4&wcs.sr=1680x1050&wcs.bs=1360x641&wcs.si=1&wcs.sv=5.1&wcs.fi=1&wcs.fv=11.0&wcs.cs=1&wcs.r=http%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fdownload%2Fdetails.aspx%3Fid%3D40770&wcs.ti=Download%20Multibyte%20MFC%20Library%20for%20Visual%20Studio%202013%20from%20Official%20Microsoft%20Download%20Center&wcs.rsd=www.microsoft.com&wcs.rsus=%2Fen-us%2Fdownload%2Fconfirmation.aspx&wcs.rsqs=%3Fid%3D40770&wcs.rihs=0&wcs.v=3.5&wcs.vct=1&wcs.vs=1&wcs.vclt=0&wcs.vfpv=0&wcs.et=1&ms.sitever=DLC%207.0&ms.UriDomain=www.microsoft.com&ms.UriPath=%2Fen-us%2Fdownload%2Fconfirmation.aspx&ms.UriQuery=%3Fid%3D40770&ms.InteractionType=0&ms.Title=Download%20Multibyte%20MFC%20Library%20for%20Visual%20Studio%202013%20from%20Official%20Microsoft%20Download%20Center&ms.linkid=3D1-GEN-142V1ENUS54588-A04%3B58%3B59%3B59.5%3B60%3B60.5%3B61%3B62%3B63%3B64%3B65%3B66%3B66.2%3B66.4%3B66.7%3B	2014年05月31日 21:32:30	
+
+http://c.microsoft.com/trans_pixel.aspx?wcs.tz=10&wcs.cot=5&wcs.route=le200&wcs.ctrl=ss100&wcs.ts=1401535957529&wcs.cd=0&wcs.eid=2a9a7554-4406-147d-3e8f-271e5bde30f0&wcs.sr=1680x1050&wcs.bs=1360x618&wcs.si=1&wcs.sv=5.1&wcs.fi=1&wcs.fv=11.0&wcs.cs=1&wcs.r=http%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fdownload%2Fdetails.aspx%3Fid%3D40770&wcs.ti=Download%20Multibyte%20MFC%20Library%20for%20Visual%20Studio%202013%20from%20Official%20Microsoft%20Download%20Center&wcs.rsd=www.microsoft.com&wcs.rsus=%2Fen-us%2Fdownload%2Fconfirmation.aspx&wcs.rsqs=%3Fid%3D40770&wcs.rihs=0&wcs.v=3.5&wcs.vct=1&wcs.vs=1&wcs.vclt=0&wcs.vfpv=0&wcs.et=1&ms.sitever=DLC%207.0&ms.UriDomain=www.microsoft.com&ms.UriPath=%2Fen-us%2Fdownload%2Fconfirmation.aspx&ms.UriQuery=%3Fid%3D40770&ms.InteractionType=14&ms.ParentTypeStructure=accordion%3Blist&ms.lang=en&ms.loc=us&ms.cmpnm=Install%20Instructions&ms.cmpgrp=download%3AMultibyte%20MFC%20Library%20for%20Visual%20Studio%202013&ms.pgarea=body&ms.env=prod&ms.pagetype=confirmation&ms.pltfrm=CMS&ms.dwnsr	2014年05月31日 21:32:38	
+
+http://c.microsoft.com/trans_pixel.aspx?wcs.tz=10&wcs.cot=5&wcs.route=le200&wcs.ctrl=ss100&wcs.ts=1401535945804&wcs.cd=0&wcs.eid=43f91a66-2298-24b5-949a-8eb91e82990f&wcs.sr=1680x1050&wcs.bs=1360x641&wcs.si=1&wcs.sv=5.1&wcs.fi=1&wcs.fv=11.0&wcs.cs=1&wcs.ti=Download%20Multibyte%20MFC%20Library%20for%20Visual%20Studio%202013%20from%20Official%20Microsoft%20Download%20Center&wcs.rsd=www.microsoft.com&wcs.rsus=%2Fen-us%2Fdownload%2Fdetails.aspx&wcs.rsqs=%3Fid%3D40770&wcs.rihs=0&wcs.v=3.5&wcs.vct=1&wcs.vs=1&wcs.vclt=0&wcs.vfpv=0&wcs.et=1&wcs.ct=http%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fdownload%2Fconfirmation.aspx%3Fid%3D40770&wcs.cn=Download&ms.sitever=DLC%207.0&ms.UriDomain=www.microsoft.com&ms.UriPath=%2Fen-us%2Fdownload%2Fdetails.aspx&ms.UriQuery=%3Fid%3D40770&ms.InteractionType=21&ms.Title=Download&ms.ParentTypeStructure=Popup&ms.lang=en&ms.loc=us&ms.cmpnm=download&ms.cmpgrp=download&ms.pgarea=body&ms.ea_action=dwn&ms.ea_offer=cnt&ms.env=prod&ms.pagetype=details&ms.dwnsrc=dlc&ms.sitesec=downloads&ms.pltfrm=CMS	2014年05月31日 21:32:26	
+
+http://c.microsoft.com/trans_pixel.aspx?wcs.tz=10&wcs.cot=0&wcs.route=&wcs.ctrl=&wcs.ts=1401535896134&wcs.cd=0&wcs.eid=6c44262b-21ee-78fc-7a5d-ddf4673f92f8&wcs.sr=1680x1050&wcs.bs=1343x717&wcs.si=1&wcs.sv=&wcs.ti=MFC%20MBCS%20DLL%20Add-on&wcs.rsd=msdn.microsoft.com&wcs.rsus=%2Flibrary%2Fdn251007.aspx&wcs.rsqs=&wcs.rihs=0&wcs.v=3.5&wcs.vct=1&wcs.vs=0&wcs.vclt=1&wcs.vfpv=&wcs.et=0&ms.normalizedurl=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fdn251007(d%3Ddefault%2Cl%3Den-us%2Cv%3Dvs.120).aspx&ms.shortidmsdn=dn251007&Ms.Locale=en-us&wcs.tr=0	2014年05月31日 21:31:36	
+
+http://c.microsoft.com/trans_pixel.aspx?wcs.tz=10&wcs.cot=0&wcs.route=le200&wcs.ctrl=ss100&wcs.ts=1401535936592&wcs.cd=0&wcs.eid=86fdee17-a197-1f64-5990-54fa64fb48f0&wcs.sr=1680x1050&wcs.bs=1360x641&wcs.si=1&wcs.sv=5.1&wcs.fi=1&wcs.fv=11.0&wcs.cs=1&wcs.ti=Download%20Multibyte%20MFC%20Library%20for%20Visual%20Studio%202013%20from%20Official%20Microsoft%20Download%20Center&wcs.rsd=www.microsoft.com&wcs.rsus=%2Fen-us%2Fdownload%2Fdetails.aspx&wcs.rsqs=%3Fid%3D40770&wcs.rihs=0&wcs.v=3.5&wcs.vct=1&wcs.vs=1&wcs.vclt=0&wcs.vfpv=0&wcs.et=1&ms.sitever=DLC%207.0&ms.UriDomain=www.microsoft.com&ms.UriPath=%2Fen-us%2Fdownload%2Fdetails.aspx&ms.UriQuery=%3Fid%3D40770&ms.InteractionType=0&ms.Title=Download%20Multibyte%20MFC%20Library%20for%20Visual%20Studio%202013%20from%20Official%20Microsoft%20Download%20Center&ms.linkid=2D1-GEN-142V1ENUS54588-A04%3B58%3B59%3B59.5%3B60%3B60.5%3B61%3B62%3B63%3B64%3B65%3B66%3B66.2%3B66.4%3B66.7%3B67%3B66.9%3B69.2%3B69.4%3B69.6%3B70%3B71%3B71.3%3B71.5%3B71.7%3B72%3B72.2%3B73%3B74%3B74.5%3B7	2014年05月31日 21:32:17	
+
+http://c.microsoft.com/trans_pixel.aspx?wcs.tz=10&wcs.cot=5&wcs.route=le200&wcs.ctrl=ss100&wcs.ts=1401536016428&wcs.cd=0&wcs.eid=914c68f1-590c-9c6d-aa2a-bf82ec41d037&wcs.sr=1680x1050&wcs.bs=1360x618&wcs.si=1&wcs.sv=5.1&wcs.fi=1&wcs.fv=11.0&wcs.cs=1&wcs.r=http%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fdownload%2Fdetails.aspx%3Fid%3D40770&wcs.ti=Download%20Multibyte%20MFC%20Library%20for%20Visual%20Studio%202013%20from%20Official%20Microsoft%20Download%20Center&wcs.rsd=www.microsoft.com&wcs.rsus=%2Fen-us%2Fdownload%2Fconfirmation.aspx&wcs.rsqs=%3Fid%3D40770&wcs.rihs=0&wcs.v=3.5&wcs.vct=1&wcs.vs=1&wcs.vclt=0&wcs.vfpv=0&wcs.et=1&wcs.ct=http%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fdownload%2Fconfirmation.aspx%3Fid%3D40770%26cffa64c5-a636-96fc-e97a-0e907fcc4c04%3DTrue&wcs.cn=Install%20Instructions&ms.sitever=DLC%207.0&ms.UriDomain=www.microsoft.com&ms.UriPath=%2Fen-us%2Fdownload%2Fconfirmation.aspx&ms.UriQuery=%3Fid%3D40770%26cffa64c5-a636-96fc-e97a-0e907fcc4c04%3DTrue&ms.InteractionType=15&ms.Title=Install%20Instructions&m	2014年05月31日 21:33:36	
+
+http://c.microsoft.com/trans_pixel.aspx?wcs.tz=10&wcs.cot=5&wcs.route=le200&wcs.ctrl=ss100&wcs.ts=1401535977244&wcs.cd=0&wcs.eid=d2a35857-2f98-c09b-10dc-232f3a0ca9a6&wcs.sr=1680x1050&wcs.bs=1360x618&wcs.si=1&wcs.sv=5.1&wcs.fi=1&wcs.fv=11.0&wcs.cs=1&wcs.r=http%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fdownload%2Fdetails.aspx%3Fid%3D40770&wcs.ti=Download%20Multibyte%20MFC%20Library%20for%20Visual%20Studio%202013%20from%20Official%20Microsoft%20Download%20Center&wcs.rsd=www.microsoft.com&wcs.rsus=%2Fen-us%2Fdownload%2Fconfirmation.aspx&wcs.rsqs=%3Fid%3D40770&wcs.rihs=0&wcs.v=3.5&wcs.vct=1&wcs.vs=1&wcs.vclt=0&wcs.vfpv=0&wcs.et=1&wcs.cn=Click%20here&ms.sitever=DLC%207.0&ms.UriDomain=www.microsoft.com&ms.UriPath=%2Fen-us%2Fdownload%2Fconfirmation.aspx&ms.UriQuery=%3Fid%3D40770&ms.InteractionType=13&ms.Title=Click%20here&ms.lang=en&ms.loc=us&ms.cmpnm=download%20details&ms.cmpgrp=download%3AMultibyte%20MFC%20Library%20for%20Visual%20Studio%202013&ms.pgarea=body&ms.env=prod&ms.pagetype=confirmation&ms.pltfrm=CMS&ms.dwnsrc=	2014年05月31日 21:32:57	
+
+http://c.microsoft.com/trans_pixel.aspx?wcs.tz=10&wcs.cot=5&wcs.route=le200&wcs.ctrl=ss100&wcs.ts=1401535944190&wcs.cd=0&wcs.eid=f819de42-5df9-ca16-8ed9-94e8a9bd56a5&wcs.sr=1680x1050&wcs.bs=1360x641&wcs.si=1&wcs.sv=5.1&wcs.fi=1&wcs.fv=11.0&wcs.cs=1&wcs.ti=Download%20Multibyte%20MFC%20Library%20for%20Visual%20Studio%202013%20from%20Official%20Microsoft%20Download%20Center&wcs.rsd=www.microsoft.com&wcs.rsus=%2Fen-us%2Fdownload%2Fdetails.aspx&wcs.rsqs=%3Fid%3D40770&wcs.rihs=0&wcs.v=3.5&wcs.vct=1&wcs.vs=1&wcs.vclt=0&wcs.vfpv=0&wcs.et=1&wcs.cn=English&ms.sitever=DLC%207.0&ms.UriDomain=www.microsoft.com&ms.UriPath=%2Fen-us%2Fdownload%2Fdetails.aspx&ms.UriQuery=%3Fid%3D40770&ms.InteractionType=14&ms.Title=English&ms.lang=en&ms.loc=us&ms.cmpnm=select%20language&ms.cmpgrp=download&ms.pgarea=body&ms.env=prod&ms.pagetype=details&ms.dwnsrc=dlc&ms.sitesec=downloads&ms.pltfrm=CMS&ms.dlcfamilyid=c3d0a265-d286-4bf4-9409-d155358c560e&ms.dlcproductid=40770&ms.dwntype=SinDwn&scrl=0%2C1&vp=1360x641&wcs.tr=0	2014年05月31日 21:32:24	
+
+http://c.microsoft.com/trans_pixel.aspx?wcs.et=2&wcs.tz=10&wcs.cot=1&wcs.route=&wcs.ctrl=&wcs.ts=1401535913337&wcs.cd=0&wcs.eid=6902abc7-203e-ce6f-f9df-88d34112a31e&wcs.sr=1680x1050&wcs.bs=1343x1109&wcs.si=1&wcs.sv=&wcs.ti=MFC%20MBCS%20DLL%20Add-on&wcs.rsd=msdn.microsoft.com&wcs.rsus=%2Flibrary%2Fdn251007.aspx&wcs.rsqs=&wcs.rihs=0&wcs.v=3.5&wcs.vct=1&wcs.vs=0&wcs.vclt=1&wcs.vfpv=&wcs.cn=http%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fdownload%2Fdetails.aspx%3Fid%3D40770&wcs.cid=&wcs.ct=&ms.normalizedurl=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fdn251007(d%3Ddefault%2Cl%3Den-us%2Cv%3Dvs.120).aspx&ms.shortidmsdn=dn251007&Ms.Locale=en-us&wcs.tr=0	2014年05月31日 21:31:54	
+
+http://c.microsoft.com/trans_pixel.aspx?wcs.tz=10&wcs.cot=0&wcs.route=&wcs.ctrl=&wcs.ts=1401535401661&wcs.cd=0&wcs.eid=65b50cd0-9c5d-5cd4-e952-faeafa1e5328&wcs.sr=1680x1050&wcs.bs=1473x1109&wcs.si=1&wcs.sv=&wcs.ti=MFC%20MBCS%20DLL%20Add-on&wcs.rsd=msdn.microsoft.com&wcs.rsus=%2Flibrary%2Fdn251007.aspx&wcs.rsqs=&wcs.rihs=0&wcs.v=3.5&wcs.vct=1&wcs.vs=0&wcs.vclt=1&wcs.vfpv=&wcs.et=0&ms.normalizedurl=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fdn251007(d%3Ddefault%2Cl%3Den-us%2Cv%3Dvs.120).aspx&ms.shortidmsdn=dn251007&Ms.Locale=en-us&wcs.tr=0	2014年05月31日 21:23:24	
+
+http://az416426.vo.msecnd.net/scripts/ai.js	2014年05月31日 21:31:35	
+
+http://pgdt.gtimg.cn/gdt/0/BCPBRnaABBTfwYmQwEGHR.jpg/0?ck=e015187cc32d6e707a9d4c01faa2f4c6	2014年05月31日 21:44:37	
+
+http://pgdt.gtimg.cn/gdt/0/BCMbwMaABBTV2rlNTpS1P.jpg/0?ck=891cb2771887d382df36ddfe792bfcc1	2014年05月31日 21:51:27	
+
+http://pgdt.gtimg.cn/gdt/0/BAAAKmRABBTgxmmiJetqq.jpg/0?ck=41ada76acffe36c62d7bac1a14258393	2014年05月31日 21:48:33	
+
+http://pgdt.gtimg.cn/gdt/0/BCMbwMaABBTYKJVaSCAsY.jpg/0?ck=7572a7f0086a8ed44265e0709f3f08fd	2014年05月31日 21:45:22	
+
+http://pgdt.gtimg.cn/gdt/0/BB1y9-wABBTVjd1HNHRP8.jpg/0?ck=f3e1ba56a791767a4b6afc725f3580fe	2014年05月31日 21:46:14	
+
+http://open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?adposcount=1&freshinfo=&freqinfo=null&posid=2&uin=31825066&skey=@odOw3Q91u&frienduin=51152238&ext={"req":{"friendqq":"51152238","qqshow":"0","sex":"M"}}&opencount=2&cmd=query&action=1	2014年05月31日 21:44:35	
+
+http://open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?adposcount=1&freshinfo=%7B%22expire%22%3A%22%22%2C%22value%22%3A%22%22%7D&freqinfo=null&posid=2&uin=31825066&skey=@odOw3Q91u&frienduin=76237850&ext={"req":{"friendqq":"76237850","qqshow":"0","sex":"M"}}&opencount=3&cmd=query&action=1	2014年05月31日 21:45:14	
+
+http://open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?adposcount=1&freshinfo=%7B%22expire%22%3A%22%22%2C%22value%22%3A%22%22%7D&freqinfo=null&posid=2&uin=31825066&skey=@odOw3Q91u&frienduin=76237850&ext={"req":{"friendqq":"76237850","qqshow":"0","sex":"M"}}&opencount=10&cmd=query&action=1	2014年05月31日 21:48:26	
+
+http://open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?adposcount=1&freshinfo=%7B%22expire%22%3A%22%22%2C%22value%22%3A%22%22%7D&freqinfo=null&posid=2&uin=31825066&skey=@odOw3Q91u&frienduin=51152238&ext={"req":{"friendqq":"51152238","qqshow":"0","sex":"M"}}&opencount=4&cmd=query&action=1	2014年05月31日 21:45:20	
+
+http://open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?adposcount=1&freshinfo=&freqinfo=null&posid=2&uin=31825066&skey=@odOw3Q91u&frienduin=76237850&ext={"req":{"friendqq":"76237850","qqshow":"0","sex":"M"}}&opencount=2&cmd=query&action=1	2014年05月31日 21:45:09	
+
+http://open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?adposcount=1&freshinfo=%7B%22expire%22%3A%22%22%2C%22value%22%3A%22%22%7D&freqinfo=null&posid=2&uin=31825066&skey=@odOw3Q91u&frienduin=51152238&ext={"req":{"friendqq":"51152238","qqshow":"0","sex":"M"}}&opencount=10&cmd=query&action=1	2014年05月31日 21:48:28	
+
+http://open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?adposcount=1&freshinfo=%7B%22expire%22%3A%22%22%2C%22value%22%3A%22%22%7D&freqinfo=null&posid=2&uin=31825066&skey=@odOw3Q91u&frienduin=76237850&ext={"req":{"friendqq":"76237850","qqshow":"0","sex":"M"}}&opencount=6&cmd=query&action=1	2014年05月31日 21:45:47	
+
+http://open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?adposcount=1&freshinfo=%7B%22expire%22%3A%22%22%2C%22value%22%3A%22%22%7D&freqinfo=null&posid=2&uin=31825066&skey=@odOw3Q91u&frienduin=51152238&ext={"req":{"friendqq":"51152238","qqshow":"0","sex":"M"}}&opencount=8&cmd=query&action=1	2014年05月31日 21:46:09	
+
+http://open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?adposcount=1&freshinfo=%7B%22expire%22%3A%22%22%2C%22value%22%3A%22%22%7D&freqinfo=null&posid=2&uin=31825066&skey=@odOw3Q91u&frienduin=76237850&ext={"req":{"friendqq":"76237850","qqshow":"0","sex":"M"}}&opencount=8&cmd=query&action=1	2014年05月31日 21:46:08	
+
+http://open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?adposcount=1&freshinfo=%7B%22value%22%3A%22%22%2C%22expire%22%3A%22%22%7D&freqinfo=null&posid=2&uin=31825066&skey=@odOw3Q91u&frienduin=51152238&ext={"req":{"friendqq":"51152238","qqshow":"0","sex":"M"}}&opencount=5&cmd=query&action=1	2014年05月31日 21:45:33	
+
+http://open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?adposcount=1&freshinfo=%7B%22expire%22%3A%22%22%2C%22value%22%3A%22%22%7D&freqinfo=null&posid=2&uin=31825066&skey=@odOw3Q91u&frienduin=51152238&ext={"req":{"friendqq":"51152238","qqshow":"0","sex":"M"}}&opencount=6&cmd=query&action=1	2014年05月31日 21:45:50	
+
+http://open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?adposcount=1&freshinfo=%7B%22value%22%3A%22%22%2C%22expire%22%3A%22%22%7D&freqinfo=null&posid=2&uin=31825066&skey=@odOw3Q91u&frienduin=76237850&ext={"req":{"friendqq":"76237850","qqshow":"0","sex":"M"}}&opencount=12&cmd=query&action=1	2014年05月31日 21:51:27	
+
+http://i3.msdn.microsoft.com/Areas/Epx/Content/Images/ImageSprite.png	2014年05月31日 21:31:33	
+
+http://i3.msdn.microsoft.com/Combined.css?resources=0:Topic,0:CodeSnippet,0:ProgrammingSelector,0:ExpandableCollapsibleArea,1:CommunityContent,0:TopicNotInScope,0:FeedViewerBasic,0:ImageSprite,2:Header,2:HeaderFooterSprite,3:LinkList,4:PrintExportButton,1:Toc,1:NavigationResize,5:FeedbackCounter,0:VersionSelector,1:LibraryMemberFilter,2:Footer,5:Feedback,3:Base,6:Msdn;/Areas/Epx/Content/Css:0,/Areas/Library/Content:1,/Areas/Centers/Themes/StandardDevCenter/Content:2,/Areas/Epx/Themes/Base/Content:3,/Areas/Library/Themes/Base/Content:4,/Areas/Epx/Shared/Content:5,/Areas/Library/Themes/Msdn/Content:6&amp;hashKey=1EF75A1822EB81D39C53CF6A79470460	2014年05月31日 21:31:32	
+
+http://i3.msdn.microsoft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png	2014年05月31日 21:31:33	
+
+http://imgcache.qq.com/qqshow_v3/htdocs/syndata/excel_snashot/9/14/682914_0.jpg	2014年05月31日 21:51:26	
+
+http://imgcache.qq.com/qqshow_v3/htdocs/syndata/excel_snashot/gdt/actid14_bg.png	2014年05月31日 21:48:28	
+
+http://www.microsoft.com/en-us/download/details.aspx?id=40770	2014年05月31日 21:32:13	
+
+http://www.microsoft.com/en-us/download/confirmation.aspx?id=40770	2014年05月31日 21:32:29	
+
+http://www.microsoft.com/library/svy/broker.js	2014年05月31日 21:32:27	
+
+http://c.isdspeed.qq.com/code.cgi?domain=v%2Egdt%2Eqq%2Ecom&cgi=%2Fgdt%5Fstats%2Efcg&type=3&rate=100&time=2094&code=	2014年05月31日 21:45:37	
+
+http://img.pet.qq.com/2012/tool/loadgame.js	2014年05月31日 19:43:36	
+
+https://clients2.google.com/ime/pinyin/dicts/dict_index.zip	2014年05月31日 14:50:38	
+
+http://ads1.msn.com/library/dap.js	2014年05月31日 21:32:29	
+
+http://img5.paipaiimg.com/5b28b837/expr-53871FFF-00000000185569B553871FFF000E5C0B.1.jpg?ck=cbcc37d7cbd7d7c5baa2535443133f0f	2014年05月31日 21:45:55	
+
+http://resource.pet.qq.com/WebSoc/bin-release/preloading.html?rt=901897406	2014年05月31日 19:43:34	
+
+http://info.gomlab.com/ad/imp.html?bid=137&cid=1	2014年05月31日 21:34:38	
+
+http://info.gomlab.com/ad/imp.html?bid=4&cid=1	2014年05月31日 19:49:28	
+
+http://info.gomlab.com/ad/imp.html?bid=133&cid=1	2014年05月31日 19:20:58	
+
+http://info.gomlab.com/eng_ad.html	2014年05月31日 21:34:37	
+
+http://i1.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox&btnid=HeaderSearchButton&brand=Msdn&loc=en-au&focusOnInit=false&emptyWatermark=true&searchButtonTooltip=Search%20MSDN	2014年05月31日 21:31:35	
+
+1.1.2	WEB 历史记录
+
+1.1.2	WEB 历史记录
+URL标题	URL地址	最近访问时间	
+
+	http://web.pet.qq.com/static.html	2014年05月31日 19:43:41	
+
+	http://download.microsoft.com/download/0/2/3/02389126-40A7-46FD-9D83-802454852703/vc_mbcsmfc.exe	2014年05月31日 21:57:48	
+
+	http://resource.pet.qq.com/WebSoc/bin-release/preloading.html?rt=901897406	2014年05月31日 19:43:34	
+
+	http://action.tenpay.com/cuifei/2014/qqwallet/yifenqian.shtml?clientuin=170254937&clientkey=96B8383E9E4E05C239AB88294BA8A80B55A902EF45ADD70815DFC8D669D23F38	2014年05月31日 19:43:23	
+
+MFC MBCS DLL Add-on	http://msdn.microsoft.com/library/dn251007.aspx	2014年05月31日 21:31:35	
+
+ENG Main AD	http://playinfo.gomlab.com/eng.html	2014年05月31日 21:34:38	
+
+	about:blank	2014年05月31日 21:32:29	
+
+	http://go.microsoft.com/fwlink/p/?LinkId=286820	2014年05月31日 21:31:31	
+
+	http://c1.microsoft.com/c.gif?DI=4050&did=1&t=	2014年05月31日 21:32:29	
+
+	http://www.microsoft.com/en-us/download/confirmation.aspx?id=40770	2014年05月31日 21:32:25	
+
+	http://ib.adnxs.com/tt?id=1574155	2014年05月31日 21:32:30	
+
+	http://ib.adnxs.com/tt?id=1574153	2014年05月31日 21:32:20	
+
+	http://info.gomlab.com/eng_ad.html	2014年05月31日 21:34:38	
+
+1.1.3	URL 下拉列表
+
+1.1.3	URL 下拉列表
+URL编号	URL地址	
+
+1.1.4	COOKIE记录
+
+1.1.4	COOKIE记录
+URL地址	最近访问时间	
+
+1.1.5	IE账号
+
+1.1.5	IE账号
+资源名称	资源类型	用户名	密码	
+
+2 	网络状况
+
+2.1	外联设备
+
+2.1.1	网络配置信息
+
+2.1.1	网络配置信息
+适配器描述	IP地址	掩码	网关	
+
+2.1.2	无线网卡信息
+
+2.1.2	无线网卡信息
+描述	硬件ID	
+
+2.1.3	无线上网卡信息
+
+2.1.3	无线上网卡信息
+设备描述	
+
+2.1.4	蓝牙设备信息
+
+2.1.4	蓝牙设备信息
+名称	设备ID	
+
+2.1.5	红外设备信息
+
+2.1.5	红外设备信息
+名称	设备ID	
+
+2.2	调制解调器
+
+2.2.1	基本信息
+
+2.2.1	基本信息
+名称	绑定端口	硬件ID	
+
+2.2.2	拨号连接信息
+
+2.2.2	拨号连接信息
+连接名	设备信息	
+
+3 	存储状况
+
+3.1	存储信息
+
+3.1.1	硬盘信息
+
+3.1.1	硬盘信息
+磁盘分区	磁盘类型	可用空间	总计空间	
+
+3.1.2	共享目录
+
+3.1.2	共享目录
+名称	目录	
+
+3.1.3	U盘使用记录
+
+3.1.3	U盘使用记录
+设备类型	设备型号	硬件ID	
+
+3.1.4	交叉检测
+
+3.1.4	交叉检测
+检测结果	
+
+4 	安全防护
+
+4.1	防护软件
+
+4.1.1	杀毒软件
+
+4.1.1	杀毒软件
+软件名称	安装时间	安装目录	是否在运行状态	
+
+4.1.2	防火墙软件
+
+4.1.2	防火墙软件
+软件名称	安装时间	安装目录	是否在运行状态	
+
+4.1.3	windows防火墙
+
+4.1.3	windows防火墙
+当前状态	
+
+4.1.4	补丁检测
+
+4.1.4	补丁检测
+编号	修补软件	描述	安装时间	
+
+4.1.5	用户自定义进程1
+
+4.1.5	用户自定义进程1
+进程名	进程ID	当前状态	
+
+4.1.6	用户自定义进程2
+
+4.1.6	用户自定义进程2
+进程名	进程ID	当前状态	
+
+4.1.7	口令破解
+
+4.1.7	口令破解
+项目名称	类型	用户	口令	最后记录	别名	注释	持续	
+
+4.2	IE安全设置
+
+4.2.1	本地Intranet
+
+4.2.1	本地Intranet
+本地Intranet	
+
+4.2.2	可信站点
+
+4.2.2	可信站点
+可信站点	
+
+4.2.3	受限站点
+
+4.2.3	受限站点
+受限站点	
+
+4.2.4	Internet安全设置信息
+
+4.2.4	Internet安全设置信息
+Internet安全设置信息	
+
+4.3	本地安全配置
+
+4.3.1	密码策略
+
+4.3.1	密码策略
+策略	本地设置	有效设置	
+
+4.3.2	账户锁定策略
+
+4.3.2	账户锁定策略
+策略	本地设置	有效设置	
+
+4.3.3	审核策略
+
+4.3.3	审核策略
+策略	本地设置	有效设置	
+
+4.3.4	安全选项
+
+4.3.4	安全选项
+策略	本地设置	有效设置	
+
+5 	系统信息
+
+5.1	基本信息检测
+
+5.1.1	操作系统信息
+
+5.1.1	操作系统信息
+操作系统名称	操作系统版本	安装时间	系统路径	安装路径	产品序列号	
+
+5.1.2	CPU信息
+
+5.1.2	CPU信息
+CPU名称	CPU型号	CPU频率(MHZ)	
+
+5.1.3	内存信息
+
+5.1.3	内存信息
+内存大小(M)	可用物理内存(M)	页面大小	内存分配粒度	应用程序开始地址	应用程序结束地址	
+
+5.1.4	用户信息
+
+5.1.4	用户信息
+名称	
+
+5.2	系统深度检测
+
+5.2.1	系统进程
+
+5.2.1	系统进程
+进程名	进程ID	
+
+5.2.2	BHO
+
+5.2.2	BHO
+键值	项目名	
+
+5.2.3	SPI
+
+5.2.3	SPI
+键值	项目名	启动文件名	属性	
+
+5.2.4	启动组信息
+
+5.2.4	启动组信息
+注册表项名	注册表启动项目名	注册表启动项目键值	
+
+5.2.5	系统服务信息
+
+5.2.5	系统服务信息
+进程名	进程描述	当前状态	
+
+5.2.6	服务端口信息
+
+5.2.6	服务端口信息
+Proto	Local Address	Foreign Address	State	process	
+
+6 	软件安装
+
+6.1	软件安装列表
+
+6.1.1	软件安装列表
+
+6.1.1	软件安装列表
+名称	安装时间	
+
+6.2	下载类软件
+
+6.2.1	网络蚂蚁
+
+6.2.1	网络蚂蚁
+软件名称	版本号	安装路径	
+
+6.2.2	网际快车
+
+6.2.2	网际快车
+软件名称	版本号	安装路径	
+
+6.2.3	BT
+
+6.2.3	BT
+软件名称	版本号	安装路径	
+
+6.2.4	电驴
+
+6.2.4	电驴
+软件名称	版本号	安装路径	
+
+6.2.5	迅雷
+
+6.2.5	迅雷
+软件名称	版本号	安装路径	
+
+6.2.6	自定义下载类软件
+
+6.2.6	自定义下载类软件
+软件名称	版本号	安装路径	
+
+6.3	通信类软件
+
+6.3.1	腾讯QQ
+
+6.3.1	腾讯QQ
+软件名称	版本号	安装路径	
+
+6.3.2	网易泡泡
+
+6.3.2	网易泡泡
+软件名称	版本号	安装路径	
+
+6.3.3	淘宝旺旺
+
+6.3.3	淘宝旺旺
+软件名称	版本号	安装路径	
+
+6.3.4	SKYPE
+
+6.3.4	SKYPE
+软件名称	版本号	安装路径	
+
+6.3.5	自定义通信类软件
+
+6.3.5	自定义通信类软件
+软件名称	版本号	安装路径	
+
+7 	使用痕迹
+
+7.1	windows痕迹检测
+
+7.1.1	开始-运行痕迹信息
+
+7.1.1	开始-运行痕迹信息
+开始-运行痕迹信息	
+
+7.1.2	开始-搜索痕迹信息
+
+7.1.2	开始-搜索痕迹信息
+开始-搜索痕迹信息	
+
+7.1.3	开始-搜索计算机痕迹信息
+
+7.1.3	开始-搜索计算机痕迹信息
+开始-搜索计算机痕迹信息	
+
+7.1.4	Windows预读文件
+
+7.1.4	Windows预读文件
+Windows预读文件信息	
+
+7.1.5	开始-文档痕迹信息
+
+7.1.5	开始-文档痕迹信息
+开始-文档痕迹信息	
+
+7.1.6	Windows文档列表痕迹
+
+7.1.6	Windows文档列表痕迹
+文档列表痕迹信息	
+
+7.1.7	临时文件信息
+
+7.1.7	临时文件信息
+文件路径	
+
+7.1.8	自定义痕迹信息
+
+7.1.8	自定义痕迹信息
+自定义痕迹	
+
+7.2	应用软件访问文件
+
+7.2.1	文字处理文件
+
+7.2.1	文字处理文件
+文件信息	
+
+7.2.2	图形处理文件
+
+7.2.2	图形处理文件
+文件信息	
+
+7.2.3	媒体播放文件
+
+7.2.3	媒体播放文件
+文件信息	
+
+7.2.4	压缩工具文件
+
+7.2.4	压缩工具文件
+文件信息	
+
+7.2.5	杀毒软件文件
+
+7.2.5	杀毒软件文件
+文件信息	
+
+7.2.6	下载软件文件
+
+7.2.6	下载软件文件
+文件信息	
+
+7.2.7	光盘刻录文件
+
+7.2.7	光盘刻录文件
+文件信息	
+
+7.2.8	自定义文件
+
+7.2.8	自定义文件
+文件信息	
+

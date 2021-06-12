@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>ISTC</ProjectName>
+    <ProjectGuid>{42A74E33-A355-4D57-AB80-B920B5BE84A2}</ProjectGuid>
+    <RootNamespace>ISTC</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\platform\libxml;..\..\platform;..\..\Win32++\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;nafxcwd.lib;libcpmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ISTC.exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>nafxcwd.lib;libcpmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)ISTC.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\Win32++\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Win32++\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/force %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>comctl32.lib;ScriptHost.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ISTC.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\Win32++\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\AuthSetDialog.cpp" />
+    <ClCompile Include="..\src\CfgFile.cpp" />
+    <ClCompile Include="..\src\Classes.cpp" />
+    <ClCompile Include="..\src\ComboBoxEx.cpp" />
+    <ClCompile Include="..\src\ContainerApp.cpp" />
+    <ClCompile Include="..\src\DataGrid.cpp" />
+    <ClCompile Include="..\src\DataGridDlg.cpp" />
+    <ClCompile Include="..\src\DataGridView.cpp" />
+    <ClCompile Include="..\src\DiskScanDlg.cpp" />
+    <ClCompile Include="..\src\Files.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\Mainfrm.cpp" />
+    <ClCompile Include="..\src\Output.cpp" />
+    <ClCompile Include="..\src\Simple.cpp" />
+    <ClCompile Include="..\src\StdAfx.cpp" />
+    <ClCompile Include="..\src\SysSettingDlg.cpp" />
+    <ClCompile Include="..\src\Text.cpp" />
+    <ClCompile Include="..\src\UserOutput.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Classes.h" />
+    <ClInclude Include="..\src\ComboBoxEx.h" />
+    <ClInclude Include="..\src\ContainerApp.h" />
+    <ClInclude Include="..\src\DockContainer.h" />
+    <ClInclude Include="..\src\Files.h" />
+    <ClInclude Include="..\src\Mainfrm.h" />
+    <ClInclude Include="..\src\Output.h" />
+    <ClInclude Include="..\src\resource.h" />
+    <ClInclude Include="..\src\resrc1.h" />
+    <ClInclude Include="..\src\Simple.h" />
+    <ClInclude Include="..\src\stdafx.h" />
+    <ClInclude Include="..\src\Text.h" />
+    <ClInclude Include="..\..\Win32++\include\dialog.h" />
+    <ClInclude Include="..\..\Win32++\include\docking.h" />
+    <ClInclude Include="..\..\Win32++\include\frame.h" />
+    <ClInclude Include="..\..\Win32++\include\gdi.h" />
+    <ClInclude Include="..\..\Win32++\include\listview.h" />
+    <ClInclude Include="..\..\Win32++\include\rebar.h" />
+    <ClInclude Include="..\..\Win32++\include\statusbar.h" />
+    <ClInclude Include="..\..\Win32++\include\toolbar.h" />
+    <ClInclude Include="..\..\Win32++\include\treeview.h" />
+    <ClInclude Include="..\..\Win32++\include\wincore.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\src\res\Barbarian.ico" />
+    <Image Include="..\src\res\classview.bmp" />
+    <Image Include="..\src\res\classview.ico" />
+    <Image Include="..\src\res\Docking.ico" />
+    <Image Include="..\src\res\fileview.bmp" />
+    <Image Include="..\src\res\fileview.ico" />
+    <Image Include="..\src\main.ico" />
+    <Image Include="..\src\mfc.ico" />
+    <Image Include="..\src\res\mfc2.ico" />
+    <Image Include="..\src\mfc2.ico" />
+    <Image Include="..\src\res\SDbottom.bmp" />
+    <Image Include="..\src\res\SDcenter.bmp" />
+    <Image Include="..\src\res\SDleft.bmp" />
+    <Image Include="..\src\res\SDmiddle.bmp" />
+    <Image Include="..\src\res\SDright.bmp" />
+    <Image Include="..\src\res\SDtop.bmp" />
+    <Image Include="..\src\res\status.bmp" />
+    <Image Include="..\src\res\Text.ico" />
+    <Image Include="..\src\res\threestate.bmp" />
+    <Image Include="..\src\res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\res\SplitH.cur" />
+    <None Include="..\src\res\SplitV.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="..\src\res\Win32++.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\platform\plat\plat.vcxproj">
+      <Project>{a6e8f229-befd-4460-9222-0cbf1db181f7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\radius\radLib\RadiusLib\RadiusLib.vcxproj">
+      <Project>{853420b4-cd86-4f89-8df3-3dc8d7be5b1a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\sqlite_lib\sqlitelib\sqlitelib.vcxproj">
+      <Project>{e74f4e99-fd60-4668-8640-5e5c4c934437}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="\prog\SVN_code\TraceWiper\Isct\src\main.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

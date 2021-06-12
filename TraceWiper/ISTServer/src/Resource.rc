@@ -1,0 +1,402 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "res/Win32++.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDW_MAIN MENU 
+BEGIN
+    POPUP "任务(&T)"
+    BEGIN
+        MENUITEM "开始(&S)",                    ID_Menu
+        MENUITEM "停止(&T)",                    ID__40018
+        MENUITEM "导出日志(&L)",                ID__40003
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&Q)",                    IDM_FILE_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "全屏",                        ID_VIEW_
+        MENUITEM "拷贝(&C)",                    ID_40005
+        MENUITEM "粘贴(&P)",                    ID_40006
+        MENUITEM "工具栏",                      IDW_VIEW_TOOLBAR, CHECKED
+        MENUITEM "状态栏",                      IDW_VIEW_STATUSBAR, CHECKED
+    END
+    POPUP "管理(&M)"
+    BEGIN
+        MENUITEM "服务器设置",                  ID_SETTINGS
+        MENUITEM "添加用户",                    ID_ADD_USER
+        MENUITEM "删除用户",                    ID_DELETE_USER
+        MENUITEM "编辑用户",                    ID_EDIT_USER
+    END
+    POPUP "浮动窗口(&F)"
+    BEGIN
+        MENUITEM "默认格调(&D)",                IDM_DOCK_DEFAULT
+        MENUITEM "关闭所有",                    IDM_DOCK_CLOSEALL
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于本软件(&A)",              IDM_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDW_MAIN                ICON                    "res/Barbarian.ico"
+IDI_CLASSVIEW           ICON                    "res/classview.ico"
+IDI_FILEVIEW            ICON                    "res/fileview.ico"
+IDI_TEXT                ICON                    "res/text.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDW_MAIN                BITMAP                  "res/toolbar.bmp"
+IDW_SDBOTTOM            BITMAP                  "res/SDbottom.bmp"
+IDW_SDCENTER            BITMAP                  "res/SDcenter.bmp"
+IDW_SDLEFT              BITMAP                  "res/SDleft.bmp"
+IDW_SDMIDDLE            BITMAP                  "res/SDmiddle.bmp"
+IDW_SDRIGHT             BITMAP                  "res/SDright.bmp"
+IDW_SDTOP               BITMAP                  "res/SDtop.bmp"
+IDB_CLASSVIEW           BITMAP                  "res/classview.bmp"
+IDB_FILEVIEW            BITMAP                  "res/fileview.bmp"
+IDB_STATUS              BITMAP                  "res/status.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDW_SPLITH              CURSOR                  "res/SplitH.cur"
+IDW_SPLITV              CURSOR                  "res/SplitV.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDW_ABOUT DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,68,49,50,14
+    CTEXT           "ISTServer ICT工具认证服务器",IDC_STATIC,60,22,64,18
+    ICON            IDW_MAIN,0,4,4,20,20
+END
+
+IDD_CONFIG DIALOGEX 0, 0, 419, 228
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,269,207,50,14
+    PUSHBUTTON      "取消",IDCANCEL,352,207,50,14
+    LTEXT           "最大并发数",IDC_STATIC,25,21,45,8
+    LTEXT           "最大用户数",IDC_STATIC,25,37,45,8
+    CONTROL         "开机自动运行",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,60,64,10
+    CONTROL         "关闭时自动隐藏",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,82,72,10
+    CONTROL         "新连接提示",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,103,56,10
+    CONTROL         "非法连接提示",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,124,64,10
+    CONTROL         "MAC地址鉴权",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,144,67,10
+    CONTROL         "IP地址鉴权",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,163,59,10
+    CONTROL         "硬盘序列号鉴权",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,184,76,10
+    GROUPBOX        "服务器设置",IDC_STATIC,7,7,405,197
+    EDITTEXT        IDC_EDIT1,96,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,96,34,40,14,ES_AUTOHSCROLL
+END
+
+IDD_EDIT_USER DIALOGEX 0, 0, 349, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "用户设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,269,157,50,14
+    LTEXT           "用户名",IDC_STATIC,25,21,45,8
+    LTEXT           "部门信息",IDC_STATIC,25,43,45,8
+    GROUPBOX        "用户设置",IDC_STATIC,7,7,335,150
+    EDITTEXT        IDC_EDIT1,96,17,124,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,96,40,124,14,ES_AUTOHSCROLL
+    LTEXT           "IP地址",IDC_STATIC,26,66,45,8
+    EDITTEXT        IDC_EDIT3,96,62,124,14,ES_AUTOHSCROLL
+    LTEXT           "MAC地址",IDC_STATIC,26,87,45,8
+    EDITTEXT        IDC_EDIT4,96,84,124,14,ES_AUTOHSCROLL
+    LTEXT           "硬盘序列号",IDC_STATIC,26,108,45,8
+    EDITTEXT        IDC_EDIT5,96,106,124,14,ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,26,129,45,8
+    EDITTEXT        IDC_EDIT6,96,128,124,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_SERVER_PARA DIALOGEX 0, 0, 375, 238
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "服务器验证参数设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,63,217,50,14
+    PUSHBUTTON      "取消",IDCANCEL,252,217,50,14
+    GROUPBOX        "并发数验证",IDC_STATIC,7,7,361,58
+    GROUPBOX        "精确验证",IDC_STATIC,7,67,361,69
+    GROUPBOX        "审批验证",IDC_STATIC,7,138,361,71
+    CONTROL         "并发终端",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,23,21,
+                    48,10
+    CONTROL         "精确验证",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,23,80,
+                    48,10
+    CONTROL         "审批方式",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,23,151,
+                    48,10
+    LTEXT           "并发终端数",IDC_STATIC,23,34,45,8
+    LTEXT           "最大终端数",IDC_STATIC,23,49,45,8
+    LTEXT           "IP地址",IDC_STATIC,23,98,24,8
+    LTEXT           "MAC地址",IDC_STATIC,23,115,32,8
+    LTEXT           "硬盘序列号",IDC_STATIC,154,98,41,8
+    LTEXT           "用户名/密码",IDC_STATIC,154,115,44,8
+    LTEXT           "人工审批",IDC_STATIC,23,168,33,8
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,
+                    115,16,8
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,
+                    98,16,8
+    CONTROL         "",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,
+                    98,16,8
+    CONTROL         "",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,
+                    115,16,8
+    CONTROL         "",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,
+                    168,16,8
+    CONTROL         "",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,
+                    49,16,8
+    CONTROL         "",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,
+                    34,16,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDW_MAIN ACCELERATORS 
+BEGIN
+    "N",            IDM_FILE_NEW,           VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_FILE_OPEN,          VIRTKEY, CONTROL, NOINVERT
+    "P",            IDM_FILE_PRINT,         VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_FILE_SAVE,          VIRTKEY, CONTROL, NOINVERT
+    "C",            IDM_EDIT_COPY,          VIRTKEY, CONTROL, NOINVERT
+    "X",            IDM_EDIT_CUT,           VIRTKEY, CONTROL, NOINVERT
+    "V",            IDM_EDIT_PASTE,         VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDM_EDIT_UNDO,          VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDM_EDIT_REDO,          VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_DELETE,      IDM_EDIT_DELETE,        VIRTKEY, NOINVERT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_EDIT_USER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_DIALOG_SERVER_PARA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDW_MAIN                "ISTServer - IST工具认证服务器"
+    IDW_VIEW_TOOLBAR        "Show or hide the tool bar"
+    IDW_VIEW_STATUSBAR      "Show or hide the status bar"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_FILE_NEW            "启动服务器"
+    IDM_FILE_OPEN           "停止服务器"
+    IDM_FILE_SAVE           "添加用户"
+    IDM_FILE_SAVEAS         "Save the Document with a new name"
+    IDM_FILE_PRINT          "刷新"
+    IDM_FILE_EXIT           "End the Program"
+    IDM_EDIT_UNDO           "Undo the last action"
+    IDM_EDIT_REDO           "Redo the previously undone action"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_EDIT_CUT            "删除用户"
+    IDM_EDIT_PASTE          "批量用户导入"
+    IDM_EDIT_DELETE         "Erase the selected Contents"
+    IDM_HELP_ABOUT          "关于本程序"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SETTINGS             "服务器配置"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_DOCK_DEFAULT        "Restore default dock layout"
+    IDM_DOCK_CLOSEALL       "Close all docked and undocked windows"
+END
+
+STRINGTABLE 
+BEGIN
+    61536                   "Close the Window"
+END
+
+STRINGTABLE 
+BEGIN
+    61488                   "Maximize the Window"
+END
+
+STRINGTABLE 
+BEGIN
+    61472                   "Minimize the WIndow"
+END
+
+STRINGTABLE 
+BEGIN
+    61456                   "Move the Window"
+END
+
+STRINGTABLE 
+BEGIN
+    61504                   "Select Next Window"
+END
+
+STRINGTABLE 
+BEGIN
+    61520                   "Select Previous Window"
+END
+
+STRINGTABLE 
+BEGIN
+    61728                   "Restore the Window"
+END
+
+STRINGTABLE 
+BEGIN
+    61440                   "Resize the Window"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

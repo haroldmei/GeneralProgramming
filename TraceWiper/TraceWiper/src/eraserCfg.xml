@@ -1,0 +1,628 @@
+<Node Name="计算机使用痕迹清除">
+    <Node Name="WINDOWS运行痕迹">
+        <Node Name="开始-运行痕迹">
+            <DelFile Name=""/>
+            <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU"/>
+            <DelDir Name=""/>
+        </Node>
+        <Node Name="开始-搜索文件痕迹">
+            <DelFile Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-2052111302-329068152-682003330-500\ Software\Microsoft\Search Assistant\ACMru\5603"/>
+            <DelReg Name="HKEY＿CURRENT＿USER\Software\Microsoft\Search Assistant\ACMru\5603"/>
+            <DelDir Name=""/>
+        </Node>
+        <Node Name="开始-搜索计算机痕迹">
+            <DelFile Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-2052111302-329068152-682003330-500\ Software\Microsoft\Search Assistant\ACMru\5604"/>
+            <DelReg Name="HKEY＿CURRENT＿USER\Software\Microsoft\Search Assistant\ACMru\5604"/>
+            <DelDir Name=""/>
+        </Node>
+        <Node Name="开始-文档痕迹">
+            <DelFile Name=""/>
+            <DelReg Name=""/>
+            <DelDir Name="C:\Documents and Settings\t400\Recent"/>
+        </Node>
+        <Node Name="WINDOWS使用过的文件列表痕迹">
+            <DelFile Name=""/>
+            <DelReg Name=""/>
+            <DelDir Name="C:\Documents and Settings\t400\Recent"/>
+        </Node>
+        <Node Name="运行程序产生的临时文件痕迹">
+            <DelFile Name=""/>
+            <DelReg Name=""/>
+            <DelDir Name="C:\WINDOWS\Temp"/>
+            <DelDir Name="C:\Documents and Settings\t400\Local Settings\Temp"/>
+        </Node>
+        <Node Name="汉字输入痕迹">
+            <DelFile Name=""/>
+            <DelReg Name=""/>
+            <DelDir Name=""/>
+        </Node>
+        <Node Name="WINDOWS事件和应用程序日志痕迹">
+            <DelFile Name=""/>
+            <DelReg Name=""/>
+            <DelDir Name="C:\WINDOWS\system32\wbem\Logs\*.log"/>
+            <DelDir Name="C:\WINDOWS\*.log"/>
+            <DelDir Name="C:\Documents and Settings\All Users\Application Data\Microsoft\ *.log"/>
+            <DelDir Name="C:\WINDOWS\Debug\*.log"/>
+            <DelDir Name="C:\WINDOWS\security\logs"/>
+        </Node>
+        <Node Name="WINDOWS预读文件痕迹">
+            <DelFile Name=""/>
+            <DelReg Name=""/>
+            <DelDir Name="%SystemRoot%\Prefetch"/>
+        </Node>
+        <Node Name="RegEdit搜索痕迹">
+            <DelFile Name=""/>
+            <DelReg Name=""/>
+            <DelDir Name=""/>
+        </Node>
+    </Node>
+    <Node Name="浏览器运行痕迹">
+        <Node Name="IE浏览器痕迹">
+            <Node Name="IE地址栏痕迹">
+                <DelDir Name=""/>
+                <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders: Cache"/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="IE浏览过网页痕迹">
+                <DelDir Name=""/>
+                <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders:History"/>
+                <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TypedUrls"/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="IE浏览网页COOKIES痕迹">
+                <DelDir Name=""/>
+                <DelReg Name=" HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders: Cookies"/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="IE浏览网页临时文件痕迹">
+                <DelDir Name="C:\Documents and Settings\t400\Local Settings\Temporary Internet Files"/>
+                <DelReg Name=""/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="IE浏览网页自动完成表单痕迹"><!--以下三项通过windows API实现 -->
+                <DelDir Name=""/>
+                <DelReg Name=""/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="IE浏览网页自动完成密码痕迹">
+                <DelDir Name=""/>
+                <DelReg Name=""/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="IE浏览网页时允许弹出窗口站点痕迹">
+                <DelDir Name=""/>
+                <DelReg Name=""/>
+                <DelFile Name=""/>
+            </Node>
+        </Node>
+        <Node Name="FIREFOX浏览器痕迹">
+            <Node Name="FIREFOX浏览过的网页痕迹">
+                <DelDir Name="C:\Documents and Settings\t400\Local Settings\Application Data\Mozilla\Firefox\Profiles\wl9v8g38.default"/>
+                <DelDir Name="C:\\WINDOWS\\Application Data\\Mozilla\\Firefox\\Profiles\\xxxxxxxx.default\\"/>
+                <DelReg Name=""/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="FIREFOX浏览器COOKIES痕迹">
+                <DelDir Name=""/>
+                <DelReg Name=""/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="FIREFOX浏览器临时文件痕迹">
+                <DelDir Name=""/>
+                <DelReg Name=""/>
+                <DelFile Name="C:\Documents and Settings\t400\Local Settings\Application Data\Mozilla\Firefox\Profiles\wl9v8g38.default\Cache"/>
+            </Node>
+            <Node Name="FIREFOX下载文件痕迹">
+                <DelDir Name=""/>
+                <DelReg Name=""/>
+                <DelFile Name="C:\Documents and Settings\t400\Application Data\Mozilla\Firefox\Profiles\wl9v8g38.default\downloads.sqlite"/>
+            </Node>
+            <Node Name="FIREFOX浏览器网页自动完成密码痕迹"><!--通过firefox API清除 -->
+                <DelDir Name=""/>
+                <DelReg Name=""/>
+                <DelFile Name=""/>
+            </Node>
+        </Node>
+    </Node>
+    <Node Name="文字处理软件运行痕迹">
+        <Node Name="WINDOWS写字板使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\rtf"/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="OFFICE使用痕迹">
+            <Node Name="word痕迹">
+                <DelDir Name="C:\Documents and Settings\t400\Application Data\Microsoft\Office\Recent"/>
+                <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\doc"/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="Excel痕迹">
+                <DelDir Name=""/>
+                <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\xls"/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="Access痕迹">
+                <DelDir Name=""/>
+                <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\acs"/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="PowerPoint痕迹">
+                <DelDir Name=""/>
+                <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\ppt"/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="FrontPage痕迹">
+                <DelDir Name=""/>
+                <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\ppt"/>
+                <DelFile Name=""/>
+            </Node>
+        </Node>
+        <Node Name="AcrobatReader使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\pdf"/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="UltraEdit使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\TXT"/>
+            <DelFile Name=""/>
+        </Node>
+    </Node>
+    <Node Name="图形处理软件运行痕迹">
+        <Node Name="WINDOWS附件画图软件使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Applets\Paint\Recent File List"/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="ACDSee使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="PhotoShop使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+    </Node>
+    <Node Name="媒体播放软件运行痕迹">
+        <Node Name="MediaPlayer使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\MediaPlayer\Player\RecentFileList"/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="QuiteTime使用痕迹">
+            <DelDir Name="C:\Documents and Settings\t400\Local Settings\Application Data\Apple Computer\QuickTime"/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="RealPlayer使用痕迹">
+            <DelDir Name="C:\Documents and Settings\t400\Application Data\Real\RealPlayer"/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="Winamp使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="FlashPlayer使用痕迹">
+            <DelDir Name="C:\Documents and Settings\t400\Application Data\Macromedia\Flash Player"/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+    </Node>
+    <Node Name="压缩工具运行痕迹">
+        <Node Name="WinRar使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\WinRAR\ArcHistory"/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="WinZip使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\WinZIP\ArcHistory"/>
+            <DelFile Name=""/>
+        </Node>
+    </Node>
+    <Node Name="杀毒和防火墙软件运行痕迹">
+        <Node Name="ZoneAlarm使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\ZoneAlarm"/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="NOD32使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\NOD32"/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="AntiVir使用痕迹">
+            <DelDir Name="C:\Documents and Settings\All Users\Application Data\avg8"/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+    </Node>
+    <Node Name="下载软件运行痕迹">
+        <Node Name="影音传送带使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="FlashGet使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="NetAnts使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="IE下载痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="Orbit使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+    </Node>
+    <Node Name="光盘刻录软件运行痕迹">
+        <Node Name="Nero使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="Alcohol使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="Easy-CD-Creator使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="UltraIso使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="DVD-Shrink使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+    </Node>
+    <Node Name="回收站清理">
+        <DelDir Name=""/>
+        <DelReg Name=""/>
+        <DelFile Name=""/>
+    </Node>
+    <Node Name="WINDOWS系统还原痕迹">
+        <DelDir Name=""/>
+        <DelReg Name=""/>
+        <DelFile Name=""/>
+    </Node>
+    <Node Name="WINDOWS隐藏不活动图标痕迹">
+        <DelDir Name=""/>
+        <DelReg Name=""/>
+        <DelFile Name=""/>
+    </Node>
+    <Node Name="WINDOWS运行痕迹">
+        <Node Name="开始-运行痕迹">
+            <DelFile Name=""/>
+            <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU"/>
+            <DelDir Name=""/>
+        </Node>
+        <Node Name="开始-搜索文件痕迹">
+            <DelFile Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-2052111302-329068152-682003330-500\ Software\Microsoft\Search Assistant\ACMru\5603"/>
+            <DelReg Name="HKEY＿CURRENT＿USER\Software\Microsoft\Search Assistant\ACMru\5603"/>
+            <DelDir Name=""/>
+        </Node>
+        <Node Name="开始-搜索计算机痕迹">
+            <DelFile Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-2052111302-329068152-682003330-500\ Software\Microsoft\Search Assistant\ACMru\5604"/>
+            <DelReg Name="HKEY＿CURRENT＿USER\Software\Microsoft\Search Assistant\ACMru\5604"/>
+            <DelDir Name=""/>
+        </Node>
+        <Node Name="开始-文档痕迹">
+            <DelFile Name=""/>
+            <DelReg Name=""/>
+            <DelDir Name="C:\Documents and Settings\t400\Recent"/>
+        </Node>
+        <Node Name="WINDOWS使用过的文件列表痕迹">
+            <DelFile Name=""/>
+            <DelReg Name=""/>
+            <DelDir Name="C:\Documents and Settings\t400\Recent"/>
+        </Node>
+        <Node Name="运行程序产生的临时文件痕迹">
+            <DelFile Name=""/>
+            <DelReg Name=""/>
+            <DelDir Name="C:\WINDOWS\Temp"/>
+            <DelDir Name="C:\Documents and Settings\t400\Local Settings\Temp"/>
+        </Node>
+        <Node Name="汉字输入痕迹">
+            <DelFile Name=""/>
+            <DelReg Name=""/>
+            <DelDir Name=""/>
+        </Node>
+        <Node Name="WINDOWS事件和应用程序日志痕迹">
+            <DelFile Name=""/>
+            <DelReg Name=""/>
+            <DelDir Name="C:\WINDOWS\system32\wbem\Logs\*.log"/>
+            <DelDir Name="C:\WINDOWS\*.log"/>
+            <DelDir Name="C:\Documents and Settings\All Users\Application Data\Microsoft\ *.log"/>
+            <DelDir Name="C:\WINDOWS\Debug\*.log"/>
+            <DelDir Name="C:\WINDOWS\security\logs"/>
+        </Node>
+        <Node Name="WINDOWS预读文件痕迹">
+            <DelFile Name=""/>
+            <DelReg Name=""/>
+            <DelDir Name="%SystemRoot%\Prefetch"/>
+        </Node>
+        <Node Name="RegEdit搜索痕迹">
+            <DelFile Name=""/>
+            <DelReg Name=""/>
+            <DelDir Name=""/>
+        </Node>
+    </Node>
+    <Node Name="浏览器运行痕迹">
+        <Node Name="IE浏览器痕迹">
+            <Node Name="IE地址栏痕迹">
+                <DelDir Name=""/>
+                <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders: Cache"/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="IE浏览过网页痕迹">
+                <DelDir Name=""/>
+                <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders:History"/>
+                <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TypedUrls"/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="IE浏览网页COOKIES痕迹">
+                <DelDir Name=""/>
+                <DelReg Name=" HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders: Cookies"/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="IE浏览网页临时文件痕迹">
+                <DelDir Name="C:\Documents and Settings\t400\Local Settings\Temporary Internet Files"/>
+                <DelReg Name=""/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="IE浏览网页自动完成表单痕迹"><!--以下三项通过windows API实现 -->
+                <DelDir Name=""/>
+                <DelReg Name=""/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="IE浏览网页自动完成密码痕迹">
+                <DelDir Name=""/>
+                <DelReg Name=""/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="IE浏览网页时允许弹出窗口站点痕迹">
+                <DelDir Name=""/>
+                <DelReg Name=""/>
+                <DelFile Name=""/>
+            </Node>
+        </Node>
+        <Node Name="FIREFOX浏览器痕迹">
+            <Node Name="FIREFOX浏览过的网页痕迹">
+                <DelDir Name="C:\Documents and Settings\t400\Local Settings\Application Data\Mozilla\Firefox\Profiles\wl9v8g38.default"/>
+                <DelDir Name="C:\\WINDOWS\\Application Data\\Mozilla\\Firefox\\Profiles\\xxxxxxxx.default\\"/>
+                <DelReg Name=""/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="FIREFOX浏览器COOKIES痕迹">
+                <DelDir Name=""/>
+                <DelReg Name=""/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="FIREFOX浏览器临时文件痕迹">
+                <DelDir Name=""/>
+                <DelReg Name=""/>
+                <DelFile Name="C:\Documents and Settings\t400\Local Settings\Application Data\Mozilla\Firefox\Profiles\wl9v8g38.default\Cache"/>
+            </Node>
+            <Node Name="FIREFOX下载文件痕迹">
+                <DelDir Name=""/>
+                <DelReg Name=""/>
+                <DelFile Name="C:\Documents and Settings\t400\Application Data\Mozilla\Firefox\Profiles\wl9v8g38.default\downloads.sqlite"/>
+            </Node>
+            <Node Name="FIREFOX浏览器网页自动完成密码痕迹"><!--通过firefox API清除 -->
+                <DelDir Name=""/>
+                <DelReg Name=""/>
+                <DelFile Name=""/>
+            </Node>
+        </Node>
+    </Node>
+    <Node Name="文字处理软件运行痕迹">
+        <Node Name="WINDOWS写字板使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\rtf"/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="OFFICE使用痕迹">
+            <Node Name="word痕迹">
+                <DelDir Name="C:\Documents and Settings\t400\Application Data\Microsoft\Office\Recent"/>
+                <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\doc"/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="Excel痕迹">
+                <DelDir Name=""/>
+                <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\xls"/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="Access痕迹">
+                <DelDir Name=""/>
+                <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\acs"/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="PowerPoint痕迹">
+                <DelDir Name=""/>
+                <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\ppt"/>
+                <DelFile Name=""/>
+            </Node>
+            <Node Name="FrontPage痕迹">
+                <DelDir Name=""/>
+                <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\ppt"/>
+                <DelFile Name=""/>
+            </Node>
+        </Node>
+        <Node Name="AcrobatReader使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\pdf"/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="UltraEdit使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\TXT"/>
+            <DelFile Name=""/>
+        </Node>
+    </Node>
+    <Node Name="图形处理软件运行痕迹">
+        <Node Name="WINDOWS附件画图软件使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Applets\Paint\Recent File List"/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="ACDSee使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="PhotoShop使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+    </Node>
+    <Node Name="媒体播放软件运行痕迹">
+        <Node Name="MediaPlayer使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\MediaPlayer\Player\RecentFileList"/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="QuiteTime使用痕迹">
+            <DelDir Name="C:\Documents and Settings\t400\Local Settings\Application Data\Apple Computer\QuickTime"/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="RealPlayer使用痕迹">
+            <DelDir Name="C:\Documents and Settings\t400\Application Data\Real\RealPlayer"/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="Winamp使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="FlashPlayer使用痕迹">
+            <DelDir Name="C:\Documents and Settings\t400\Application Data\Macromedia\Flash Player"/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+    </Node>
+    <Node Name="压缩工具运行痕迹">
+        <Node Name="WinRar使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\WinRAR\ArcHistory"/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="WinZip使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\WinZIP\ArcHistory"/>
+            <DelFile Name=""/>
+        </Node>
+    </Node>
+    <Node Name="杀毒和防火墙软件运行痕迹">
+        <Node Name="ZoneAlarm使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\ZoneAlarm"/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="NOD32使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\NOD32"/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="AntiVir使用痕迹">
+            <DelDir Name="C:\Documents and Settings\All Users\Application Data\avg8"/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+    </Node>
+    <Node Name="下载软件运行痕迹">
+        <Node Name="影音传送带使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="FlashGet使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="NetAnts使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="IE下载痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="Orbit使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+    </Node>
+    <Node Name="光盘刻录软件运行痕迹">
+        <Node Name="Nero使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="Alcohol使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="Easy-CD-Creator使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="UltraIso使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+        <Node Name="DVD-Shrink使用痕迹">
+            <DelDir Name=""/>
+            <DelReg Name=""/>
+            <DelFile Name=""/>
+        </Node>
+    </Node>
+    <Node Name="回收站清理">
+        <DelDir Name=""/>
+        <DelReg Name=""/>
+        <DelFile Name=""/>
+    </Node>
+    <Node Name="WINDOWS系统还原痕迹">
+        <DelDir Name=""/>
+        <DelReg Name=""/>
+        <DelFile Name=""/>
+    </Node>
+    <Node Name="WINDOWS隐藏不活动图标痕迹">
+        <DelDir Name=""/>
+        <DelReg Name=""/>
+        <DelFile Name=""/>
+    </Node>
+</Node>

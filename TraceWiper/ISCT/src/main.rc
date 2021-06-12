@@ -1,0 +1,243 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "commctrl.h"
+#include "richedit.h"
+#include "main.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""commctrl.h""\r\n"
+    "#include ""richedit.h""\r\n"
+    "#include ""main.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DISKSCAN DIALOGEX 0, 0, 546, 247
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_LEFTSCROLLBAR
+CAPTION "基本涉密检测"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "搜索",DISKSCAN_IDSEARCH,13,226,50,14
+    PUSHBUTTON      "取消",DISKSCAN_IDCANCEL,71,226,50,14
+    CONTROL         "Custom control",IDC_DISKSCANLIST,"DGridVwClass",
+                    WS_TABSTOP,161,7,378,215,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_BASICTREE,"SysTreeView32",TVS_NOSCROLL | 
+                    WS_BORDER | WS_TABSTOP,7,29,150,195
+    LTEXT           "关键字",IDC_STATIC,8,12,33,11
+    EDITTEXT        IDC_KEYWORDS,49,11,106,12,ES_AUTOHSCROLL
+    LTEXT           "搜索结果:",IDC_STATIC_BASIC,162,224,377,16
+END
+
+IDD_DISKFULLSCAN DIALOGEX 0, 0, 546, 346
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "全面涉密检测"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",DISKFULLSCAN__IDOK,7,325,50,14
+    PUSHBUTTON      "取消",DISKFULLSCAN__IDCANCEL,112,325,50,14
+    CONTROL         "Custom control",IDC_DISKFULLSCANLIST,"DGridVwClass",
+                    WS_TABSTOP,161,7,378,117,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_FULLTREE,"SysTreeView32",TVS_NOSCROLL | WS_BORDER | 
+                    WS_TABSTOP,7,7,150,293
+    DEFPUSHBUTTON   "停止",DISKFULLSCAN_IDSTOP,59,325,50,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,7,313,532,
+                    7
+    DEFPUSHBUTTON   "上一扇区",DISKFULLSCAN__PRESECTOR,233,296,50,14
+    DEFPUSHBUTTON   "下一扇区",DISKFULLSCAN__NEXTSECTOR,290,296,50,14
+    CONTROL         "",IDC_RICHEDIT21,"RichEdit20A",ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP,161,129,378,79,
+                    WS_EX_LEFTSCROLLBAR
+    CONTROL         "",IDC_RICHEDIT22,"RichEdit20A",ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP,161,214,378,79,
+                    WS_EX_LEFTSCROLLBAR
+END
+
+IDD_DISKDEEPSCAN DIALOGEX 0, 0, 546, 247
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "深度检测"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "开始",DISKDEEPSCAN_IDSTART,13,226,50,14
+    PUSHBUTTON      "取消",DISKSCAN_IDCANCEL,71,226,50,14
+    CONTROL         "Custom control",IDC_DISKDEEPSCANLIST,"DGridVwClass",
+                    WS_TABSTOP,161,7,378,213,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_DEEPTREE,"SysTreeView32",TVS_NOSCROLL | WS_BORDER | 
+                    WS_TABSTOP,7,7,150,213
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,161,225,
+                    378,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DISKSCAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 539
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_DISKFULLSCAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 539
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 339
+    END
+
+    IDD_DISKDEEPSCAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 539
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_MAIN DIALOGEX 6, 18, 565, 329
+STYLE DS_ABSALIGN | DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "安全评分设置"
+CLASS "SDKDataGClass"
+FONT 8, "宋体-18030", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Data Grids",IDC_GRIDLINES,4,4,66,15
+    PUSHBUTTON      "Resize Col",IDC_RESIZE_COL,4,24,65,15
+    PUSHBUTTON      "Back Clr",IDC_COLOR_BK,4,44,65,15
+    PUSHBUTTON      "Text Clr",IDC_TXT_CLR,4,64,65,15
+    PUSHBUTTON      "Alt Text Clr",IDC_ALT_TXT_CLR,4,84,64,15
+    PUSHBUTTON      "Alt Row Clr",IDC_ALT_CLR_ROW,4,104,64,15
+    PUSHBUTTON      "Alt Col Clr",IDC_ALT_CLR_COL,4,124,67,15
+    PUSHBUTTON      "Editor Clr",IDC_COLOR_EDIT,4,144,66,15
+    PUSHBUTTON      "Editor Text Clr",IDC_TXTCOLOR_EDIT,4,164,65,15
+    PUSHBUTTON      "Row Headers",IDC_ROWHDR,4,184,65,15
+    PUSHBUTTON      "+",IDC_PLUS,4,266,16,15
+    PUSHBUTTON      "-",IDC_MINUS,32,266,16,15
+    CONTROL         "Custom control",IDC_GRID,"DGridVwClass",WS_TABSTOP,100,
+                    0,465,275,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Commit",IDC_BUTTON1,2,215,50,14
+    PUSHBUTTON      "Cancel",IDC_BUTTON2,2,240,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    DLG_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 531
+        BOTTOMMARGIN, 281
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_ICO_MAIN            ICON                    "main.ico"
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

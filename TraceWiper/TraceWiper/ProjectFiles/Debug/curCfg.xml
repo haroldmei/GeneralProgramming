@@ -1,0 +1,259 @@
+<Node Name="计算机使用痕迹清除" Checked="1">
+    <Node Name="上网记录" Checked="1">
+        <Node Name="IE浏览器痕迹" Checked="1">
+            <Node Name="WEB缓存" Checked="1">
+                <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders: Cache"/>
+            </Node>
+        
+            <Node Name="WEB历史记录" Checked="1">
+                <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders:History"/>
+                <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TypedUrls"/>
+            </Node>
+        
+            <Node Name="URL下拉列表" Checked="1">
+                <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders: Cookies"/>
+            </Node>
+        
+            <Node Name="COOKIE记录" Checked="1">
+                <DelDir Name="C:\Documents and Settings\t400\Local Settings\Temporary Internet Files"/>
+            </Node>
+        </Node>
+    </Node>
+
+    <Node Name="拨号连接删除" Checked="1">
+        <DelDir Name=""/>
+        <DelReg Name=""/>
+        <DelFile Name=""/>
+    </Node>
+
+    <Node Name="共享目录禁止" Checked="1">
+        <DelDir Name=""/>
+        <DelReg Name=""/>
+        <DelFile Name=""/>
+    </Node>
+
+    <Node Name="U盘使用痕迹" Checked="1">
+        <DelReg Name="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\DeviceClasses\{53f56307-b6bf-11d0-94f2-00a0c91efb8b}"/>
+        <DelReg Name="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet003\Control\DeviceClasses\{a5dcbf10-6530-11d2-901f-00c04fb951ed}"/>
+        <DelReg Name="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\DeviceClasses\{a5dcbf10-6530-11d2-901f-00c04fb951ed}"/>
+        <DelReg Name="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\DeviceClasses\{a5dcbf10-6530-11d2-901f-00c04fb951ed}"/>
+        <Unknown Name="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB,all"/>
+        <Unknown Name="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet003\Enum\USB,all"/>
+        <Unknown Name="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Enum\USB,all"/>
+        <Unknown Name="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\USB,all"/>
+        <Unknown Name="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USBSTOR,all"/>
+        <Unknown Name="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet003\Enum\USBSTOR,all"/>
+        <Unknown Name="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Enum\USBSTOR,all"/>
+        <Unknown Name="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\USBSTOR,all"/>
+    </Node>
+
+    <Node Name="回收站清理" Checked="1">
+        <DelDir Name="C:\RECYCLER"/>
+        <DelDir Name="D:\RECYCLER"/>
+        <DelDir Name="E:\RECYCLER"/>
+        <DelDir Name="F:\RECYCLER"/>
+    </Node>
+
+    <Node Name="WINDOWS运行痕迹" Checked="1">
+        <Node Name="最近访问文件" Checked="1">
+            <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Search Assistant\ACMru\5604"/>
+            <DelDir Name="C:\Documents and Settings\t400\Recent"/>
+        </Node>
+    
+        <Node Name="开始-运行痕迹" Checked="1">
+            <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU"/>
+        </Node>
+    
+        <Node Name="开始-搜索文件痕迹" Checked="1">
+            <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Search Assistant\ACMru\5603"/>
+        </Node>
+    
+        <Node Name="开始-搜索计算机痕迹" Checked="1">
+            <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Search Assistant\ACMru\5647"/>
+        </Node>
+    
+        <Node Name="WINDOWS预读文件痕迹" Checked="1">
+            <DelDir Name="%SystemRoot%\Prefetch"/>
+        </Node>
+    
+        <Node Name="临时文件痕迹" Checked="1">
+            <DelDir Name="C:\WINDOWS\Temp"/>
+            <DelDir Name="%AppData%\Temp"/>
+        </Node>
+    
+        <Node Name="WINDOWS事件日志" Checked="1">
+            <DelDir Name="C:\WINDOWS\system32\wbem\Logs\*.log"/>
+            <DelDir Name="C:\WINDOWS\*.log"/>
+            <DelDir Name="C:\Documents and Settings\All Users\Application Data\Microsoft\ *.log"/>
+            <DelDir Name="C:\WINDOWS\Debug\*.log"/>
+            <DelDir Name="C:\WINDOWS\security\logs"/>
+        </Node>
+    </Node>
+
+    <Node Name="应用软件痕迹" Checked="1">
+        <Node Name="文字处理文件" Checked="1">
+            <Node Name="WINDOWS写字板使用痕迹" Checked="1">
+                <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\rtf"/>
+            </Node>
+        
+            <Node Name="OFFICE使用痕迹" Checked="1">
+                <DelDir Name="C:\Documents and Settings\t400\Application Data\Microsoft\Office\Recent"/>
+                <Node Name="word痕迹" Checked="1">
+                    <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\doc"/>
+                    <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\docx"/>
+                </Node>
+            
+                <Node Name="Excel痕迹" Checked="1">
+                    <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\xls"/>
+                    <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\xlsx"/>
+                </Node>
+            
+                <Node Name="Access痕迹" Checked="1">
+                    <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\acs"/>
+                    <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\acsx"/>
+                </Node>
+            
+                <Node Name="PowerPoint痕迹" Checked="1">
+                    <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\ppt"/>
+                    <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\pptx"/>
+                </Node>
+            </Node>
+        
+            <Node Name="AcrobatReader使用痕迹" Checked="1">
+                <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\pdf"/>
+            </Node>
+        </Node>
+    
+        <Node Name="图形处理文件" Checked="1">
+            <Node Name="WINDOWS附件画图软件使用痕迹" Checked="1">
+                <DelReg Name="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Paint\Recent File List"/>
+            </Node>
+        
+            <Node Name="ACDSee使用痕迹" Checked="1">
+                <Unknown Name="DelRegKeyList=HKEY_LOCAL_MACHINE\SOFTWARE\ACD Systems\PlugIns\InfoCache,all"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\ACD Systems\ACDSee32,OpenFolder,LastFolder,HistPaths"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\ACD Systems\ACDSee\50,OpenFolder,HistMCFDestFolder,HistPaths,HistSearchText,HistFileFilters,LastFolder,ImageDB"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\ACD Systems\ACDSee,LastFolder,OpenFolder,Favorites,ImageDB,HistPaths,HistMCFDestFolder"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\ACD Systems\FotoCanvas\20\Recent File List,all"/>
+                <DelFile Name="%AppData%\ACD Systems\ACDSee\imageDB.*,,"/>
+                <DelFile Name="%AppData%\ACD Systems\ImageDB\*.*,FilesFolders"/>
+            </Node>
+        </Node>
+    
+        <Node Name="媒体播放文件" Checked="1">
+            <Node Name="QuiteTime使用痕迹" Checked="1">
+                <DelDir Name="C:\Documents and Settings\t400\Local Settings\Application Data\Apple Computer\QuickTime"/>
+                <Unknown Name="HKEY_LOCAL_MACHINE\SOFTWARE\Apple Computer, Inc.\QuickTime\Recent Movies,all"/>
+            </Node>
+        
+            <Node Name="RealPlayer使用痕迹" Checked="1">
+                <DelDir Name="C:\Documents and Settings\t400\Application Data\Real\RealPlayer"/>
+                <Unknown Name="HKEY_USERS\S-1-5-21-1935655697-839522115-682003330-500\Software\RealNetworks\RealPlayer\6.0\Preferences,LastOpenFileDir"/>
+                <Unknown Name="HKEY_CURRENT_USER\software\realnetworks\realplayer\6.0\preferences,openlocationclips1,openlocationclips2,openlocationclips3,openlocationclips4,openlocationclips5,openlocationclips6,openlocationclips7,openlocationclips8"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\RealNetworks\RealJukebox\1.0\Preferences,ImportWizardPath"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences,LastOpenFileDir"/>
+                <Unknown Name="HKEY_CURRENT_USER\software\realnetworks\realplayer\6.0\preferences,historylist"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences,MostRecentClips1,MostRecentClips2,MostRecentClips3,MostRecentClips4,MostRecentClips5,MostRecentClips6,MostRecentClips7,MostRecentClips8"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\RealNetworks\RealDownload\4.0\Jobs,"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\RealNetworks\RealDownload\4.0\URL History,"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\DownloadDir,"/>
+                <DelFile Name="%ALLUSERSPROFILE%\Application Data\Real\RealOne Player\cookies.txt,,"/>
+                <DelFile Name="%ALLUSERSPROFILE%\Application Data\Real\RealOne Player\ctd.dat,,"/>
+                <DelFile Name="%ALLUSERSPROFILE%\Application Data\Real\RealOne Player\History\*.*,FilesFolders"/>
+                <DelFile Name="%ALLUSERSPROFILE%\Application Data\Real\RealOne Player\realplayer.ste,,"/>
+                <DelFile Name="%ALLUSERSPROFILE%\Application Data\Real\RealOne Player\Temp\*.*,FilesFolders"/>
+                <DelFile Name="%ALLUSERSPROFILE%\Application Data\Real\RealOne Player\urls.ini,,"/>
+                <DelFile Name="%AppData%\Real\Msg\*.*"/>
+                <DelFile Name="%COMMONPROGRAMFILES%\Real\Common\cookies.txt"/>
+                <DelFile Name="%LocalAppData%\Real\RealPlayer\*.*"/>
+                <DelFile Name="%LocalAppData%\Real\RealPlayer\db\*.*,FilesFolders"/>
+                <DelFile Name="%LocalAppData%\Real\RealPlayer\ErrorLogs\*.*"/>
+                <DelFile Name="%LocalAppData%\Real\RealPlayer\History\*.*,FilesFolders"/>
+                <DelFile Name="%LocalAppData%\Real\RealPlayer\PMP\*.*,FilesFolders"/>
+                <DelFile Name="%LocalAppData%\Real\RealPlayer\Temp\*.*,FilesFolders"/>
+            </Node>
+        
+            <Node Name="Winamp使用痕迹" Checked="1">
+                <DelFile Name="%PROGRAMFILES%\Winamp\*.m3u,,"/>
+                <DelFile Name="%PROGRAMFILES%\Winamp\*.m3u8,,"/>
+                <DelFile Name="%PROGRAMFILES%\Winamp\Plugins\ml\main.dat,,"/>
+                <DelFile Name="%PROGRAMFILES%\Winamp\Plugins\ml\main.idx,,"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\Winamp.ini,Winamp\cwd\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\Winamp.ini,Winamp\last_short\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL1\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL10\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL11\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL12\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL13\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL14\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL15\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL16\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL2\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL3\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL4\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL5\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL6\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL7\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL8\"/>
+                <Unknown Name="%PROGRAMFILES%\Winamp\winamp.ini,Winamp\RecentURL9\"/>
+            </Node>
+        
+            <Node Name="FlashPlayer使用痕迹" Checked="1">
+                <DelDir Name="%ALLUSERSPROFILE%\Application Data\Macromedia\Flash Player"/>
+            </Node>
+        </Node>
+    
+        <Node Name="压缩工具文件" Checked="1">
+            <Node Name="WinRar使用痕迹" Checked="1">
+                <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\WinRAR\ArcHistory"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\WinRAR\DialogEditHistory,"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\WinRAR\Compression,deffolder"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\WinRAR\Paths,startfolder"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\WinRAR\Extraction,lastfolder"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\WinRAR\Extraction,deffolder"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\WinRAR\ArcHistory,all"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\WinRAR SFX,all"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\WinRAR\General,LastFolder"/>
+            </Node>
+        </Node>
+    
+        <Node Name="杀毒和防火墙" Checked="1">
+            <Node Name="ZoneAlarm使用痕迹" Checked="1">
+                <DelDir Name=""/>
+                <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\ZoneAlarm"/>
+                <DelFile Name=""/>
+            </Node>
+        
+            <Node Name="NOD32使用痕迹" Checked="1">
+                <DelReg Name="HKEY_USERS\S-1-5-21-1409082233-861567501-725345543-1003\Software\NOD32"/>
+            </Node>
+        
+            <Node Name="AntiVir使用痕迹" Checked="1">
+                <DelDir Name="%ALLUSERSPROFILE%\Application Data\avg8"/>
+                <DelFile Name="%ALLUSERSPROFILE%\Application Data\Avira\AntiVir PersonalEdition Classic\EVENTDB\*.dbe,,"/>
+                <DelFile Name="%ALLUSERSPROFILE%\Application Data\Avira\AntiVir PersonalEdition Classic\REPORTS\*.avl,SubFolder"/>
+            </Node>
+        </Node>
+    
+        <Node Name="光盘刻录软件" Checked="1">
+            <Node Name="Nero使用痕迹" Checked="1">
+                <Unknown Name="HKEY_CURRENT_USER\Software\Nero\Nero7\Nero WaveEditor\Recent File List,all"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\Ahead\Nero WaveEditor\Directories,Last"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\Nero\Nero8\Nero WaveEditor\Recent File List,all"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\Ahead\Nero WaveEditor\Recent File List,all"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\Nero\Nero8\Nero WaveEditor\Directories,Last"/>
+            </Node>
+        
+            <Node Name="Alcohol使用痕迹" Checked="1">
+                <Unknown Name="HKEY_CURRENT_USER\Software\Alcohol Soft\Alcohol 120%\MountedMRU,all"/>
+            </Node>
+        
+            <Node Name="UltraIso使用痕迹" Checked="1">
+                <Unknown Name="HKEY_CURRENT_USER\Software\EasyBoot Systems\UltraISO\5.0,reopen"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\EasyBoot Systems\UltraISO\5.0,a,b,c,d,e"/>
+                <Unknown Name="HKEY_CURRENT_USER\Software\EasyBoot Systems\UltraISO\5.0,OpenFolder"/>
+                <DelFile Name="%PROGRAMFILES%\UltraISO\checklog.txt,,"/>
+            </Node>
+        </Node>
+    </Node>
+</Node>

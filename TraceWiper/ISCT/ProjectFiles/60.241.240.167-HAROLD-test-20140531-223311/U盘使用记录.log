@@ -1,0 +1,6 @@
+@disk.inf,%disk_devdesc%;Disk drive
+General USB Flash Disk USB Device
+02525900000006FC&0
+@disk.inf,%disk_devdesc%;Disk drive
+Myson SD/MMC/MS Reader USB Device
+000100000000&0

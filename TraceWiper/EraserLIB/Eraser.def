@@ -1,0 +1,60 @@
+; Eraser.def : Declares the module parameters for the DLL.
+
+LIBRARY      "WINERASER"
+;DESCRIPTION  'WinEraser Library'
+
+EXPORTS
+    eraserInit
+    eraserEnd
+    eraserCreateContext
+    eraserCreateContextEx
+    eraserDestroyContext
+    eraserIsValidContext
+    eraserSetDataType
+    eraserGetDataType
+    eraserAddItemA
+    eraserAddItemW
+    eraserClearItems
+    eraserSetWindow
+    eraserGetWindow
+    eraserSetWindowMessage
+    eraserGetWindowMessage
+    eraserStatGetArea
+    eraserStatGetTips
+    eraserStatGetWiped
+    eraserStatGetTime
+    eraserDispFlags
+    eraserProgGetTimeLeft
+    eraserProgGetPercent
+    eraserProgGetTotalPercent
+    eraserProgGetCurrentPass
+    eraserProgGetPasses
+    eraserProgGetMessageA
+    eraserProgGetMessageW
+    eraserProgGetCurrentDataStringA
+    eraserProgGetCurrentDataStringW
+    eraserStart
+    eraserStartSync
+    eraserStop
+    eraserIsRunning
+    eraserCompleted
+    eraserFailed
+    eraserTerminated
+    eraserErrorStringCount
+    eraserErrorStringA
+    eraserErrorStringW
+    eraserFailedCount
+    eraserFailedStringA
+    eraserFailedStringW
+    eraserShowReport
+    eraserShowOptions
+    eraserRemoveFileA
+    eraserRemoveFileW
+    eraserRemoveFolderA
+    eraserRemoveFolderW
+    eraserGetFreeDiskSpaceA
+    eraserGetFreeDiskSpaceW
+    eraserGetClusterSizeA
+    eraserGetClusterSizeW
+    eraserTestEnable
+    eraserTestContinueProcess

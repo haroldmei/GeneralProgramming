@@ -1,0 +1,1307 @@
+<?xml version="1.0" encoding="GB2312" standalone="no" ?>
+<root>
+
+<treenode name="软件信息检测" checked="0">
+<subtreenode name="下载类软件信息">
+<node name="网络蚂蚁" checked="1"><!--节点显示名称-->
+<title name="软件名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\NetAnts">
+    	<Field type="STRING" action="READ">
+    		DisplayName
+    	</Field>
+    </Key>
+</title>
+<title name="版本号">
+    <Key access="TEXT" key="1.0版本以上">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<title name="安装路径">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\NetAnts">
+    	<Field type="STRING" action="READ">
+    		UninstallString
+    	</Field>
+    </Key>
+</title>
+</node>
+
+<node name="网际快车" checked="0">
+<title name="软件名称">
+    <Key access="TEXT" key="网际快车">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<title name="版本号">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\FlashGet Network\Flashget 3">
+    	<Field type="STRING" action="READ">
+    		Version1
+    	</Field>
+    </Key>
+</title>
+<title name="安装路径">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\FlashGet Network\Flashget 3">
+    	<Field type="STRING" action="READ">
+    		Path
+    	</Field>
+    </Key>
+</title>
+</node>
+
+<node name="BT" checked="0"><!--节点显示名称-->
+<title name="软件名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BitComet">
+    	<Field type="STRING" action="READ">
+    		DisplayName
+    	</Field>
+    </Key>
+</title>
+<title name="版本号">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BitComet">
+    	<Field type="STRING" action="READ">
+    		DisplayVersion
+    	</Field>
+    </Key>
+</title>
+<title name="安装路径">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BitComet">
+    	<Field type="STRING" action="READ">
+    		UninstallString
+    	</Field>
+    </Key>
+</title>
+</node>
+
+<node name="电驴" checked="0"><!--节点显示名称-->
+<title name="软件名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\easyMule"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">
+    		DisplayName
+    	</Field>
+    </Key>
+</title>
+<title name="版本号">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\easyMule"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">
+    		Version1
+    	</Field>
+    </Key>
+</title>
+<title name="安装路径">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\easyMule"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">
+    		UninstallString
+    	</Field>
+    </Key>
+</title>
+</node>
+
+<node name="自定义下载软件" checked="0"><!--节点显示名称-->
+<title name="软件名称">
+    <Key access="TEXT" key="未定义"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">
+    		DisplayName
+    	</Field>
+    </Key>
+</title>
+<title name="版本号">
+    <Key access="TEXT" key="未定义"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">
+    		Version1
+    	</Field>
+    </Key>
+</title>
+<title name="安装路径">
+    <Key access="TEXT" key="未定义"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">
+    		UninstallString
+    	</Field>
+    </Key>
+</title>
+</node>
+</subtreenode>
+
+<subtreenode name="通信类软件信息">
+<node name="腾讯QQ" checked="0"><!--节点显示名称-->
+<title name="软件名称">
+    <Key access="TEXT" key="腾讯QQ"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<title name="版本号">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Tencent\QQ2009"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">
+    		version
+    	</Field>
+    </Key>
+</title>
+<title name="安装路径">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Tencent\QQ2009"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">Install</Field>
+    </Key>
+</title>
+</node>
+
+<node name="网易泡泡" checked="0"><!--节点显示名称-->
+<title name="软件名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\网易POPO"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">DisplayName</Field>
+    </Key>
+</title>
+<title name="版本号">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\网易POPO"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">DisplayVersion</Field>
+    </Key>
+</title>
+<title name="安装路径">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\网易POPO"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">UninstallString</Field>
+    </Key>
+</title>
+</node>
+
+<node name="淘宝旺旺" checked="0"><!--节点显示名称-->
+<title name="软件名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\阿里旺旺2009 正式版SP2"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">DisplayName</Field>
+    </Key>
+</title>
+<title name="版本号">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\阿里旺旺2009 正式版SP2"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">DisplayVersion</Field>
+    </Key>
+</title>
+<title name="安装路径">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\阿里旺旺2009 正式版SP2"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">UninstallString</Field>
+    </Key>
+</title>
+</node>
+
+<node name="SKYPE" checked="0"><!--节点显示名称-->
+<title name="软件名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TOMSkypeData_is1"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">DisplayName</Field>
+    </Key>
+</title>
+<title name="版本号">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TOMSkypeData_is1"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">DisplayVersion</Field>
+    </Key>
+</title>
+<title name="安装路径">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TOMSkypeData_is1"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">InstallLocation</Field>
+    </Key>
+</title>
+</node>
+
+<node name="自定义通信类软件" checked="0"><!--节点显示名称-->
+<title name="软件名称">
+    <Key access="TEXT" key="未定义"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">
+    		DisplayName
+    	</Field>
+    </Key>
+</title>
+<title name="版本号">
+    <Key access="TEXT" key="未定义"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">
+    		Version1
+    	</Field>
+    </Key>
+</title>
+<title name="安装路径">
+    <Key access="TEXT" key="未定义"><!--通过注册表获取如下信息-->
+    	<Field type="STRING" action="READ">
+    		UninstallString
+    	</Field>
+    </Key>
+</title>
+</node>
+</subtreenode>
+</treenode>
+
+<treenode name="计算机使用痕迹检测" checked="0">
+<subtreenode name="IE浏览器使用痕迹">
+<node name="WEB 缓存" checked="0">
+<title name="URL地址">
+    <Key access="API" key="">
+        <Field type="STRING" action="IE_WEBCACHE_URL">*</Field>
+    </Key>
+</title>
+<title name="最近访问时间">
+     <Key access="API" key="">
+     	<Field type="STRING" action="IE_WEBCACHE_TIME">*</Field>
+     </Key>
+</title>
+</node>
+<node name="WEB 历史记录" checked="0">
+<title name="URL标题">
+    <Key access="API" key="">
+    	<Field type="STRING" action="IE_HISTORY_TITLE">*</Field>
+    </Key>
+</title>
+<title name="URL地址">
+    <Key access="API" key="">
+    	<Field type="STRING" action="IE_HISTORY_URL">*</Field>
+    </Key>
+</title>
+<title name="最近访问时间">
+    <Key access="API" key="NULL">
+    	<Field type="STRING" action="IE_HISTORY_TIME">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="URL 下拉列表" checked="0">
+<title name="URL编号">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TypedUrls">
+    	<Field type="STRING" action="READALLFIELDS">*</Field>
+    </Key>
+</title>
+<title name="URL地址">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TypedUrls">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="COOKIE记录" checked="0">
+<title name="URL地址">
+<!--
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+-->
+    <Key access="API" key="">
+    	<Field type="STRING" action="IE_COOKIE_URL">*</Field>
+    </Key>
+</title>
+<title name="最近访问时间">
+    <Key access="API" key="NULL">
+    	<Field type="STRING" action="IE_COOKIE_TIME">*</Field>
+    </Key>
+</title>
+</node>
+</subtreenode>
+
+
+<subtreenode name="FIREFOX浏览器使用痕迹">
+<node name="FIREFOX WEB 缓存" checked="0">
+<title name="URL地址">
+    <Key access="API" key="">
+        <Field type="STRING" action="READ">Cache</Field>
+    </Key>
+</title>
+<title name="最近访问时间">
+     <Key access="API" key="NULL">
+     </Key>
+</title>
+</node>
+
+<node name="FIREFOX WEB 历史记录" checked="0">
+<title name="URL地址">
+    <Key access="API" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders">
+    	<Field type="STRING" action="READ">Cache</Field>
+    </Key>
+</title>
+<title name="最近访问时间">
+    <Key access="API" key="NULL">
+    </Key>
+</title>
+</node>
+
+<node name="FIREFOX URL 下拉列表" checked="0">
+<title name="URL编号">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TypedUrls">
+    	<Field type="STRING" action="READALLFIELDS">*</Field>
+    </Key>
+</title>
+<title name="URL地址">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TypedUrls">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="FIREFOX COOKIE记录" checked="0">
+<title name="URL地址">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders">
+    	<Field type="STRING" action="READ">
+    		*
+    	</Field>
+    </Key>
+</title>
+<title name="最近访问时间">
+    <Key access="API" key="">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+</subtreenode>
+
+<subtreenode name="最近文件信息检测" checked="0">
+<node name="字处理软件文件信息" checked="0">
+<title name="文件信息">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\doc">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="图形处理软件文件信息" checked="0">
+<title name="文件信息">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\gif">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\jpg">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="媒体播放软件文件信息" checked="0">
+<title name="文件信息">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\wma">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\mp3">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\wav">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\mp4">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="压缩工具文件信息" checked="0">
+<title name="文件信息">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\rar">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\zip">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="杀毒软件文件信息" checked="0">
+<title name="文件信息">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\xxx">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="下载软件文件信息" checked="0">
+<title name="文件信息">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\xxx">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="光盘刻录文件信息" checked="0">
+<title name="文件信息">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\iso">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="自定义文件信息" checked="0">
+<title name="文件信息">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\userXXX">
+    	<Field type="DWORD" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+</subtreenode>
+
+<subtreenode name="Windows痕迹检测" checked="0">
+<node name="开始/运行痕迹信息" checked="0">
+<title name="开始/运行痕迹信息">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="开始/搜索痕迹信息" checked="0">
+<title name="开始/搜索痕迹信息">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Search Assistant\ACMru\5603">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="开始/搜索计算机痕迹信息" checked="0">
+<title name="开始/搜索计算机痕迹信息">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Search Assistant\ACMru\5647">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="开始/文档痕迹信息" checked="0">
+<title name="开始/文档痕迹信息">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Search Assistant\ACMru\5604">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="Windows文档列表痕迹信息" checked="0">
+<title name="文档列表痕迹信息">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\*">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="运行程序时产生的临时文件信息" checked="0">
+<title name="文件路径">
+    <Key access="API" key="">
+    	<Field type="STRING" action="PROG_TEMP_FILE">*.bak;*.chk;*.fts;*.tmp;*.old;*.xlk</Field><!--此处以分号分隔-->
+    </Key>
+</title>
+</node>
+
+<node name="Windows事件和应用程序日志" checked="0"><!--此处还有问题，待完善-->
+<title name="事件和应用程序日志">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application">
+    	<Field type="STRING" action="READSUBKEY">EventMessageFile</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Security">
+    	<Field type="STRING" action="READSUBKEY">ParameterMessageFile</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\System">
+    	<Field type="STRING" action="READSUBKEY">EventMessageFile</Field>
+    </Key>
+</title>
+<!--
+<title name="安全">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Security">
+    	<Field type="STRING" action="READSUBKEY">ParameterMessageFile</Field>
+    </Key>
+</title>
+<title name="系统">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\System">
+    	<Field type="STRING" action="READSUBKEY">EventMessageFile</Field>
+    </Key>
+</title>
+-->
+</node>
+
+<node name="Windows预读文件痕迹" checked="0">
+<title name="Windows预读文件信息">
+<!--
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management">
+    	<Field type="STRING" action="READ">Application</Field>
+    </Key>
+-->
+    <Key access="API" key="%SystemRoot%\Prefetch">
+    	<Field type="STRING" action="WIN_PRE_READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="自定义痕迹信息" checked="0">
+<title name="自定义痕迹">
+    <Key access="REGISTER" key="USER_DEFINED">
+    	<Field type="STRING" action="USER_DEFINED">*</Field>
+    </Key>
+</title>
+</node>
+</subtreenode>
+
+<subtreenode name="U盘使用记录检测" checked="0">
+<node name="U盘使用记录检测" checked="0">
+<title name="设备类型">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\USBSTOR"><!--此处需作特殊处理-->
+    	<Field type="STRING" action="USB_CLASS">DeviceDesc</Field>
+    </Key>
+</title>
+<title name="设备型号">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\USBSTOR">
+    	<Field type="STRING" action="USB_TYPE">FriendlyName</Field>
+    </Key>
+</title>
+<title name="硬件ID">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\USBSTOR">
+    	<Field type="STRING" action="USB_HARDWAREID">HardwareID</Field>
+    </Key>
+</title>
+</node>
+</subtreenode>
+
+<subtreenode name="交叉检测" checked="0">
+<node name="交叉检测" checked="0">
+	<title name="检测结果">
+    <Key access="API" key="">
+    	<Field type="STRING" action="UDISK_CROSS_DETECT">*</Field>
+    </Key>
+  </title>
+</node>
+</subtreenode>
+</treenode>
+
+<treenode name="涉密信息检测" checked="0">
+<subtreenode name="涉密信息检测" checked="0">
+<node name="基本涉密信息检测" checked="0">
+<title name="名称">
+    <Key access="API" key="">
+    </Key>
+</title>
+<title name="所在文件夹">
+    <Key access="API" key="">
+    </Key>
+</title>
+<title name="大小">
+    <Key access="API" key="">
+    </Key>
+</title>
+<title name="打开时间">
+    <Key access="API" key="">
+    </Key>
+</title>
+</node>
+
+<node name="全面涉密信息检测" checked="0">
+<title name="偏移位置">
+    <Key access="API" key="">
+    </Key>
+</title>
+<title name="关键字">
+    <Key access="API" key="">
+    </Key>
+</title>
+<title name="扇区内容">
+    <Key access="API" key="">
+    </Key>
+</title>
+</node>
+
+<node name="深度检测" checked="0">
+<title name="URL地址">
+    <Key access="API" key="">
+    </Key>
+</title>
+<title name="访问时间">
+    <Key access="API" key="">
+    </Key>
+</title>
+</node>
+
+</subtreenode>
+</treenode>
+
+<treenode name="硬件信息检测" checked="0">
+<subtreenode name="基本信息检测" checked="0">
+<node name="CPU信息" checked="0">
+<title name="CPU名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\CentralProcessor\0">
+    	<Field type="STRING" action="READ">ProcessorNameString</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\CentralProcessor\1">
+    	<Field type="STRING" action="READ">ProcessorNameString</Field>
+    </Key>
+</title>
+<title name="CPU型号">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\CentralProcessor\0">
+    	<Field type="STRING" action="READ">Identifier</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\CentralProcessor\1">
+    	<Field type="STRING" action="READ">Identifier</Field>
+    </Key>
+</title>
+<title name="CPU频率(MHZ)">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\CentralProcessor\0">
+    	<Field type="DWORD" action="READ">~MHz</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\CentralProcessor\1">
+    	<Field type="DWORD" action="READ">~MHz</Field>
+    </Key>
+</title>
+</node>
+
+<node name="内存信息" checked="0">
+<title name="内存大小(M)">
+    <Key access="API" key="">
+    	<Field type="STRING" action="MEM_SIZE">*</Field>
+    </Key>
+</title>
+<title name="可用物理内存(M)">
+	  <Key access="API" key="">
+    	<Field type="STRING" action="MEM_AVAIL">*</Field>
+    </Key>
+</title>
+<title name="页面大小">
+	  <Key access="API" key="">
+    	<Field type="STRING" action="MEM_PAGESIZE">*</Field>
+    </Key>
+</title>
+<title name="内存分配粒度">
+	  <Key access="API" key="">
+    	<Field type="STRING" action="MEM_STEP">*</Field>
+    </Key>
+</title>
+<title name="应用程序开始地址">
+	  <Key access="API" key="">
+    	<Field type="STRING" action="MEM_APPSTART">*</Field>
+    </Key>
+</title>
+<title name="应用程序结束地址">
+	  <Key access="API" key="">
+    	<Field type="STRING" action="MEM_APPEND">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="硬盘信息" checked="0">
+<!--
+<title name="硬盘编号">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\IDE">
+    	<Field type="STRING" action="READ">LocationInformation</Field>
+    </Key>
+</title>
+<title name="硬盘型号">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\IDE">
+    	<Field type="STRING" action="READ">FriendlyName</Field>
+    </Key>
+</title>
+<title name="硬盘ID">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\IDE">
+    	<Field type="STRING" action="READ">HardwareID</Field>
+    </Key>
+</title>
+<title name="硬盘描述">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\IDE">
+    	<Field type="STRING" action="READ">DeviceDesc</Field>
+    </Key>
+</title>
+-->
+<title name="磁盘分区">
+    <Key access="API" key="">
+    	<Field type="STRING" action="HDISK_PARTITION">*</Field>
+    </Key>
+</title>
+<title name="磁盘类型">
+    <Key access="API" key="">
+    	<Field type="STRING" action="HDISK_TYPE">*</Field>
+    </Key>
+</title>
+<title name="可用空间">
+    <Key access="API" key="">
+    	<Field type="STRING" action="HDISK_AVAILSIZE">*</Field>
+    </Key>
+</title>
+<title name="总计空间">
+    <Key access="API" key="">
+    	<Field type="STRING" action="HDISK_TOTALSIZE">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="无线网卡信息" checked="0">
+<title name="描述">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network">
+    	<Field type="STRING" action="READ">Name</Field>
+    </Key>
+</title>
+<title name="硬件ID">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network">
+    	<Field type="STRING" action="READ">x</Field><!--硬件ID包含在键值中-->
+    </Key>
+</title>
+<!--说明:轮循Network分支下所有子健值，查询Connection键值，提取MediaSubType字段，若其值为2，则表示为无线网卡-->
+</node>
+
+<node name="无线上网卡信息" checked="0">
+<title name="设备描述">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Unimodem\DeviceSpecific">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<!--说明:该分支键值，参见设计文档描述-->
+</node>
+
+<node name="蓝牙设备信息" checked="0">
+<title name="名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class">
+    	<Field type="STRING" action="READ">BlueTooth</Field>
+    </Key>
+</title>
+<title name="设备ID">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<!--说明:Class分支下查找关键字为"BlueTooth"的分支，其对应的键值为class-->
+</node>
+
+<node name="红外设备信息" checked="0">
+<title name="名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class">
+    	<Field type="STRING" action="READ">Infrared</Field>
+    </Key>
+</title>
+<title name="设备ID">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<!--说明:Class分支下查找关键字为"Infrared"的分支，其对应的键值为class-->
+</node>
+</subtreenode>
+
+<subtreenode name="系统信息检测" checked="0">
+<node name="操作系统信息" checked="0">
+<title name="操作系统名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion">
+    	<Field type="STRING" action="READ">ProductName</Field>
+    </Key>
+</title>
+<title name="操作系统版本">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion">
+    	<Field type="STRING" action="READ">CurrentVersion</Field>
+    </Key>
+</title>
+<title name="安装时间">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion">
+    	<Field type="DWORD" action="READ">InstallDate</Field>
+    </Key>
+</title>
+<title name="系统路径">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion">
+    	<Field type="STRING" action="READ">PathName</Field>
+    </Key>
+</title>
+<title name="安装路径">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion">
+    	<Field type="STRING" action="READ">SourcePath</Field>
+    </Key>
+</title>
+<title name="产品序列号">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion">
+    	<Field type="STRING" action="READ">ProductId</Field>
+    </Key>
+</title>
+</node>
+
+<node name="网络配置信息" checked="0">
+<title name="适配器描述">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkCards">
+    	<Field type="STRING" action="READ">Description</Field>
+    </Key>
+</title>
+<title name="适配器名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkCards">
+    	<Field type="STRING" action="READ">ServiceName</Field>
+    </Key>
+</title>
+<title name="IP地址">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{%ServiceName%}">
+    	<Field type="STRING" action="READ">DhcpIPAddress</Field>
+    </Key>
+</title>
+<title name="网关">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{%ServiceName%}">
+    	<Field type="STRING" action="READ">DhcpDefaultGateway</Field>
+    </Key>
+</title>
+<title name="计算机名">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{%ServiceName%}">
+    	<Field type="STRING" action="READ">ComputerName</Field>
+    </Key>
+</title>
+</node>
+
+<node name="软件安装列表" checked="0">
+<title name="名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall">
+    	<Field type="STRING" action="READSUBKEY">DisplayName</Field>
+    </Key>
+</title>
+<title name="安装时间">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall">
+    	<Field type="STRING" action="READSUBKEY">InstallDate</Field>
+    </Key>
+</title>
+</node>
+
+<node name="用户信息" checked="0">
+<title name="名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SAM\SAM\Domains\Account\Users\Names">
+    	<Field type="STRING" action="READSUBKEY">*</Field>
+    </Key>,
+</title>
+</node>
+
+<node name="口令破解" checked="0">
+<title name="项目名称">
+    <Key access="API" key="">
+    	<!--<Field type="STRING" action="READ">subkey</Field>-->
+    </Key>
+</title>
+<title name="类型">
+    <Key access="API" key="">
+    	<!--<Field type="STRING" action="READ">subkey</Field>-->
+    </Key>
+</title>
+<title name="用户">
+    <Key access="API" key="">
+    	<!--<Field type="STRING" action="READ">subkey</Field>-->
+    </Key>
+</title>
+<title name="口令">
+    <Key access="API" key="">
+    	<!--<Field type="STRING" action="READ">subkey</Field>-->
+    </Key>
+</title>
+<title name="最后记录">
+    <Key access="API" key="">
+    	<!--<Field type="STRING" action="READ">subkey</Field>-->
+    </Key>
+</title>
+<title name="别名">
+    <Key access="API" key="">
+    	<!--<Field type="STRING" action="READ">subkey</Field>-->
+    </Key>
+</title>
+<title name="注释">
+    <Key access="API" key="">
+    	<!--<Field type="STRING" action="READ">subkey</Field>-->
+    </Key>
+</title>
+<title name="持续">
+    <Key access="API" key="">
+    	<!--<Field type="STRING" action="READ">subkey</Field>-->
+    </Key>
+</title>
+</node>
+
+<node name="IE账号" checked="0">
+<title name="资源名称">
+    <Key access="API" key="">
+    	<Field type="STRING" action="IE_RSCNAME">subkey</Field>
+    </Key>
+</title>
+<title name="资源类型">
+    <Key access="API" key="">
+    	<Field type="STRING" action="IE_RSCTYPE">subkey</Field>
+    </Key>
+</title>
+<title name="用户名">
+    <Key access="API" key="">
+    	<Field type="STRING" action="IE_USERID">subkey</Field>
+    </Key>
+</title>
+<title name="密码">
+    <Key access="API" key="">
+    	<Field type="STRING" action="IE_USERPWD">subkey</Field>
+    </Key>
+</title>
+</node>
+
+<node name="共享目录" checked="0">
+<title name="名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Shares">
+    	<Field type="STRING" action="READALLFIELDS">*</Field>
+    </Key>
+</title>
+<title name="目录">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Shares">
+    	<Field type="STRING" action="GetShares">*</Field>
+    </Key>
+</title>
+</node>
+</subtreenode>
+
+<subtreenode name="调制解调器信息检测" checked="0">
+<node name="基本信息" checked="0">
+<title name="绑定端口">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ras\Tapi Devices\Unimodem">
+    	<Field type="STRING" action="READ">Address</Field>
+    </Key>
+</title>
+<title name="设备描述">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ras\Tapi Devices\Unimodem">
+    	<Field type="STRING" action="READ">FriendlyName</Field>
+    </Key>
+</title>
+<title name="驱动程序版本">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ras\Tapi Devices\Unimodem">
+    	<Field type="STRING" action="READ">FriendlyName</Field>
+    </Key>
+</title>
+<title name="设备制造商">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ras\Tapi Devices\Unimodem">
+    	<Field type="STRING" action="READ">FriendlyName</Field>
+    </Key>
+</title>
+<title name="供应商名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ras\Tapi Devices\Unimodem">
+    	<Field type="STRING" action="READ">FriendlyName</Field>
+    </Key>
+</title>
+</node>
+
+<node name="拨号连接信息" checked="0">
+<title name="连接名">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RAS AutoDial\Default">
+    	<Field type="STRING" action="READ">DefaultInternet</Field>
+    </Key>
+</title>
+<title name="设备名">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ras\Tapi Devices\Unimodem">
+    	<Field type="STRING" action="READ">FriendlyName</Field>
+    </Key>
+</title>
+</node>
+</subtreenode>
+
+<subtreenode name="系统深度检测" checked="0">
+<node name="系统进程" checked="0">
+<title name="进程名">
+	  <Key access="API" key="">
+    	<Field type="STRING" action="SYS_PID_NAME">*</Field>
+    </Key>
+</title>
+<title name="进程ID">
+	  <Key access="API" key="">
+    	<Field type="STRING" action="SYS_PID">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="BHO" checked="0">
+<title name="键值">
+	  <!--there should be TEXT-->
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects">
+    	<Field type="STRING" action="READSUBKEYTOTALPATH">BHO</Field>
+    </Key>
+</title>
+<title name="项目名">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects">
+    	<Field type="STRING" action="BHO">BHO</Field>
+    </Key>
+</title>
+</node>
+
+<node name="SPI" checked="0">
+<title name="键值">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries">
+    	<Field type="STRING" action="READSUBKEYTOTALPATH">*</Field>
+    </Key>
+</title>
+<title name="项目名">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\*">
+    	<Field type="BINARY" action="READ">SPIProtocol</Field>
+    </Key>
+</title>
+<title name="启动文件名">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\*">
+    	<Field type="BINARY" action="READ">DLLFile</Field>
+    </Key>
+</title>
+<title name="属性">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\*">
+    	<Field type="BINARY" action="READ">Attr</Field>
+    </Key>
+</title>
+</node>
+
+<node name="启动组信息" checked="0">
+<title name="注册表项名">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\Setup">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<title name="注册表启动项目名">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run">
+    	<Field type="STRING" action="READALLFIELDS">*</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\Setup">
+    	<Field type="STRING" action="READALLFIELDS">*</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run">
+    	<Field type="STRING" action="READALLFIELDS">*</Field>
+    </Key>
+</title>
+<title name="注册表启动项目键值">
+    <Key access="REGISTER" key="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\Setup">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="系统服务信息" checked="0">
+<title name="进程名">
+	  <Key access="API" key="">
+    	<Field type="STRING" action="SYS_SRV_PIDNAME">*</Field>
+    </Key>
+</title>
+<title name="进程描述">
+    <Key access="API" key="">
+    	<Field type="STRING" action="SYS_SRV_PIDDESC">*</Field>
+    </Key>
+</title>
+<title name="当前状态">
+    <Key access="API" key="">
+    	<Field type="STRING" action="SYS_SRV_CURRENTSTATE">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="服务端口信息" checked="0">
+<title name="Proto">
+    <Key access="API" key="">
+    	<Field type="STRING" action="SYS_SRVPORT_PROTO">*</Field>
+    </Key>
+</title>
+<title name="Local Address">
+    <Key access="API" key="">
+    	<Field type="STRING" action="SYS_SRVPORT_LOCALADDR">*</Field>
+    </Key>
+</title>
+<title name="Foreign Address">
+    <Key access="API" key="">
+    	<Field type="STRING" action="SYS_SRVPORT_FOREIGNADDR">*</Field>
+    </Key>
+</title>
+<title name="State">
+    <Key access="API" key="">
+    	<Field type="STRING" action="SYS_SRVPORT_STATE">*</Field>
+    </Key>
+</title>
+<title name="process">
+    <Key access="API" key="">
+    	<Field type="STRING" action="SYS_SRVPORT_PROCESS">*</Field>
+    </Key>
+</title>
+</node>
+</subtreenode>
+</treenode>
+
+<treenode name="安全设置检测" checked="0">
+<subtreenode name="安全软件检测" checked="0">
+<node name="防火墙软件" checked="0">
+<title name="软件名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\360安全卫士">
+    	<Field type="STRING" action="READ">DisplayName</Field>
+    </Key>
+</title>
+<title name="安装时间">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\360安全卫士">
+    	<Field type="STRING" action="READ">InstallDate</Field>
+    </Key>
+</title>
+<title name="安装目录">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\360安全卫士">
+    	<Field type="STRING" action="READ">UninstallString</Field>
+    </Key>
+</title>
+<title name="是否在运行状态">
+    <Key access="API" key="">
+    	<Field type="STRING" action="VIRUS_IS_RUNNING">360SE.exe</Field>
+    </Key>
+</title>
+</node>
+
+<node name="windows防火墙" checked="0">
+<title name="当前状态">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile">
+    	<Field type="DWORD" action="READ">EnableFirewall</Field>
+    </Key>
+</title>
+</node>
+
+<node name="杀毒软件" checked="0">
+<title name="软件名称">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\360安全卫士">
+    	<Field type="STRING" action="READ">DisplayName</Field>
+    </Key>
+</title>
+<title name="安装时间">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\360安全卫士">
+    	<Field type="STRING" action="READ">InstallDate</Field>
+    </Key>
+</title>
+<title name="安装目录">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\360安全卫士">
+    	<Field type="STRING" action="READ">UninstallString</Field>
+    </Key>
+</title>
+<title name="是否在运行状态">
+    <Key access="API" key="">
+    	<Field type="STRING" action="VIRUS_IS_RUNNING">360SE.exe</Field>
+    </Key>
+</title>
+</node>
+
+<node name="用户自定义进程" checked="0">
+<title name="进程名">
+    <Key access="API" key="">
+    	<Field type="STRING" action="USER_DEFINED_PNAME">360SE.exe;Uedit32.exe;WINWORD.EXE;xx.exe</Field>
+    </Key>
+</title>
+<title name="进程ID">
+    <Key access="API" key="">
+    	<Field type="STRING" action="USER_DEFINED_PID">360SE.exe;Uedit32.exe;WINWORD.EXE;xx.exe</Field>
+    </Key>
+</title>
+<title name="当前状态">
+    <Key access="API" key="">
+    	<Field type="STRING" action="USER_DEFINED_PCURRENTSTATE">360SE.exe;Uedit32.exe;WINWORD.EXE;xx.exe</Field>
+    </Key>
+</title>
+</node>
+</subtreenode>
+
+<subtreenode name="IE安全设置" checked="0">
+<node name="本地Intranet" checked="0">
+<title name="本地Intranet">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\SOIEAK">
+    	<Field type="STRING" action="IESECURITY0">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="可信站点" checked="0">
+<title name="可信站点">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\SOIEAK">
+    	<Field type="STRING" action="IESECURITY1">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="受限站点" checked="0">
+<title name="受限站点">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\SOIEAK">
+    	<Field type="STRING" action="IESECURITY2">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="Internet安全设置信息" checked="0">
+<title name="Internet安全设置信息">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\SOIEAK">
+    	<Field type="STRING" action="IESECURITY3">*</Field>
+    </Key>
+</title>
+</node>
+</subtreenode>
+
+<subtreenode name="本地安全配置" checked="0">
+<node name="密码策略" checked="0">
+<title name="策略">
+    <Key access="REGISTER" key="">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<title name="本地设置">
+    <Key access="REGISTER" key="">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<title name="有效设置">
+    <Key access="REGISTER" key="">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="账户锁定策略" checked="0">
+<title name="策略">
+    <Key access="REGISTER" key="">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<title name="本地设置">
+    <Key access="REGISTER" key="">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<title name="有效设置">
+    <Key access="REGISTER" key="">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="审核策略" checked="0">
+<title name="策略">
+    <Key access="API" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SeCEdit\Reg Values">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<title name="本地设置">
+    <Key access="API" key="">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<title name="有效设置">
+    <Key access="API" key="">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+
+<node name="安全选项" checked="0">
+<title name="策略">
+    <Key access="REGISTER" key="">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<title name="本地设置">
+    <Key access="REGISTER" key="">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+<title name="有效设置">
+    <Key access="REGISTER" key="">
+    	<Field type="STRING" action="READ">*</Field>
+    </Key>
+</title>
+</node>
+</subtreenode>
+</treenode>
+
+<treenode name="补丁检测" checked="0">
+<subtreenode name="补丁检测" checked="0">
+<node name="补丁检测" checked="0">
+<title name="编号">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Updates">
+    	<Field type="STRING" action="READSUBKEY">*</Field>
+    </Key>
+</title>
+<title name="描述">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Updates">
+    	<Field type="STRING" action="READSUBKEY">*</Field>
+    </Key>
+</title>
+<title name="安装时间">
+    <Key access="REGISTER" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Updates">
+    	<Field type="STRING" action="READSUBKEY">*</Field>
+    </Key>
+</title>
+</node>
+</subtreenode>
+</treenode>
+</root>
