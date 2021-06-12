@@ -1,0 +1,15 @@
+1.
+ClosestPointQuery.exe
+A set of hard coded functionality test will be performed;
+Test cases are described in "test cases.xlsx"
+
+2.
+ClosestPointQuery.exe <mesh size> <query size>
+Performance test, output both kd tree creation time, and query time.
+A set of performance tests are also listed in "test cases.xlsx"
+
+3.
+For tests of other dimensions, souce code need to be modified and rebuilt:
+using KDTree = ClosestPointQuery<int, 3>;
+
+4.
