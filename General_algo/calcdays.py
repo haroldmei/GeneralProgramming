@@ -9,6 +9,8 @@ Test cases
 1) ​ 02/06/1983 - 22/06/1983​ = 19 days
 2) ​ 04/07/1984 - 25/12/1984​ = 173 days
 3) ​ 03/01/1989 - 03/08/1983​ = 1979 days
+
+Run: python calcdays.python 02/06/1983 22/06/1983
 '''
 
 import argparse
