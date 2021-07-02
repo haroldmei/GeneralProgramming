@@ -2,9 +2,16 @@
 Algorithm, OO, Template, C++, Java, etc.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
-/KD_BSP_TREE: C++ implementation of K-D Tree and BSP tree.  
+## KD_BSP_TREE
+C++ library of K-D Tree and BSP tree.  
   K-D tree: https://en.wikipedia.org/wiki/K-d_tree  
   BSP tree: https://en.wikipedia.org/wiki/Binary_space_partitioning  
+
+### Use cases:  
+  collision detection  
+  instance segmentation  
+  shadow generation  
+  3d rendering  
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
