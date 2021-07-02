@@ -2,4 +2,4 @@
 *.ncb
 *.suo
 *.aps
-
+.vscode

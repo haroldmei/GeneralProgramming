@@ -16,18 +16,18 @@
 #pragma once
 using namespace std;
 
-//! kdnode implementation
-//! N dimension kdnode creation and nearest point query;
-//! 
-//! template args:
-//!		TYPE: could be int, long, float, depending on different application;
-//!		DIM: any value greater than 0, dimension of the space.
-//!
-//! References:
-//! 1, A brief description of kdnode: https://en.wikipedia.org/wiki/K-d_tree (BuildKD, binary search: operator())
-//! 2, <Building a Balanced k-d Tree in O(kn log n) Time> by Russell A. Brown (implemented in BuildKDFast)
-//! 3, <Approximate Nearest Neighbor Queries in Fixed Dimensions> by Sunil Arya and David M. Mount (todo...)
-//! 4, octree (todo...)
+// kdnode implementation
+// N dimension kdnode creation and nearest point query;
+// 
+// template args:
+//		TYPE: could be int, long, float, depending on different application;
+//		DIM: any value greater than 0, dimension of the space.
+//
+// References:
+// 1, A brief description of kdnode: https://en.wikipedia.org/wiki/K-d_tree (BuildKD, binary search: operator())
+// 2, <Building a Balanced k-d Tree in O(kn log n) Time> by Russell A. Brown (implemented in BuildKDFast)
+// 3, <Approximate Nearest Neighbor Queries in Fixed Dimensions> by Sunil Arya and David M. Mount (todo...)
+// 4, octree (todo...)
 template<class TYPE, int DIM>
 class ClosestPointQuery
 {
@@ -57,12 +57,12 @@ public:
 		kdnode* right;
 	};
 
-	//! Constructor;
-	//! 1, create a kd tree for use of neareast point in the mesh;
-	//!	2, maintain an invalid point in case there is no point in maxDist distance;
-	//!
-	//! input:
-	//!		points: points in the mesh;
+	// Constructor;
+	// 1, create a kd tree for use of neareast point in the mesh;
+	//	2, maintain an invalid point in case there is no point in maxDist distance;
+	//
+	// input:
+	//		points: points in the mesh;
 	ClosestPointQuery(const Mesh &points): currentFree(0), kdhead(0)
 	{
 		invalidPoint.fill(std::numeric_limits<TYPE>::max());
@@ -72,17 +72,17 @@ public:
 		BuildKD(tempMesh.begin(), tempMesh.end(), &kdhead);
 	}
 
-	//! another binary search tree;
-	//! complexity:
-	//!		time O(log(n))
-	//!		space O(log(n))
-	//!
-	//! input:
-	//!		queryPoint: source point used for the query
-	//!		maxDist: max distance in which the nearest point will be.
-	//! output:
-	//!		the nearest point to source point within a certain distance;
-	//£¡		if no point is found in maxDist area, the function returns an invalid point
+	// another binary search tree;
+	// complexity:
+	//		time O(log(n))
+	//		space O(log(n))
+	//
+	// input:
+	//		queryPoint: source point used for the query
+	//		maxDist: max distance in which the nearest point will be.
+	// output:
+	//		the nearest point to source point within a certain distance;
+	//		if no point is found in maxDist area, the function returns an invalid point
 	Point operator()(const Point& queryPoint, double maxDist) const
 	{
 		int depth = 0;
@@ -122,16 +122,16 @@ public:
 			return invalidPoint;
 	}
 
-	//! another binary search tree;
+	// another binary search tree;
 	~ClosestPointQuery()
 	{
 		delete[] nodepool;
 	}
 
-	//! generate a mesh with large amount of points;
-	//! input:
-	//! n, number of points
-	//! mesh, the vector of points in the mesh
+	// generate a mesh with large amount of points;
+	// input:
+	// n, number of points
+	// mesh, the vector of points in the mesh
 	void static generateMesh(long n, vector<Point> &mesh)
 	{
 		for (int i = 0; i < n; i++)
@@ -143,18 +143,18 @@ public:
 	}
 
 private:
-	//! draft 2: divide by axis in turn, no recursion, 
-	//! an improvement from draft 1, call stack will no 
-	//! long be broken;
-	//! complexity:
-	//!		time O(nlog2(n))
-	//!		space O(n)
-	//!
-	//! input:
-	//!		beg, end: array range of a given point list;
-	//!		depth:	current tree depth being built;
-	//! output:
-	//!		pNode:	current subtree being built.
+	// draft 2: divide by axis in turn, no recursion, 
+	// an improvement from draft 1, call stack will no 
+	// long be broken;
+	// complexity:
+	//		time O(nlog2(n))
+	//		space O(n)
+	//
+	// input:
+	//		beg, end: array range of a given point list;
+	//		depth:	current tree depth being built;
+	// output:
+	//		pNode:	current subtree being built.
 	void BuildKD(MyIterator itBeg, MyIterator itEnd, kdnode **pTree)
 	{
 		// build the tree from root
@@ -201,19 +201,19 @@ private:
 		}
 	}
 
-	//! draft 4: another kdnode creation, no recursion, 
-	//! <Building a Balanced k-d Tree in O(kn log n) Time> by Russell A. Brown
-	//! 
-	//! <Harold: the solution is a bit slower than draft 2, for it copies a lot>
-	//! complexity:
-	//!		time O(knlog(n))
-	//!		space O(n)
-	//!
-	//! input:
-	//!		beg, end: array range of a given point list;
-	//!		depth:	current tree depth being built;
-	//! output:
-	//!		pNode:	current subtree being built.
+	// draft 4: another kdnode creation, no recursion, 
+	// <Building a Balanced k-d Tree in O(kn log n) Time> by Russell A. Brown
+	// 
+	// <Harold: the solution is a bit slower than draft 2, for it copies a lot>
+	// complexity:
+	//		time O(knlog(n))
+	//		space O(n)
+	//
+	// input:
+	//		beg, end: array range of a given point list;
+	//		depth:	current tree depth being built;
+	// output:
+	//		pNode:	current subtree being built.
 	void BuildKDFast(MyConstIterator itBeg, MyConstIterator itEnd, kdnode **pTree)
 	{
 		// initialize DIM lists;
@@ -289,14 +289,14 @@ private:
 		}
 	}
 
-	//! The superKeyCompare method compares two points in all dimensions, 
-	//! and uses the sorting or partition coordinate as the most significant dimension.
-	//!
-	//! calling parameters:
-	//! a - a Point
-	//! b - a Point
-	//! p - the most significant dimension
-	//! returns: a TYPE result of comparing two long arrays
+	// The superKeyCompare method compares two points in all dimensions, 
+	// and uses the sorting or partition coordinate as the most significant dimension.
+	//
+	// calling parameters:
+	// a - a Point
+	// b - a Point
+	// p - the most significant dimension
+	// returns: a TYPE result of comparing two long arrays
 	static TYPE superKeyCompare(const Point &a, const Point &b, int p)
 	{
 		TYPE diff = 0;
@@ -314,8 +314,8 @@ private:
 		return diff;
 	}
 
-	//! power of distance returned from the function
-	//! in order to make it fast, square calculation is not used
+	// power of distance returned from the function
+	// in order to make it fast, square calculation is not used
 	static double distance(const Point &queryPoint, const Point &pt)
 	{
 		double dist = 0;
