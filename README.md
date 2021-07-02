@@ -1,10 +1,10 @@
-# Misc
-Algorithm, OO, Template, C++, Java, etc.
+# Algorithms, Performance, OO, Template, C++, System & Networks, etc.
 
 ## Binary Space Partition trees
 C++ library of K-D Tree and BSP tree.  
   * K-D tree: https://en.wikipedia.org/wiki/K-d_tree  
   * BSP tree: https://en.wikipedia.org/wiki/Binary_space_partitioning  
+
 
 ### Use cases:  
   * collision detection  
