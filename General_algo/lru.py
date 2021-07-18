@@ -13,6 +13,7 @@ class DoubleLinkedList:
     def __init__(self):
         self.head = None
         self.tail = None
+        self.count = 0
     
     def push_front(self, node):
         if self.head:
@@ -23,6 +24,7 @@ class DoubleLinkedList:
 
         if not self.tail:
             self.tail = node
+        self.count += 1
 
     def pop_front(self):
         result = self.head
@@ -33,7 +35,7 @@ class DoubleLinkedList:
             self.head.prev = None
         else:
             self.tail = None
-
+        self.count -= 1
         return result
 
     def push_back(self, node):
@@ -44,6 +46,7 @@ class DoubleLinkedList:
         if not self.head:
             self.head = node
         self.tail = node
+        self.count += 1
     
     def pop_back(self):
         result = self.tail
@@ -53,6 +56,7 @@ class DoubleLinkedList:
             self.tail.next = None
         else:
             self.head = None
+        self.count -= 1
         return result
     
     def remove_node(self, node):
@@ -63,6 +67,16 @@ class DoubleLinkedList:
             self.pop_back()
         else:
             self.pop_front()
+        self.count -= 1
+    
+    def insert_node(self, prev, node):
+        next = prev.next
+        node.next = prev.next
+        node.prev = prev
+        prev.next = node
+        if next:
+            next.prev = node
+        self.count += 1
 
     def dump(self):
         result = []
@@ -70,14 +84,12 @@ class DoubleLinkedList:
         while curr:
             result.append(curr.key)
             curr = curr.next
-
         print(result)
 
 class LRUCache:
 
     def __init__(self, capacity: int):
         self.capacity = capacity
-        self.count = 0
         self.dict = {}
         self.cache = DoubleLinkedList()
 
@@ -86,12 +98,7 @@ class LRUCache:
         if key in self.dict:
             self.cache.remove_node(self.dict[key])
             result = self.dict[key].value
-
-            #make it easy, remove first and add it back
-            del self.dict[key]
-            self.count -= 1
-
-            self.put(key, result)
+            self.cache.push_front(self.dict[key])
         return result
 
     def put(self, key: int, value: int) -> None:
@@ -100,11 +107,10 @@ class LRUCache:
             self.dict[key].value = value
             self.cache.push_front(self.dict[key])
 
-        elif self.count < self.capacity:
+        elif self.cache.count < self.capacity:
             node = ListNode(key, value)
             self.dict[key] = node
             self.cache.push_front(node)
-            self.count += 1
 
         else:
             node = ListNode(key, value)
@@ -135,9 +141,9 @@ if __name__ == "__main__":
         else:
             obj = LRUCache(params[i][0])
 
-        #obj.dump()
+        obj.dump()
     print('Done')  
-    
+
 '''
 # Your LRUCache object will be instantiated and called as such:
 obj = LRUCache(2)
