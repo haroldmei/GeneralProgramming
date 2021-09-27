@@ -31,3 +31,5 @@ Dou di zhu (was once a famous Chinese poker game), the rules are specified in: h
 This c implementation is super fast and memory efficient, the game literally consumes no memory, all data needed in the game are just 4 32bit integers, and all calculation needed is just bit wise operations.  
 
 
+Notes:
+Replace the RANSAC based ML solution to kNN based general algo
