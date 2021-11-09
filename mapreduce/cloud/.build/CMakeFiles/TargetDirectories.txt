@@ -1,0 +1,4 @@
+/media/hmei/500G/GeneralProgramming/mapreduce/cloud/.build/CMakeFiles/rebuild_cache.dir
+/media/hmei/500G/GeneralProgramming/mapreduce/cloud/.build/CMakeFiles/edit_cache.dir
+/media/hmei/500G/GeneralProgramming/mapreduce/cloud/.build/CMakeFiles/cl.bin.dir
+/media/hmei/500G/GeneralProgramming/mapreduce/cloud/.build/CMakeFiles/sv.bin.dir
