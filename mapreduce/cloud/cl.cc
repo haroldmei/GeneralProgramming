@@ -4,8 +4,10 @@
 
 #include "rpc/client.h"
 #include "./msg.hh"
+#include "google/cloud/storage/client.h"
 
 using namespace std;
+namespace gcs = ::google::cloud::storage;
 
 void worker(rpc::client *c){
 

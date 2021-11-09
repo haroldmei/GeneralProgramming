@@ -11,6 +11,8 @@
 
 using namespace std;
 namespace fs = filesystem;
+namespace gcs = ::google::cloud::storage;
+extern gcs::Client client;
 
 vector<string> partitions;
 int num_partition = 0;
@@ -59,30 +61,24 @@ int main(int argc, char *argv[]) {
     cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt!
 
     n_reducer = stoi(argv[2]);
-    for (const auto & entry : fs::directory_iterator(argv[1])){
-        partitions.push_back(string(entry.path().string()));
-    }
 
-    namespace gcs = ::google::cloud::storage;
-    auto client = gcs::Client();
     auto f = [](gcs::Client client, std::string const& bucket_name) {
       for (auto&& object_metadata : client.ListObjects(bucket_name)) {
         if (!object_metadata) {
           throw std::runtime_error(object_metadata.status().message());
         }
 
-        std::cout << "bucket_name=" << object_metadata->bucket()
-                  << ", object_name=" << object_metadata->name() << "\n";
+        std::cout << "bucket_name=" << object_metadata->bucket() << ", object_name=" << object_metadata->name() << "\n";   
+        partitions.push_back(string(object_metadata->name()));
       }
     };
-    f(client, "gs://gcp-wow-rwds-ai-mlchapter-dev-bucket/data");
+
+    f(client, bucket_name);
     num_partition = partitions.size();
 
     // Creating a server that listens on port 8080
     rpc::server srv(8080);
     srv.bind("foo", &foo);
-
-    // Run the server loop.
     srv.run();
 
     return 0;

@@ -5,9 +5,13 @@
 
 #include <boost/algorithm/string/split.hpp>
 #include <boost/algorithm/string.hpp>
+#include "google/cloud/storage/client.h"
+
 
 using namespace std;
-
+namespace gcs = ::google::cloud::storage;
+string const bucket_name = "gcp-wow-rwds-ai-mlchapter-dev-bucket";
+gcs::Client client = gcs::Client();
 
 // cliend code
 vector<vector<string>> Map(string content){
@@ -29,11 +33,35 @@ string Reduce(string key, vector<string> values){
     return to_string(values.size());
 }
 
+string ReadObject(string bucket, string object){
+    auto reader = client.ReadObject(bucket_name, "quickstart.txt");
+    if (!reader) {
+        std::cerr << "Error reading object: " << reader.status() << "\n";
+        return "";
+    }
+
+    std::string contents{std::istreambuf_iterator<char>{reader}, {}};
+    return contents;
+}
+
+void WriteObject(string bucket, string object, string content){
+
+    auto writer = client.WriteObject(bucket_name, "quickstart.txt");
+    writer << content;
+    writer.Close();
+
+    if (writer.metadata()) {
+        std::cout << "Successfully created object: " << *writer.metadata() << "\n";
+    } else {
+        std::cerr << "Error creating object: " << writer.metadata().status() << "\n";
+    }
+}
 // system code
 int mapper(string fn, int m_id, int n_reducer){
 
     ifstream ifs(fn, ios::in);
     string content((istreambuf_iterator<char>(ifs)), (istreambuf_iterator<char>()));
+
     auto kvs = Map(content);
 
     //initialize n_reducer number of buckets
@@ -50,6 +78,7 @@ int mapper(string fn, int m_id, int n_reducer){
             output += e[1];
             output += "\n";
         });
+
         ofstream out("./out/mr-" + to_string(m_id) + "-" + to_string(it - intermediate.begin()));
         out << output;
         out.close();
@@ -63,9 +92,10 @@ int reducer(int n_mapper, int id) {
     vector<vector<string>> kvs;
     for (int i = 0; i < n_mapper; i++){
         string fname = string("./out/mr-") + to_string(i) + "-" + to_string(id);
-        ifstream ifs(fname, ios::in);
 
+        ifstream ifs(fname, ios::in);
         string content((istreambuf_iterator<char>(ifs)), (istreambuf_iterator<char>()));
+
         vector<string> lines;
         boost::split(lines, content, boost::is_any_of("\n"));
 
@@ -100,5 +130,6 @@ int reducer(int n_mapper, int id) {
         it = found;
     }
     out.close();
+
     return 0;
 }
