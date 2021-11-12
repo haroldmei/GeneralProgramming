@@ -24,10 +24,18 @@ spec:
       containers:
       - name: sv
         image: haroldmei/mapreduce:latest
+        # volumeMounts:
+        # - mountPath: /test-pd
+        #   name: test-volume
         command: ["/bin/sv.bin"]
         args: ["/data", "3"]
         ports:
         - containerPort: 8080
+      volumes:
+      - name: test-volume
+        gcePersistentDisk:
+          pdName: hm-data-disk
+          fsType: ext4
 ---
 apiVersion: v1
 kind: Service
@@ -61,7 +69,5 @@ spec:
       containers:
       - name: cl
         image: haroldmei/mapreduce:latest
-        command: ["/bin/sh","-c", "mkdir -p out && sleep 20s && /bin/cl.bin"]
-        #args: ["mkdir -p out; sleep 20s; /bin/cl.bin"]
-        #args: ["sleep 1h"]
+        command: ["/bin/sh","-c", "sleep 30s && /bin/cl.bin"]
 

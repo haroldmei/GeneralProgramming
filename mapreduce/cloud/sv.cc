@@ -58,6 +58,8 @@ int main(int argc, char *argv[]) {
     }
 
     ofstream out("./log.txt");
+
+    std::streambuf *coutbuf = std::cout.rdbuf(); //save old buf
     cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt!
 
     n_reducer = stoi(argv[2]);
@@ -81,5 +83,6 @@ int main(int argc, char *argv[]) {
     srv.bind("foo", &foo);
     srv.run();
 
+    std::cout.rdbuf(coutbuf); //reset to standard output again
     return 0;
 }

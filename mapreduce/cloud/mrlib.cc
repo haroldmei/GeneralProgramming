@@ -6,7 +6,7 @@
 #include <boost/algorithm/string/split.hpp>
 #include <boost/algorithm/string.hpp>
 #include "google/cloud/storage/client.h"
-
+#include "msg.hh"
 
 using namespace std;
 namespace gcs = ::google::cloud::storage;
@@ -34,7 +34,7 @@ string Reduce(string key, vector<string> values){
 }
 
 string ReadObject(string bucket, string object){
-    auto reader = client.ReadObject(bucket_name, "quickstart.txt");
+    auto reader = client.ReadObject(bucket_name, object);
     if (!reader) {
         std::cerr << "Error reading object: " << reader.status() << "\n";
         return "";
@@ -45,6 +45,10 @@ string ReadObject(string bucket, string object){
 }
 
 void WriteObject(string bucket, string object, string content){
+    
+    cout << bucket << endl;
+    cout << object << endl;
+    cout << content << endl;
 
     auto writer = client.WriteObject(bucket_name, object);
     writer << content;
@@ -83,7 +87,7 @@ int mapper(string fn, int m_id, int n_reducer){
         //ofstream out("./out/mr-" + to_string(m_id) + "-" + to_string(it - intermediate.begin()));
         //out << output;
         //out.close();
-        string out("./out/mr-" + to_string(m_id) + "-" + to_string(it - intermediate.begin()));
+        string out("out/mr-" + to_string(m_id) + "-" + to_string(it - intermediate.begin()));
         WriteObject(bucket_name, out, output);
     };
 
@@ -130,7 +134,7 @@ int reducer(int n_mapper, int id) {
         vector<string> values(count + 1, (*it)[1]);
         
         string result = Reduce((*it)[0], values);
-        
+
         WriteObject(bucket_name, out, result);
         it = found;
     }

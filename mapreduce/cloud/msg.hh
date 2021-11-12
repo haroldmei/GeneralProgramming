@@ -17,4 +17,6 @@ vector<vector<string>> Map(string content);
 string Reduce(string key, vector<string> values);
 int mapper(string fn, int m_id, int n_reducer);
 int reducer(int n_mapper, int id);
-string const bucket_name;
+string ReadObject(string bucket, string object);
+void WriteObject(string bucket, string object, string content);
+extern string const bucket_name;

@@ -38,24 +38,18 @@ void worker(rpc::client *c){
 
 int main(int argc, char *argv[]) {
 
-    // if (argc < 2){
-    //     cout << "params needed. " << endl;
-    // }
-
     ofstream out("./log.txt");
+    
+    std::streambuf *coutbuf = std::cout.rdbuf(); //save old buf
     cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt!
     
     // Creating a client that connects to the localhost on port 8080
-    string ip("server.default");
+    string ip("server.mapreduce");
     cout << "client started, ip = " << ip << endl;
 
-    rpc::client client("server.default", 8080);
-
-    // vector<thread> workers;
-    // for (int i = 0; i < 3; i++){
-    //     workers.push_back(thread(worker, &client));
-    // }
-    // for_each(workers.begin(), workers.end(), [](auto &i){i.join();});
+    rpc::client client("server.mapreduce", 8080);
     worker(&client);
+
+    std::cout.rdbuf(coutbuf); //reset to standard output again
     return 0;
 }
