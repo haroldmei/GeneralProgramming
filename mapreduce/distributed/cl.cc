@@ -36,10 +36,6 @@ void worker(rpc::client *c){
 
 int main(int argc, char *argv[]) {
 
-    // if (argc < 2){
-    //     cout << "params needed. " << endl;
-    // }
-
     ofstream out("./log.txt");
     cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt!
     
@@ -48,12 +44,6 @@ int main(int argc, char *argv[]) {
     cout << "client started, ip = " << ip << endl;
 
     rpc::client client("server.default", 8080);
-
-    // vector<thread> workers;
-    // for (int i = 0; i < 3; i++){
-    //     workers.push_back(thread(worker, &client));
-    // }
-    // for_each(workers.begin(), workers.end(), [](auto &i){i.join();});
     worker(&client);
     return 0;
 }
