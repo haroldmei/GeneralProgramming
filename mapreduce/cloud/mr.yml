@@ -24,18 +24,25 @@ spec:
       containers:
       - name: sv
         image: haroldmei/mapreduce:latest
-        # volumeMounts:
-        # - mountPath: /test-pd
-        #   name: test-volume
         command: ["/bin/sv.bin"]
         args: ["/data", "3"]
         ports:
         - containerPort: 8080
+        env:
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: /test-pd/adc.json
+        - name: GCLOUD_PROJECT
+          value: gcp-wow-rwds-ai-mlchapter-dev
+          
+        volumeMounts:
+        - mountPath: /test-pd
+          name: test-volume
       volumes:
       - name: test-volume
         gcePersistentDisk:
           pdName: hm-data-disk
           fsType: ext4
+          readOnly: true
 ---
 apiVersion: v1
 kind: Service
@@ -70,4 +77,19 @@ spec:
       - name: cl
         image: haroldmei/mapreduce:latest
         command: ["/bin/sh","-c", "sleep 30s && /bin/cl.bin"]
+        env:
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: /test-pd/adc.json
+        - name: GCLOUD_PROJECT
+          value: gcp-wow-rwds-ai-mlchapter-dev
+
+        volumeMounts:
+        - mountPath: /test-pd
+          name: test-volume
+      volumes:
+      - name: test-volume
+        gcePersistentDisk:
+          pdName: hm-data-disk
+          fsType: ext4
+          readOnly: true
 
