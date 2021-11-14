@@ -61,7 +61,7 @@ metadata:
   name: client
   namespace: mapreduce
 spec:
-  parallelism: 3
+  parallelism: 2
   backoffLimit: 5
   template:
     metadata:
@@ -73,7 +73,7 @@ spec:
       containers:
       - name: cl
         image: haroldmei/mapreduce:latest
-        command: ["/bin/sh","-c", "sleep 5s && /bin/cl.bin"]
+        command: ["/bin/sh","-c", "sleep 30s && /bin/cl.bin"]
         env:
         - name: GOOGLE_APPLICATION_CREDENTIALS
           value: /test-pd/adc.json

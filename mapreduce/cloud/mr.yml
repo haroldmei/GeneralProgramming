@@ -64,7 +64,7 @@ metadata:
   name: client
   namespace: mapreduce
 spec:
-  replicas: 3 
+  replicas: 2 
   selector:
     matchLabels:
       system: ReplicaOne

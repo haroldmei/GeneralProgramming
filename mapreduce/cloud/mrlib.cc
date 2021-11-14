@@ -46,8 +46,8 @@ string ReadObject(string bucket, string object){
 
 void WriteObject(string bucket, string object, string content){
 
-    cout << bucket << endl;
-    cout << object << endl;
+    //cout << bucket << endl;
+    //cout << object << endl;
 
     auto writer = client.WriteObject(bucket_name, object);
     writer << content;
