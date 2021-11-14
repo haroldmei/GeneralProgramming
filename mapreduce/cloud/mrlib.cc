@@ -54,7 +54,7 @@ void WriteObject(string bucket, string object, string content){
     writer.Close();
 
     if (writer.metadata()) {
-        std::cout << "Successfully created object: " << *writer.metadata() << "\n";
+        //std::cout << "Successfully created object: " << *writer.metadata() << "\n";
     } else {
         std::cerr << "Error creating object: " << writer.metadata().status() << "\n";
     }
@@ -97,7 +97,7 @@ int reducer(int n_mapper, int id) {
 
     vector<vector<string>> kvs;
     for (int i = 0; i < n_mapper; i++){
-        string fname = string("./out/mr-") + to_string(i) + "-" + to_string(id);
+        string fname = string("out/mr-") + to_string(i) + "-" + to_string(id);
 
         //ifstream ifs(fname, ios::in);
         //string content((istreambuf_iterator<char>(ifs)), (istreambuf_iterator<char>()));
@@ -119,7 +119,7 @@ int reducer(int n_mapper, int id) {
     }
     sort(kvs.begin(), kvs.end());
     
-    string out("./out/mr-out-" + to_string(id));
+    string out("out/mr-out-" + to_string(id));
     for (vector<vector<string>>::iterator it = kvs.begin(); it != kvs.end(); it++){
         
         vector<vector<string>>::iterator found = find_if(it + 1, kvs.end(), [&it](auto &cur){

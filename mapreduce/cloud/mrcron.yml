@@ -1,0 +1,90 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mapreduce
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: server
+  namespace: mapreduce
+spec:
+  backoffLimit: 0
+  template:
+    metadata:
+      labels:
+        system: server
+        run: server
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: sv
+        image: haroldmei/mapreduce:latest
+        command: ["/bin/sv.bin"]
+        args: ["/data", "3"]
+        ports:
+        - containerPort: 8080
+        env:
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: /test-pd/adc.json
+        - name: GCLOUD_PROJECT
+          value: gcp-wow-rwds-ai-mlchapter-dev
+        volumeMounts:
+        - mountPath: /test-pd
+          name: test-volume
+      volumes:
+      - name: test-volume
+        gcePersistentDisk:
+          pdName: hm-data-disk
+          fsType: ext4
+          readOnly: true
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: server
+  namespace: mapreduce
+  labels:
+    run: server
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+  selector:
+    run: server
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: client
+  namespace: mapreduce
+spec:
+  parallelism: 3
+  backoffLimit: 5
+  template:
+    metadata:
+      labels:
+        system: server
+        run: server
+    spec:
+      restartPolicy: OnFailure
+      containers:
+      - name: cl
+        image: haroldmei/mapreduce:latest
+        command: ["/bin/sh","-c", "sleep 5s && /bin/cl.bin"]
+        env:
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: /test-pd/adc.json
+        - name: GCLOUD_PROJECT
+          value: gcp-wow-rwds-ai-mlchapter-dev
+        volumeMounts:
+        - mountPath: /test-pd
+          name: test-volume
+      volumes:
+      - name: test-volume
+        gcePersistentDisk:
+          pdName: hm-data-disk
+          fsType: ext4
+          readOnly: true
