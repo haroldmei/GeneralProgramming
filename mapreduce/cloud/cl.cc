@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <boost/asio.hpp>
 
 #include "rpc/client.h"
 #include "./msg.hh"
@@ -8,18 +9,19 @@
 
 using namespace std;
 namespace gcs = ::google::cloud::storage;
+namespace ip = boost::asio::ip;
 
-void worker(rpc::client *c){
+void worker(rpc::client *c, gcs::ObjectWriteStream &out){
 
     while(true){
         // Calling a function with paramters and converting the result to int
-        cout << "worker started" << endl;
+        out << "worker started" << endl;
         mr_msg result = c->call("foo").as<mr_msg>();
 
-        std::cout << "Type: " << result.msg_type << std::endl;
-        std::cout << "Value: " << result.message << std::endl;
-        std::cout << "MID: " << result.mapper_id << std::endl;
-        std::cout << "RID: " << result.reducer_id << std::endl;
+        out << "Type: " << result.msg_type << std::endl;
+        out << "Value: " << result.message << std::endl;
+        out << "MID: " << result.mapper_id << std::endl;
+        out << "RID: " << result.reducer_id << std::endl;
 
         if (result.msg_type == 0){
             mapper(result.message, result.mapper_id, result.reducer_id);
@@ -30,7 +32,7 @@ void worker(rpc::client *c){
         else
         {
             //mr_msg goodbye = c->call("foo").as<mr_msg>(); //good bye, need return from rpc all the time
-            cout << "worker finished" << endl;
+            out << "worker finished" << endl;
             break;
         }
     }
@@ -38,18 +40,17 @@ void worker(rpc::client *c){
 
 int main(int argc, char *argv[]) {
 
-    ofstream out("./log.txt");
-    
-    std::streambuf *coutbuf = std::cout.rdbuf(); //save old buf
-    cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt!
-    
     // Creating a client that connects to the localhost on port 8080
+    rpc::client c("server.mapreduce", 8080);
+    
+    extern gcs::Client client;
+    string out("log-client-" + ip::host_name());
+    auto writer = client.WriteObject(bucket_name, out);
+
     string ip("server.mapreduce");
-    cout << "client started, ip = " << ip << endl;
+    writer << "client started, ip = " << ip << endl;
 
-    rpc::client client("server.mapreduce", 8080);
-    worker(&client);
-
-    std::cout.rdbuf(coutbuf); //reset to standard output again
+    worker(&c, writer);
+    writer.Close();
     return 0;
 }

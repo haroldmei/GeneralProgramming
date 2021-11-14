@@ -63,9 +63,9 @@ int main(int argc, char *argv[]) {
     cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt!
 
     n_reducer = stoi(argv[2]);
-
-    auto f = [](gcs::Client client, std::string const& bucket_name) {
-      for (auto&& object_metadata : client.ListObjects(bucket_name)) {
+    string prefix = argv[1];
+    auto f = [&prefix](gcs::Client client, std::string const& bucket_name) {
+      for (auto&& object_metadata : client.ListObjects(bucket_name, gcs::Prefix(prefix))) {
         if (!object_metadata) {
           throw std::runtime_error(object_metadata.status().message());
         }

@@ -120,6 +120,7 @@ int reducer(int n_mapper, int id) {
     sort(kvs.begin(), kvs.end());
     
     string out("out/mr-out-" + to_string(id));
+    auto writer = client.WriteObject(bucket_name, out);
     for (vector<vector<string>>::iterator it = kvs.begin(); it != kvs.end(); it++){
         
         vector<vector<string>>::iterator found = find_if(it + 1, kvs.end(), [&it](auto &cur){
@@ -132,11 +133,11 @@ int reducer(int n_mapper, int id) {
         int count = found - it;
         vector<string> values(count + 1, (*it)[1]);
         
-        string result = Reduce((*it)[0], values);
-
-        WriteObject(bucket_name, out, result);
+        string cur = Reduce((*it)[0], values);
+        writer << (*it)[0] << "," << cur << endl;
         it = found;
     }
+    writer.Close();
 
     return 0;
 }

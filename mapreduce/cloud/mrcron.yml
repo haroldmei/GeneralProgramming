@@ -22,7 +22,7 @@ spec:
       - name: sv
         image: haroldmei/mapreduce:latest
         command: ["/bin/sv.bin"]
-        args: ["/data", "3"]
+        args: ["data/", "4"]
         ports:
         - containerPort: 8080
         env:
@@ -61,7 +61,7 @@ metadata:
   name: client
   namespace: mapreduce
 spec:
-  parallelism: 2
+  parallelism: 4
   backoffLimit: 5
   template:
     metadata:

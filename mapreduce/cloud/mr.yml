@@ -25,7 +25,7 @@ spec:
       - name: sv
         image: haroldmei/mapreduce:latest
         command: ["/bin/sv.bin"]
-        args: ["/data", "3"]
+        args: ["data/", "4"]
         ports:
         - containerPort: 8080
         env:
@@ -64,7 +64,7 @@ metadata:
   name: client
   namespace: mapreduce
 spec:
-  replicas: 2 
+  replicas: 4 
   selector:
     matchLabels:
       system: ReplicaOne
