@@ -101,7 +101,7 @@ int reducer(int n_mapper, int id) {
             break;
 
         int count = found - it;
-        vector<string> values(count, (*it)[1]);
+        vector<string> values(count + 1, (*it)[1]);
         
         string result = Reduce((*it)[0], values);
         out << (*it)[0] << "," << result << endl;;
