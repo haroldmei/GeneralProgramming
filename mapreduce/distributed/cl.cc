@@ -40,10 +40,7 @@ int main(int argc, char *argv[]) {
     cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt!
     
     // Creating a client that connects to the localhost on port 8080
-    string ip("server.default");
-    cout << "client started, ip = " << ip << endl;
-
-    rpc::client client("server.default", 8080);
+    rpc::client client("127.0.0.1", 8080);
     worker(&client);
     return 0;
 }
