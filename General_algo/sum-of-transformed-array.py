@@ -9,5 +9,6 @@ sum it's transformed array of len n*(n-1):
 
 Q2: https://leetcode.com/problems/sum-of-subarray-ranges/
 
+https://drive.google.com/drive/folders/1Y2d-d8EYd_qbeBZOjwT34cK9DYvtkQOv
 
 '''
